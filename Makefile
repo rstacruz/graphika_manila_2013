@@ -16,6 +16,9 @@ assets/script.js: \
 favicon.ico: favicon.png
 	convert $< $@
 
+cachebust:
+	perl -p -i -e "s/\?v=[0-9]+/?v=`echo $$RANDOM`/" index.html
+
 # ----------------------------------------------------------------------------
 # Stylus compilation (http://learnboost.github.com/stylus)
 
@@ -57,6 +60,6 @@ check_stylus = \
 
 COMBINE = rm -f $@; cat $^ > $@; chmod a-w $@
 
-.PHONY: start watch server all clean deploy
+.PHONY: start watch server all clean cachebust
 
 PORT ?= 9110
