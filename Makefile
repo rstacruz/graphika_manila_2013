@@ -1,6 +1,7 @@
 all: \
 	assets/style.css \
-	assets/script.js
+	assets/script.js \
+	favicon.ico
 
 assets/style.css: \
 	assets/attributions.css \
@@ -11,6 +12,9 @@ assets/style.css: \
 assets/script.js: \
 	js/attributions.js
 	$(COMBINE)
+
+favicon.ico: favicon.png
+	convert $< $@
 
 # ----------------------------------------------------------------------------
 # Stylus compilation (http://learnboost.github.com/stylus)
