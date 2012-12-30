@@ -27,6 +27,15 @@ assets/%.css: css/%.styl
 	$(stylus) -I css -u nib < $< > $@
 	@chmod a-w $@
 
+# Image compression
+images/%.jpg.png: assets/%.jpg
+	$(check_imagemagick)
+	convert $< -quality 60 -strip -interlace plane $@
+
+images/%.png: assets/%.jpg
+	$(check_imagemagick)
+	convert $< -strip $@
+
 # ----------------------------------------------------------------------------
 
 # Starts the local development
@@ -42,7 +51,7 @@ server:
 
 # Cleans all compiled assets
 clean:
-	rm -f assets/*.css assets/script.js
+	rm -f assets/*.{css,jpg,png} assets/script.js
 
 # Simple file watcher
 watch:
@@ -56,6 +65,13 @@ check_stylus = \
 	@which $(stylus) >/dev/null || \
 		(echo " ! Error: You need Stylus and Nib to process .styl files." && \
 		 echo "   Try: 'sudo npm install -g stylus nib'" && \
+		 exit 1)
+
+convert ?= convert
+check_imagemagick = \
+	@which $(convert) >/dev/null || \
+		(echo " ! Error: You need ImageMagick to optimize images." && \
+		 echo "   Try: 'brew install imagemagick'" && \
 		 exit 1)
 
 COMBINE = rm -f $@; cat $^ > $@; chmod a-w $@
