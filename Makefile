@@ -1,7 +1,8 @@
 all: \
 	assets/style.css \
 	assets/script.js \
-	favicon.ico
+	favicon.ico \
+	$(patsubst %.jpg.png, %.jpg, $(patsubst images/%, assets/%, $(shell ls images/*)))
 
 assets/style.css: \
 	assets/attributions.css \
@@ -28,13 +29,16 @@ assets/%.css: css/%.styl
 	@chmod a-w $@
 
 # Image compression
-images/%.jpg.png: assets/%.jpg
+assets/%.jpg: images/%.jpg.png
 	$(check_imagemagick)
 	convert $< -quality 60 -strip -interlace plane $@
 
-images/%.png: assets/%.jpg
-	$(check_imagemagick)
-	convert $< -strip $@
+assets/%@2x.png: images/%@2x.png
+	cp $< $@
+	convert $@ -resize 50% $(patsubst %@2x.png, %.png, $@)
+
+assets/%.png: images/%.png
+	cp $< $@
 
 # ----------------------------------------------------------------------------
 
