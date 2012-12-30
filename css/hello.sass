@@ -1,11 +1,11 @@
-@import nib
+@import compass
 
 // Colors
-cream     = #fdefe1
-scarlet   = #ec553f
-turquoise = #1e908c
-ochre     = #e5a141
-lime      = #bcc58e
+$cream:     #fdefe1
+$scarlet:   #ec553f
+$turquoise: #1e908c
+$ochre:     #e5a141
+$lime:      #bcc58e
 
 // ----------------------------------------------------------------------------
 
@@ -19,14 +19,13 @@ body, input, td, th, textarea
 
 .section.title
   &
-    background: cream
+    background: $cream
     padding: 40px 0
 
   .logo
+    display: block
     margin: 40px auto
-    text-align: center
 
-  .logo img
     width: 639px
     height: 220px
 
@@ -40,10 +39,10 @@ body, input, td, th, textarea
     text-align: center
 
   .time
-    color: turquoise
+    color: $turquoise
 
   .venue
-    color: ochre
+    color: $ochre
 
   @media (max-width: 600px)
     &
@@ -52,10 +51,6 @@ body, input, td, th, textarea
 
     .logo
       margin: 20px auto
-
-    .logo img
-      width: 100%
-      height: auto
 
     .info
       margin: 20px auto

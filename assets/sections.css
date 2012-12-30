@@ -1,5 +1,54 @@
-.hello {
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+body,
+input,
+td,
+th,
+textarea {
+  font-family: proxima nova, sans-serif;
+  font-size: 10pt;
+  line-height: 1.5;
+  color: #444;
+}
+.section.title {
+  background: #fdefe1;
+  padding: 40px 0;
+}
+.section.title .logo {
+  margin: 40px auto;
+  text-align: center;
+}
+.section.title .logo img {
+  width: 639px;
+  height: 220px;
+}
+.section.title .info {
+  margin: 40px auto;
+  font-size: 16pt;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.section.title .info > * {
+  text-align: center;
+}
+.section.title .time {
+  color: #1e908c;
+}
+.section.title .venue {
+  color: #e5a141;
+}
+@media (max-width: 600px) {
+  .section.title {
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .section.title .logo {
+    margin: 20px auto;
+  }
+  .section.title .logo img {
+    width: 100%;
+    height: auto;
+  }
+  .section.title .info {
+    margin: 20px auto;
+  }
 }
 

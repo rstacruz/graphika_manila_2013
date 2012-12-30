@@ -11,7 +11,9 @@ assets/style.css: \
 	$(COMBINE)
 
 assets/script.js: \
-	js/attributions.js
+	js/attributions.js \
+	js/foresight.min.js \
+	js/setup.js
 	$(COMBINE)
 
 favicon.ico: favicon.png
@@ -21,24 +23,28 @@ cachebust:
 	perl -p -i -e "s/\?v=[0-9]+/?v=`echo $$RANDOM`/" index.html
 
 # ----------------------------------------------------------------------------
-# Stylus compilation (http://learnboost.github.com/stylus)
 
+# Stylus compilation (http://learnboost.github.com/stylus)
 assets/%.css: css/%.styl
 	$(check_stylus)
 	$(stylus) -I css -u nib < $< > $@
-	@chmod a-w $@
 
-# Image compression
+# Regular JPGs
 assets/%.jpg: images/%.jpg.png
 	$(check_imagemagick)
-	convert $< -quality 60 -strip -interlace plane $@
+	$(convert) $< -quality 60 -strip -interlace plane $@
 
+# Retina PNGs
 assets/%@2x.png: images/%@2x.png
-	cp $< $@
-	convert $@ -resize 50% $(patsubst %@2x.png, %.png, $@)
+	$(check_imagemagick)
+	$(check_optipng)
+	$(optipng) -force -quiet $< -out $@
+	$(convert) $@ -resize 50% $(patsubst %@2x.png, %.png, $@)
 
+# Regular PNGs
 assets/%.png: images/%.png
-	cp $< $@
+	$(check_optipng)
+	$(optipng) -force -quiet $< -out $@
 
 # ----------------------------------------------------------------------------
 
@@ -78,7 +84,14 @@ check_imagemagick = \
 		 echo "   Try: 'brew install imagemagick'" && \
 		 exit 1)
 
-COMBINE = rm -f $@; cat $^ > $@; chmod a-w $@
+optipng ?= optipng
+check_optipng = \
+	@which $(optipng) >/dev/null || \
+		(echo " ! Error: You need Optipng to process .png files." && \
+		 echo "   Try: 'brew install optipng'" && \
+		 exit 1)
+
+COMBINE = rm -f $@; cat $^ > $@
 
 .PHONY: start watch server all clean cachebust
 
