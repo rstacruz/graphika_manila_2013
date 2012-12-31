@@ -17,13 +17,19 @@ body, input, td, th, textarea
 
 // ----------------------------------------------------------------------------
 
+.section
+  position: absolute
+  overflow: hidden
+  width: 100%
+
+// ----------------------------------------------------------------------------
+
 .section.title
   &
     background: cream
-    padding: 40px 0
 
   .logo
-    margin: 40px auto
+    margin: 180px auto 40px auto
     text-align: center
 
   .logo img
@@ -31,7 +37,7 @@ body, input, td, th, textarea
     height: 220px
 
   .info
-    margin: 40px auto
+    margin: 40px auto 180px auto
     font-size: 16pt
     text-transform: uppercase
     font-weight: bold
@@ -44,19 +50,35 @@ body, input, td, th, textarea
 
   .venue
     color: ochre
+    margin-bottom: 10px
+
+  .address
+    font-size: 12pt
+
+  .address.one
+    color: scarlet
+
+  .address.two
+    color: green
+
+  .o-road
+    image: 'title-road.png'
+    height: 22px
+    width: 100%
 
   @media (max-width: 600px)
-    &
-      padding: 0 20px
-      overflow: hidden
-
     .logo
-      margin: 20px auto
+      margin: 40px auto 20px auto
+      width: 90%
 
     .logo img
       width: 100%
       height: auto
 
     .info
-      margin: 20px auto
+      margin: 20px auto 40px auto
 
+    .o-road
+      height: 11px
+      background-size: auto 11px
+      image: 'title-road.png' (470px / 2) 11px

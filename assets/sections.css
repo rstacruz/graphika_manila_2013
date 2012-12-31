@@ -8,12 +8,16 @@ textarea {
   line-height: 1.5;
   color: #444;
 }
+.section {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
 .section.title {
   background: #fdefe1;
-  padding: 40px 0;
 }
 .section.title .logo {
-  margin: 40px auto;
+  margin: 180px auto 40px auto;
   text-align: center;
 }
 .section.title .logo img {
@@ -21,7 +25,7 @@ textarea {
   height: 220px;
 }
 .section.title .info {
-  margin: 40px auto;
+  margin: 40px auto 180px auto;
   font-size: 16pt;
   text-transform: uppercase;
   font-weight: bold;
@@ -34,21 +38,56 @@ textarea {
 }
 .section.title .venue {
   color: #e5a141;
+  margin-bottom: 10px;
+}
+.section.title .address {
+  font-size: 12pt;
+}
+.section.title .address.one {
+  color: #ec553f;
+}
+.section.title .address.two {
+  color: #008000;
+}
+.section.title .o-road {
+  background-image: url("title-road.png");
+  height: 22px;
+  width: 100%;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .section.title .o-road {
+    background-image: url("title-road@2x.png");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
 }
 @media (max-width: 600px) {
-  .section.title {
-    padding: 0 20px;
-    overflow: hidden;
-  }
   .section.title .logo {
-    margin: 20px auto;
+    margin: 40px auto 20px auto;
+    width: 90%;
   }
   .section.title .logo img {
     width: 100%;
     height: auto;
   }
   .section.title .info {
-    margin: 20px auto;
+    margin: 20px auto 40px auto;
   }
+  .section.title .o-road {
+    height: 11px;
+    -webkit-background-size: auto 11px;
+    -moz-background-size: auto 11px;
+    background-size: auto 11px;
+    background-image: url("title-road.png");
+  }
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
+      background-image: url("title-road@2x.png");
+      -webkit-background-size: 235px 11px;
+      -moz-background-size: 235px 11px;
+      background-size: 235px 11px;
+    }
+}
 }
 

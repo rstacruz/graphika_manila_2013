@@ -38,13 +38,13 @@ assets/%.jpg: images/%.jpg.png
 assets/%@2x.png: images/%@2x.png
 	$(check_imagemagick)
 	$(check_optipng)
-	$(optipng) -force -quiet $< -out $@
+	$(optipng) -quiet -clobber $< -out $@
 	$(convert) $@ -resize 50% $(patsubst %@2x.png, %.png, $@)
 
 # Regular PNGs
 assets/%.png: images/%.png
 	$(check_optipng)
-	$(optipng) -force -quiet $< -out $@
+	$(optipng) -quiet -clobber $< -out $@
 
 # ----------------------------------------------------------------------------
 
