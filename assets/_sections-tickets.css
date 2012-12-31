@@ -1,4 +1,89 @@
 /* ----------------------------------------------------------------------------
  * Tickets
  */
+.section.tickets {
+  background: #d9ede9;
+  padding-bottom: 50px;
+}
+.section.tickets .header {
+  color: #ec553f;
+}
+.ticket-list {
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .ticket-list .ticket {
+    margin: 30px auto 30px auto;
+  }
+}
+@media (min-width: 600px) {
+  .ticket-list .ticket {
+    margin: 50px 50px 10px 50px;
+  }
+}
+.ticket-list .ticket {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  -webkit-border-radius: 125px;
+  border-radius: 125px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
+  border: solid 1px #1e908c;
+  text-align: center;
+  line-height: 1.4;
+}
+.ticket-list .ticket img {
+  width: 72px;
+  height: 120px;
+  margin-top: -40px;
+  background: #fdefe1;
+  margin-bottom: 15px;
+}
+.ticket-list .ticket h3 {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #1e908c;
+}
+.ticket-list .ticket .price {
+  font-size: 28pt;
+  font-family: adelle, sans-serif;
+  font-weight: 900;
+  color: #ec553f;
+}
+.ticket-list .ticket .type {
+  font-size: 9pt;
+  width: 160px;
+  margin: 3px auto 0 auto;
+}
+.ticket-list .ticket .type b {
+  font-weight: bold;
+}
+/* Each pass contains: */
+.pass-contents {
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.7;
+}
+.pass-contents h3 {
+  font-weight: 700;
+  font-family: adelle, sans-serif;
+  font-size: 1.3em;
+  color: #1e908c;
+}
+/* Important reminders: */
+.pass-reminders {
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.7;
+}
+.pass-reminders h3 {
+  font-weight: 700;
+  font-family: adelle, sans-serif;
+  font-size: 1.3em;
+  color: #1e908c;
+}
 
