@@ -7,12 +7,12 @@
 
 .section.about
   background: #93c8be
-  padding-bottom: 400px
+  padding-bottom: 50px
   .header
     color: white
 
 .section.location
-  padding-bottom: 600px
+  padding-bottom: 100px
   // background: url(location-hall.jpg)
   // background-size: 100% auto
   // background-position: center center
@@ -103,4 +103,57 @@
       display: block
       font-size: 1.8em
       text-transform: uppercase
+
+/* ----------------------------------------------------------------------------
+ */
+
+.body
+  width: 400px
+  margin: 0 auto
+  line-height: 1.6
+
+  p, ul, ol
+    margin-top: 20px
+
+  > :first-child
+    margin-top: 0
+
+  > p:first-child:first-line
+    font-weight: bold
+    font-size: 1.1em
+
+  > p:first-child:first-letter
+    font-family: adelle-font
+    font-weight: 900
+
+    font-size: 3em
+    float: left
+    margin: 0 5px 0 -10px
+    line-height: 1
+
+  .pullquote
+    width: 260px
+    float: right
+    font-size: 14pt
+    font-family: adelle-font
+    font-weight: 400
+
+    margin: 20px -100px 20px 40px
+
+    color: darken(turquoise, 20%)
+
+    &:first-line
+      font-weight: 900
+
+  strong
+    font-weight: bold
+
+  /* Mobile: Hide pullquote */
+  @media (max-width: 600px)
+    &
+      width: auto
+      padding: 0 20px
+
+    .pullquote
+      display: none
 

@@ -337,11 +337,27 @@ a {
 .section .header {
   text-align: center;
   margin: 50px 0;
+  position: relative;
+  z-index: 5;
+}
+.section .header p.pre {
+  font-family: proxima-nova-alt, proxima-nova, proxima nova, sans-serif;
+  font-weight: 700;
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+.section .header p.pre span {
+  padding: 5px 0;
+  border-top: solid 1px rgba(255,255,255,0.2);
+  border-bottom: solid 1px rgba(255,255,255,0.2);
+}
+.section .header h2 {
   font-size: 36pt;
   font-family: adelle, sans-serif;
   font-weight: 900;
-  position: relative;
-  z-index: 5;
 }
 /* ----------------------------------------------------------------------------
  * Title
@@ -943,13 +959,13 @@ a {
  */
 .section.about {
   background: #93c8be;
-  padding-bottom: 400px;
+  padding-bottom: 50px;
 }
 .section.about .header {
   color: #fff;
 }
 .section.location {
-  padding-bottom: 600px;
+  padding-bottom: 100px;
   background: #d2b69e;
 }
 .section.location .header {
@@ -1044,5 +1060,57 @@ a {
   display: block;
   font-size: 1.8em;
   text-transform: uppercase;
+}
+/* ----------------------------------------------------------------------------
+ */
+.body {
+  width: 400px;
+  margin: 0 auto;
+  line-height: 1.6;
+/* Mobile: Hide pullquote */
+}
+.body p,
+.body ul,
+.body ol {
+  margin-top: 20px;
+}
+.body > :first-child {
+  margin-top: 0;
+}
+.body > p:first-child:first-line {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.body > p:first-child:first-letter {
+  font-family: adelle, sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+  float: left;
+  margin: 0 5px 0 -10px;
+  line-height: 1;
+}
+.body .pullquote {
+  width: 260px;
+  float: right;
+  font-size: 14pt;
+  font-family: adelle, sans-serif;
+  font-weight: 400;
+  margin: 20px -100px 20px 40px;
+  color: #187370;
+}
+.body .pullquote:first-line {
+  font-weight: 900;
+}
+.body strong {
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .body {
+    width: auto;
+    padding: 0 20px;
+  }
+  .body .pullquote {
+    display: none;
+  }
 }
 
