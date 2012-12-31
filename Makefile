@@ -5,9 +5,9 @@ all: \
 	$(patsubst %.jpg.png, %.jpg, $(patsubst images/%, assets/%, $(shell ls images/*)))
 
 assets/style.css: \
-	assets/attributions.css \
-	assets/reset.css \
-	assets/sections.css
+	assets/_attributions.css \
+	assets/_reset.css \
+	assets/_sections.css
 	$(COMBINE)
 
 assets/script.js: \
@@ -25,7 +25,7 @@ cachebust:
 # ----------------------------------------------------------------------------
 
 # Stylus compilation (http://learnboost.github.com/stylus)
-assets/%.css: css/%.styl
+assets/_%.css: css/%.styl
 	$(check_stylus)
 	$(stylus) -I css -u nib < $< > $@
 
@@ -69,7 +69,7 @@ server:
 
 # Cleans all compiled assets
 clean:
-	rm -f assets/*.{css,jpg,png} assets/script.js
+	rm -f assets/*
 
 # Simple file watcher
 watch:
