@@ -126,19 +126,40 @@
   line-height: 1.7;
 }
 .pass-contents h3 {
-  font-weight: 700;
+  font-weight: 400;
   font-family: adelle, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: #1e908c;
   text-align: center;
+  margin-bottom: 15px;
+}
+.pass-contents h3 span {
+  padding-bottom: 15px;
+  border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+@media (min-width: 600px) {
+  .pass-contents {
+    margin-top: -25px;
+  }
 }
 .pass-contents ul {
   font-size: 1.2em;
 }
 .pass-contents li {
-  padding: 6px 0;
-  font-weight: bold;
+  padding: 9px 0;
   text-align: center;
+  line-height: 1.3;
+}
+.pass-contents li strong {
+  font-weight: bold;
+  display: block;
+}
+.pass-contents li small {
+  display: block;
+  font-size: 0.6em;
+  font-weight: 400;
+  font-family: adelle, sans-serif;
+  color: #777;
 }
 .pass-contents span.free {
   background: #e5a141;
@@ -207,5 +228,37 @@
     float: none;
     width: auto;
   }
+}
+/* Box with 'buy now' button */
+.buy-box {
+  text-align: center;
+  margin: 20px 0;
+}
+.buy-box .buy-button {
+  display: inline-block;
+  padding: 15px 30px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  background: #ec553f;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  line-height: 1.2;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 0 0 4px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 0 0 4px rgba(0,0,0,0.2);
+}
+.buy-box .buy-button strong,
+.buy-box .buy-button small {
+  display: block;
+}
+.buy-box .buy-button strong {
+  font-weight: 700;
+  font-family: proxima-nova-alt, proxima-nova, proxima nova, sans-serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+}
+.buy-box .buy-button small {
+  color: #f7bbb2;
+  font-family: adelle, sans-serif;
+  font-size: 10pt;
 }
 
