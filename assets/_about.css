@@ -20,9 +20,9 @@
  * Call to action
  */
 .section.cta {
-  background: #e5a141;
-  -webkit-box-shadow: inset 0 -4px 0 rgba(255,255,255,0.4);
-  box-shadow: inset 0 -4px 0 rgba(255,255,255,0.4);
+  background: #d2b69e;
+  -webkit-box-shadow: inset 0 -4px 0 #e5a141;
+  box-shadow: inset 0 -4px 0 #e5a141;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
   padding: 150px 0 0 0;
