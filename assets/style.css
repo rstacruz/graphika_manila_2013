@@ -1,6 +1,5 @@
 /*
- * GM2013
- * CSS reset by Eric Meyer
+ * Graphika Manila 2013
  */
 
 html,
@@ -93,6 +92,36 @@ td {
 }
 a img {
   border: none;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
 }
 
 body,
