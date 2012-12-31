@@ -28,6 +28,7 @@ a { color: #1e908c; text-decoration: none; }
 .navigation li { display: inline; }
 .navigation a { display: block; line-height: 52px; height: 52px; float: left; text-transform: uppercase; font-weight: bold; padding: 0 15px; -webkit-font-smoothing: antialiased !important; text-rendering: optimizeLegibility !important; text-shadow: 0 0 2px #fdefe1, 0 0 2px #fdefe1; background-color: rgba(229,161,65,0); -webkit-transition: background-color 300ms linear; -moz-transition: background-color 300ms linear; -o-transition: background-color 300ms linear; -ms-transition: background-color 300ms linear; transition: background-color 300ms linear; }
 .navigation a:hover { background-color: rgba(188,197,142,0.2); -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none; }
+.navigation a.active { background-color: rgba(229,161,65,0.1); }
 .navigation a[href='#speakers'] { color: #bcc58e; }
 .navigation a[href='#tickets'] { color: #ec553f; }
 .navigation a[href='#about'] { color: #e5a141; }
@@ -137,7 +138,7 @@ a { color: #1e908c; text-decoration: none; }
 .ticket-list { margin: 0 auto; text-align: center; }
 @media (max-width: 600px) { .ticket-list .ticket { margin: 30px auto 30px auto; }
 }
-@media (min-width: 600px) { .ticket-list .ticket { margin: 50px 50px 10px 50px; }
+@media (min-width: 600px) { .ticket-list .ticket { margin: 10px 50px 10px 50px; }
 }
 .ticket-list .ticket { display: inline-block; width: 250px; height: 250px; -webkit-border-radius: 125px; border-radius: 125px; background: #fff; -webkit-box-shadow: 0 0 0 4px rgba(0,0,0,0.05); box-shadow: 0 0 0 4px rgba(0,0,0,0.05); border: solid 1px #1e908c; text-align: center; line-height: 1.4; }
 .ticket-list .ticket img { width: 72px; height: 120px; margin-top: -40px; background: #fdefe1; margin-bottom: 15px; }

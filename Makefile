@@ -12,13 +12,13 @@ assets/style.css: \
 	assets/_sections-tickets.css
 
 	$(COMBINE)
-	@# Condensify whitespace
-	perl -p -i -e 's/(;|\{|,)\n/\1 /g' $@
-	perl -p -i -e 's/(;|\{) +/\1 /g' $@
-
+	$(CONDENSE)
+	
 assets/script.js: \
 	js/attributions.js \
 	js/foresight.min.js \
+	js/jquery.anchorjump.js \
+	js/jquery.scrollagent.js \
 	js/setup.js
 
 	$(COMBINE)
@@ -107,6 +107,9 @@ check_optipng = \
 		 exit 1)
 
 COMBINE = rm -f $@; cat $^ > $@
+
+# Reduce whitespace
+CONDENSE = perl -p -i -e 's/(;|\{|,)\n/\1 /g' $@; perl -p -i -e 's/(;|\{) +/\1 /g' $@
 
 .PHONY: start watch server all clean cachebust
 

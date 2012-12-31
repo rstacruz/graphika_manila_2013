@@ -21,3 +21,15 @@
     $(window).trigger('restuck');
   });
 })();
+
+/* Highlight as you go along */
+$("section.section").scrollagent(function(cid, pid) {
+   if (pid) {
+     $("[href='#"+pid+"']").removeClass('active');
+   }
+   if (cid) {
+     $("[href='#"+cid+"']").addClass('active');
+   }
+});
+
+$("#navigation a").anchorjump();

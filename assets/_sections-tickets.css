@@ -19,7 +19,7 @@
 }
 @media (min-width: 600px) {
   .ticket-list .ticket {
-    margin: 50px 50px 10px 50px;
+    margin: 10px 50px 10px 50px;
   }
 }
 .ticket-list .ticket {

@@ -83,6 +83,9 @@ a {
   -ms-transition: none;
   transition: none;
 }
+.navigation a.active {
+  background-color: rgba(229,161,65,0.1);
+}
 .navigation a[href='#speakers'] {
   color: #bcc58e;
 }
