@@ -296,19 +296,10 @@ a {
   }
   .section.title .o-road {
     height: 11px;
-    -webkit-background-size: auto 11px;
-    -moz-background-size: auto 11px;
-    background-size: auto 11px;
-    background-image: url("title-road.png");
+    -webkit-background-size: 235px 11px;
+    -moz-background-size: 235px 11px;
+    background-size: 235px 11px;
   }
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
- {
-      background-image: url("title-road@2x.png");
-      -webkit-background-size: 235px 11px;
-      -moz-background-size: 235px 11px;
-      background-size: 235px 11px;
-    }
-}
 }
 .section.speakers {
   background: #1e908c url("speakers-bg.jpg");
@@ -501,7 +492,7 @@ a {
   color: #222;
   text-shadow: 0 1px 0 rgba(255,255,255,0.3);
   text-align: center;
-  font-size: 10pt;
+  font-size: 11pt;
 }
 .speaker .back .heading {
   color: #fff;

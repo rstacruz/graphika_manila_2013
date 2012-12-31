@@ -7,7 +7,7 @@ all: \
 assets/style.css: \
 	assets/_attributions.css \
 	assets/_reset.css \
-	assets/_sections.css
+	assets/_sections-speakers.css \
 	$(COMBINE)
 
 assets/script.js: \
