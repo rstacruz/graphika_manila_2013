@@ -7,9 +7,10 @@ all: \
 assets/style.css: \
 	assets/_attributions.css \
 	assets/_reset.css \
-	assets/_sections-title.css \
-	assets/_sections-speakers.css \
-	assets/_sections-tickets.css
+	assets/_title.css \
+	assets/_speakers.css \
+	assets/_tickets.css \
+	assets/_about.css
 
 	$(COMBINE)
 	$(CONDENSE)

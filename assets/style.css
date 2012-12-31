@@ -153,3 +153,9 @@ a { color: #1e908c; text-decoration: none; }
 .pass-reminders { margin: 20px auto; text-align: center; line-height: 1.7; }
 .pass-reminders h3 { font-weight: 700; font-family: adelle, sans-serif; font-size: 1.3em; color: #1e908c; }
 
+/* ----------------------------------------------------------------------------
+ * About
+ */
+.section.about { padding-bottom: 400px; }
+.section.about .header { color: #1e908c; }
+
