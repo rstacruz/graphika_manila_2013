@@ -11,12 +11,33 @@
 
   padding-bottom: 40px
 
+  &:after
+    content: ''
+    display: block
+    absolute: bottom -3px left 0
+
+    width: 100%
+    height: 2px
+    z-index: 5
+    border-top: dotted 3px #e9eee0
+
   // Header
   .header
-    padding-top: 100px
-    color: scarlet
+    padding-top: 70px
+
     h2
-      font-size: 56pt
+      font-size: 46pt
+      text-shadow: 0 1px 0 rgba(white, 0.5)
+      color: scarlet
+
+    .pre
+      font-size: 12pt
+      letter-spacing: 3px
+      text-shadow: 0 1px 0 rgba(white, 0.5)
+
+    .pre span
+      border-top: solid 1px rgba(turquoise, 0.2)
+      border-bottom: solid 1px rgba(turquoise, 0.2)
 
   offset = 150px
 

@@ -6,12 +6,33 @@
   color: #fff;
   padding-bottom: 40px;
 }
+.section.speakers:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  z-index: 5;
+  border-top: dotted 3px #e9eee0;
+}
 .section.speakers .header {
-  padding-top: 100px;
-  color: #ec553f;
+  padding-top: 70px;
 }
 .section.speakers .header h2 {
-  font-size: 56pt;
+  font-size: 46pt;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  color: #ec553f;
+}
+.section.speakers .header .pre {
+  font-size: 12pt;
+  letter-spacing: 3px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+.section.speakers .header .pre span {
+  border-top: solid 1px rgba(30,144,140,0.2);
+  border-bottom: solid 1px rgba(30,144,140,0.2);
 }
 .section.speakers .o-waves {
   background: #fdefe1 url("speakers-waves.jpg") center bottom repeat-x;
