@@ -111,16 +111,24 @@ a
     background: rgba(black, 0.1)
     margin-bottom: 10px
 
-  .body, .image
-    float: left
+  /* Desktop: Side-by-side layout */
+  @media (min-width: 980px)
+    .body, .image
+      float: left
 
-  &.leftie
-    .image
-      margin-right: 40px
+    &.leftie
+      .image
+        margin-right: 40px
 
-  &.rightie
-    .body
-      margin-right: 40px
+    &.rightie
+      .body
+        margin-right: 40px
+
+  /* Mobile/tablet: center dat stuff */
+  @media (max-width: 980px)
+    .body, .image
+      max-width: 95%
+      margin: 40px auto
 
   img.bordered
     width: 510px

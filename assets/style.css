@@ -230,15 +230,24 @@ a {
   background: rgba(0,0,0,0.1);
   margin-bottom: 10px;
 }
-.figure .body,
-.figure .image {
-  float: left;
+@media (min-width: 980px) {
+  .figure .body,
+  .figure .image {
+    float: left;
+  }
+  .figure.leftie .image {
+    margin-right: 40px;
+  }
+  .figure.rightie .body {
+    margin-right: 40px;
+  }
 }
-.figure.leftie .image {
-  margin-right: 40px;
-}
-.figure.rightie .body {
-  margin-right: 40px;
+@media (max-width: 980px) {
+  .figure .body,
+  .figure .image {
+    max-width: 95%;
+    margin: 40px auto;
+  }
 }
 .figure img.bordered {
   width: 510px;
@@ -1177,6 +1186,9 @@ a {
     padding-top: 75px;
     padding-bottom: 150px;
   }
+}
+.section.location .image {
+  height: auto;
 }
 .section.location .header {
   color: #fff;
