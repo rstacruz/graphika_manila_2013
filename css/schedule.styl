@@ -1,0 +1,69 @@
+@import nib
+@import common
+
+/* ----------------------------------------------------------------------------
+ * Schedule
+ */
+
+.section.schedule
+
+  padding-bottom: 40px
+
+  .header .pre
+    color: turquoise
+
+  .header .pre span
+    border-top-color: rgba(lime, 0.8)
+    border-bottom-color: rgba(lime, 0.8)
+
+  .event-map
+    width: 400px
+    margin: 20px auto
+
+.event-info
+  text-align: center
+  margin: 0 auto 40px auto
+
+  dl
+    display: inline-block
+    vertical-align: top
+    text-align: center
+
+    width: 160px
+
+    border-right: dotted 1px rgba(black, 0.2)
+
+  dl:last-child
+    border-right: 0
+
+  /* Heading */
+  dt
+    font-weight: 700
+    font-family: proxima-font
+    text-transform: uppercase
+    letter-spacing: 1px
+    font-size: 10pt
+
+    color: darken(ecru, 50%)
+
+  /* Value */
+  dd
+    font-family: adelle-font
+    font-weight: 400
+    font-size: 18pt
+
+  dd small
+    font-family: proxima-font
+    font-size: 0.8em
+    font-weight: bold
+    text-transform: uppercase
+
+  .registration dd
+    color: turquoise
+    
+  .starts dd
+    color: lime
+
+  .ends dd
+    color: scarlet
+

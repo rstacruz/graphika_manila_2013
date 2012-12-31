@@ -11,6 +11,7 @@ assets/style.css: \
 	assets/_title.css \
 	assets/_speakers.css \
 	assets/_tickets.css \
+	assets/_schedule.css \
 	assets/_about.css
 
 	$(COMBINE)

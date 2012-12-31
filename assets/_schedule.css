@@ -1,0 +1,62 @@
+/* ----------------------------------------------------------------------------
+ * Schedule
+ */
+.section.schedule {
+  padding-bottom: 40px;
+}
+.section.schedule .header .pre {
+  color: #1e908c;
+}
+.section.schedule .header .pre span {
+  border-top-color: rgba(188,197,142,0.8);
+  border-bottom-color: rgba(188,197,142,0.8);
+}
+.section.schedule .event-map {
+  width: 400px;
+  margin: 20px auto;
+}
+.event-info {
+  text-align: center;
+  margin: 0 auto 40px auto;
+/* Heading */
+/* Value */
+}
+.event-info dl {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 160px;
+  border-right: dotted 1px rgba(0,0,0,0.2);
+}
+.event-info dl:last-child {
+  border-right: 0;
+}
+.event-info dt {
+  font-weight: 700;
+  font-family: proxima-nova-alt, proxima-nova, proxima nova, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  color: #7e593a;
+}
+.event-info dd {
+  font-family: adelle, sans-serif;
+  font-weight: 400;
+  font-size: 18pt;
+}
+.event-info dd small {
+  font-family: proxima-nova-alt, proxima-nova, proxima nova, sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.event-info .registration dd {
+  color: #1e908c;
+}
+.event-info .starts dd {
+  color: #bcc58e;
+}
+.event-info .ends dd {
+  color: #ec553f;
+}
+
