@@ -8,7 +8,7 @@ ochre     = #e5a141
 lime      = #bcc58e
 
 adelle-font  = adelle, sans-serif
-proxima-font = proxima nova, sans-serif
+proxima-font = proxima-nova-alt, proxima-nova, proxima nova, sans-serif
 
 // ----------------------------------------------------------------------------
 
@@ -177,7 +177,7 @@ a
       clear: both
 
     .speaker.right
-      margin-top: 30px
+      margin-top: 70px
       float: right
 
     .o-hook
@@ -192,19 +192,43 @@ a
 
       background: cream
 
+    .speaker:after
+      content: ''
+      display: block
+
+      height: 4px
+      width: 50px
+
+      position: absolute
+      bottom: 80px
+      z-index: 0
+
+      opacity: 0.5
+
+    .speaker.left:after
+      right: -20px
+      background: linear-gradient(left, rgba(cream, 0), cream)
+
+    .speaker.right:after
+      left: -20px
+      background: linear-gradient(right, rgba(cream, 0), cream)
+
 
   // Mobile
   @media (max-width: 980px)
+    &
+      padding-top: 70px
+
     .speaker
       display: block
-      margin: 10px auto
+      margin: 20px auto
 
 // Each individual speaker
 .speaker
   display: block
   position: relative
 
-  padding: 5px
+  padding: 10px
 
   &, .front, .back, .hero
     width: 450px
@@ -213,9 +237,9 @@ a
   .front, .back, .hero
     box-sizing: border-box
 
-  background: rgba(black, 0.2)
-  border-radius: 2px
-  box-shadow: inset 2px 2px 2px rgba(black, 0.2)
+  background: rgba(black, 0.1)
+  border-radius: 1px
+  box-shadow: inset 2px 2px 2px rgba(black, 0.1)
 
   // Transition stuff
   &
@@ -223,8 +247,9 @@ a
 
   .front, .back
     position: absolute
-    top: 5px
-    left: 5px
+    top: 10px
+    left: 10px
+    z-index: 1
 
     transition: transform 200ms ease
     backface-visibility: hidden
@@ -265,7 +290,7 @@ a
 
   .meta h3
     font-family: adelle-font
-    font-size: 14pt
+    font-size: 18pt
     color: scarlet
     font-weight: 900
 

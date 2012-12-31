@@ -100,7 +100,7 @@ input,
 td,
 th,
 textarea {
-  font-family: proxima nova, sans-serif;
+  font-family: proxima-nova-alt, proxima-nova, proxima nova, sans-serif;
   font-size: 11pt;
   line-height: 1.5;
   color: #444;
@@ -280,7 +280,7 @@ a {
     clear: both;
   }
   .speakers-list .speaker.right {
-    margin-top: 30px;
+    margin-top: 70px;
     float: right;
   }
   .speakers-list .o-hook {
@@ -295,22 +295,55 @@ a {
     bottom: 0;
     background: #fdefe1;
   }
+  .speakers-list .speaker:after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    bottom: 80px;
+    z-index: 0;
+    opacity: 0.5;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    filter: alpha(opacity=50);
+  }
+  .speakers-list .speaker.left:after {
+    right: -20px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(253,239,225,0)), color-stop(1, #fdefe1));
+    background: -webkit-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%);
+    background: -moz-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%);
+    background: -o-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%);
+    background: -ms-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%);
+    background: linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%);
+  }
+  .speakers-list .speaker.right:after {
+    left: -20px;
+    background: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(253,239,225,0)), color-stop(1, #fdefe1));
+    background: -webkit-linear-gradient(right, rgba(253,239,225,0) 0%, #fdefe1 100%);
+    background: -moz-linear-gradient(right, rgba(253,239,225,0) 0%, #fdefe1 100%);
+    background: -o-linear-gradient(right, rgba(253,239,225,0) 0%, #fdefe1 100%);
+    background: -ms-linear-gradient(right, rgba(253,239,225,0) 0%, #fdefe1 100%);
+    background: linear-gradient(right, rgba(253,239,225,0) 0%, #fdefe1 100%);
+  }
 }
 @media (max-width: 980px) {
+  .speakers-list {
+    padding-top: 70px;
+  }
   .speakers-list .speaker {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
   }
 }
 .speaker {
   display: block;
   position: relative;
-  padding: 5px;
-  background: rgba(0,0,0,0.2);
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+  padding: 10px;
+  background: rgba(0,0,0,0.1);
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.1);
 }
 .speaker,
 .speaker .front,
@@ -335,8 +368,9 @@ a {
 .speaker .front,
 .speaker .back {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
   -webkit-transition: -webkit-transform 200ms ease;
   -moz-transition: -moz-transform 200ms ease;
   -o-transition: -o-transform 200ms ease;
@@ -390,7 +424,7 @@ a {
 }
 .speaker .meta h3 {
   font-family: adelle, sans-serif;
-  font-size: 14pt;
+  font-size: 18pt;
   color: #ec553f;
   font-weight: 900;
   text-transform: none;
