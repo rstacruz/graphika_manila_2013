@@ -1,0 +1,32 @@
+@import nib
+@import common
+
+/* ----------------------------------------------------------------------------
+ * Generic figure
+ */
+
+.figure
+  &
+    max-width: 980px
+    margin: 0 auto
+
+  .image,
+  .image img
+    width: 530px
+    height: 300px
+
+  .image img
+    background: rgba(black, 0.1)
+    margin-bottom: 10px
+
+  .body, .image
+    float: left
+
+  &.leftie
+    .image
+      margin-right: 40px
+
+  &.rightie
+    .body
+      margin-right: 40px
+

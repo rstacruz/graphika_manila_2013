@@ -8,13 +8,8 @@
 .section.about .header {
   color: #fff;
 }
-.section.location {
-  padding-bottom: 100px;
-  background: #d2b69e;
-}
-.section.location .header {
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+.section.about .pullquote {
+  background: #93c8be;
 }
 /* ----------------------------------------------------------------------------
  * Call to action
@@ -139,8 +134,11 @@
   font-size: 14pt;
   font-family: adelle, sans-serif;
   font-weight: 400;
-  margin: 20px -100px 20px 40px;
+  margin: 0 -150px 0 20px;
   color: #187370;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
 }
 .body .pullquote:first-line {
   font-weight: 900;

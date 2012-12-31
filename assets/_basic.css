@@ -1,0 +1,27 @@
+/* ----------------------------------------------------------------------------
+ * Generic figure
+ */
+.figure {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.figure .image,
+.figure .image img {
+  width: 530px;
+  height: 300px;
+}
+.figure .image img {
+  background: rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+.figure .body,
+.figure .image {
+  float: left;
+}
+.figure.leftie .image {
+  margin-right: 40px;
+}
+.figure.rightie .body {
+  margin-right: 40px;
+}
+
