@@ -850,13 +850,15 @@ a {
   border: dotted 2px #ccc;
 }
 .ticket-list .ticket img {
-  width: 72px;
+  width: 70px;
   height: 120px;
   margin-top: -40px;
   background: #fdefe1;
   margin-bottom: 15px;
   position: relative;
   z-index: 1;
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2), -1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2), -1px 1px 1px rgba(0,0,0,0.2);
 }
 .ticket-list .ticket h3 {
   font-weight: 700;
