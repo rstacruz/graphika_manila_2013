@@ -69,19 +69,42 @@ a
   &
     background: cream
 
+  // Right ornament
+  .o-right
+    absolute: right 0 bottom 10px
+    width: 669px
+    height: 748px
+    transition: all 300ms ease
+    z-index: 1
+
+  .o-left
+    absolute: left 0 bottom 10px
+    width: 708px
+    height: 748px
+    transition: all 300ms ease
+    z-index: 2
+
+  // Logo image
   .logo
-    margin: 180px auto 40px auto
+    margin: 170px auto 40px auto
     text-align: center
+
+    position: relative
+    z-index: 5
 
   .logo img
     width: 639px
     height: 220px
 
+  // PICC hall, etc
   .info
     margin: 40px auto 180px auto
     font-size: 16pt
     text-transform: uppercase
     font-weight: bold
+
+    position: relative
+    z-index: 4
 
   .info > *
     text-align: center
@@ -102,12 +125,37 @@ a
   .address.two
     color: green
 
+  // Road ornament at the bottom
   .o-road
     image: 'title-road.png'
     height: 22px
     width: 100%
 
+    position: relative
+    z-index: 5
+
+  // Mobile
+  @media (max-width: 1250px)
+    .o-right
+      right: -50px
+    .o-left
+      left: -50px
+  @media (max-width: 1050px)
+    .o-right
+      right: -150px
+    .o-left
+      left: -250px
+  @media (max-width: 800px)
+    .o-right
+      right: -450px
+
   @media (max-width: 600px)
+    .o-left
+      left: -1000px
+    .o-right
+      right: 0
+      opacity: 0.1
+
     .logo
       margin: 40px auto 20px auto
       width: 90%
