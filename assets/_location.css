@@ -1,23 +1,23 @@
 /* ----------------------------------------------------------------------------
- * Location
+ * Venue
  */
-.section.location {
+.section.venue {
   background: #d2b69e;
 }
 @media (min-width: 600px) {
-  .section.location {
+  .section.venue {
     padding-top: 75px;
     padding-bottom: 150px;
   }
 }
-.section.location .image {
+.section.venue .image {
   height: auto;
 }
-.section.location .header {
+.section.venue .header {
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
-.section.location a.highlight {
+.section.venue a.highlight {
   color: #444;
   text-shadow: 0 1px 1px rgba(255,255,255,0.3);
   background-color: rgba(250,250,224,0.4);
@@ -32,10 +32,10 @@
   -ms-transition: background-color 100ms ease;
   transition: background-color 100ms ease;
 }
-.section.location a.highlight:hover {
+.section.venue a.highlight:hover {
   background-color: rgba(250,250,224,0.9);
 }
-.section.location a.highlight:active {
+.section.venue a.highlight:active {
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
@@ -45,10 +45,10 @@
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
-.section.location .image img.one {
+.section.venue .image img.one {
   height: 371px;
 }
-.section.location .body {
+.section.venue .body {
   text-shadow: 0 1px 1px rgba(255,255,255,0.4);
 }
 /* List of benefits of the new location */
