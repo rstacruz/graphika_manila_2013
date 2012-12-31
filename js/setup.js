@@ -32,4 +32,12 @@ $("section.section").scrollagent(function(cid, pid) {
    }
 });
 
+/* Jumping */
 $("#navigation a").anchorjump();
+
+$(function() {
+  $(".pass-reminders li")
+    .filter(":not(.no-unorphan")
+    .unorphan();
+});
+

@@ -7,4 +7,12 @@
 .section.about .header {
   color: #1e908c;
 }
+.section.location {
+  padding-bottom: 600px;
+  background: #d2b69e;
+}
+.section.location .header {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
 

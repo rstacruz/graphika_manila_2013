@@ -20,6 +20,7 @@ assets/script.js: \
 	js/foresight.min.js \
 	js/jquery.anchorjump.js \
 	js/jquery.scrollagent.js \
+	js/jquery.unorphan.js \
 	js/setup.js
 
 	$(COMBINE)
