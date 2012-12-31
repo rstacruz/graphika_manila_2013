@@ -7,14 +7,20 @@ all: \
 assets/style.css: \
 	assets/_attributions.css \
 	assets/_reset.css \
+	assets/_sections-title.css \
 	assets/_sections-speakers.css \
 	assets/_sections-tickets.css
+
 	$(COMBINE)
+	@# Condensify whitespace
+	perl -p -i -e 's/(;|\{|,)\n/\1 /g' $@
+	perl -p -i -e 's/(;|\{) +/\1 /g' $@
 
 assets/script.js: \
 	js/attributions.js \
 	js/foresight.min.js \
 	js/setup.js
+
 	$(COMBINE)
 
 favicon.ico: favicon.png

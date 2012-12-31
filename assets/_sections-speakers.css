@@ -1,3 +1,6 @@
+/* ----------------------------------------------------------------------------
+ * Speakers section
+ */
 .section.speakers {
   background: #1e908c url("speakers-bg.jpg");
   color: #fff;
@@ -35,6 +38,9 @@
     background-size: 1167px 230px;
   }
 }
+/* ----------------------------------------------------------------------------
+ * Speakers list
+ */
 .speakers-list {
   zoom: 1;
   margin: 80px auto 0 auto;
