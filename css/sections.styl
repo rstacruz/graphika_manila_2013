@@ -7,20 +7,58 @@ turquoise = #1e908c
 ochre     = #e5a141
 lime      = #bcc58e
 
+adelle-font  = adelle, sans-serif
+proxima-font = proxima nova, sans-serif
+
 // ----------------------------------------------------------------------------
 
 body, input, td, th, textarea
-  font-family: proxima nova, sans-serif
-  font-size: 10pt
+  font-family: proxima-font
+  font-size: 11pt
   line-height: 1.5
   color: #444
+
+a
+  color: turquoise
+  text-decoration: none
+
+// ----------------------------------------------------------------------------
+
+.unsupported-browser
+  padding: 20px
+  background: ochre
+
+  color: white
+  text-shadow: 0 1px 0 rgba(black, 0.3)
+
+  text-align: center
+
+  strong
+    font-weight: bold
+    font-size: 1.1em
+
+  a
+    background-color: lime
+    color: white
+    padding: 3px 10px
+    border-radius: 2px
+    margin-left: 10px
+
 
 // ----------------------------------------------------------------------------
 
 .section
-  position: absolute
+  position: relative
   overflow: hidden
   width: 100%
+
+  .header
+    text-align: center
+    margin: 50px 0
+    font-size: 36pt
+
+    font-family: adelle-font
+    font-weight: 700
 
 // ----------------------------------------------------------------------------
 
@@ -82,3 +120,118 @@ body, input, td, th, textarea
       height: 11px
       background-size: auto 11px
       image: 'title-road.png' (470px / 2) 11px
+
+// ----------------------------------------------------------------------------
+
+.section.speakers
+  background: turquoise
+  color: white
+
+  padding-bottom: 100px
+
+.speakers-list
+  &
+    clearfix()
+
+    margin: 0 auto
+
+  @media (min-width: 600px)
+    &
+      width: (450px * 2 + 60px)
+
+    .speaker.left
+      float: left
+      clear: both
+
+    .speaker.right
+      margin-top: 30px
+      float: right
+
+  @media (max-width: 600px)
+    .speaker
+      display: block
+      margin: 10px auto
+
+// Each individual speaker
+.speaker
+  display: block
+  position: relative
+
+  padding: 5px
+
+  &, .front, .back, .hero
+    width: 450px
+    height: 270px
+
+  .front, .back, .hero
+    box-sizing: border-box
+
+  background: rgba(black, 0.2)
+  border-radius: 2px
+  box-shadow: inset 2px 2px 2px rgba(black, 0.2)
+
+  // Transition stuff
+  &
+    perspective: 1000px
+
+  .front, .back
+    position: absolute
+    top: 5px
+    left: 5px
+
+    transition: transform 200ms ease
+    backface-visibility: hidden
+
+  &
+    .back
+      transform: rotateX(-180deg)
+
+  &:hover, &.active
+    .front
+      transform: rotateX(180deg)
+
+    .back
+      transform: rotateX(0)
+
+  // Back face
+  .back
+    background: white
+    padding: 20px
+    color: #444
+
+  // Front card's meta thing
+  .meta
+    position: absolute
+    z-index: 1
+
+    background: white
+    padding: 20px
+
+    bottom: 20px
+    right: 20px
+
+    text-transform: uppercase
+    color: #444
+    font-weight: bold
+    line-height: 1.4
+    font-size: 10pt
+
+  .meta h3
+    font-family: adelle-font
+    font-size: 14pt
+    color: scarlet
+    font-weight: 900
+
+    text-transform: none
+    margin-bottom: 4px
+
+  .name
+    color: ochre
+  .location
+    color: turquoise
+  .discipline
+    color: lime
+
+  &.right .meta
+    right: auto
+    left: 20px
