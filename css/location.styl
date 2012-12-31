@@ -16,3 +16,40 @@
     color: white
     text-shadow: 0 1px 1px rgba(black, 0.2)
 
+  a.highlight
+    color: #444
+    text-shadow: 0 1px 1px rgba(white, 0.3)
+
+    background-color: rgba(#fafae0, 0.4)
+    padding: 1px 4px
+    border-radius: 1px
+    box-shadow: 0 1px 1px rgba(black, 0.2)
+
+    transition: background-color 100ms ease
+
+    &:hover
+      background-color: rgba(#fafae0, 0.9)
+
+    &:active
+      transition: none
+      background-color: scarlet
+      color: white
+      text-shadow: 0 1px 1px rgba(black, 0.3)
+
+    .image img.one
+      height: 300px
+
+/* List of benefits of the new location */
+.location-benefits
+  li
+    padding: 7px 0
+
+    font-weight: 400
+
+  li strong
+    color: darken(ecru, 40%)
+    display: block
+
+    font-weight: 400
+    font-family: adelle-font
+    font-size: 1.3em

@@ -1161,6 +1161,49 @@ a {
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
+.section.location a.highlight {
+  color: #444;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+  background-color: rgba(250,250,224,0.4);
+  padding: 1px 4px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  -webkit-transition: background-color 100ms ease;
+  -moz-transition: background-color 100ms ease;
+  -o-transition: background-color 100ms ease;
+  -ms-transition: background-color 100ms ease;
+  transition: background-color 100ms ease;
+}
+.section.location a.highlight:hover {
+  background-color: rgba(250,250,224,0.9);
+}
+.section.location a.highlight:active {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  background-color: #ec553f;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.section.location a.highlight .image img.one {
+  height: 300px;
+}
+/* List of benefits of the new location */
+.location-benefits li {
+  padding: 7px 0;
+  font-weight: 400;
+}
+.location-benefits li strong {
+  color: #976b46;
+  display: block;
+  font-weight: 400;
+  font-family: adelle, sans-serif;
+  font-size: 1.3em;
+}
 
 /* ----------------------------------------------------------------------------
  * About

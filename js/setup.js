@@ -37,7 +37,10 @@ $("#navigation a").anchorjump();
 
 $(function() {
   $(".pass-reminders li, .pass-contents li strong")
-    .filter(":not(.no-unorphan")
+    .filter(":not(.no-unorphan)")
+    .unorphan();
+
+  $("p, li", ".location, .about")
     .unorphan();
 });
 
