@@ -1250,6 +1250,9 @@ a {
 .section.about img.one {
   height: 380px;
 }
+.section.about .body {
+  text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+}
 /* ----------------------------------------------------------------------------
  * Call to action
  */
