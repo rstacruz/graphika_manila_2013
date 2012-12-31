@@ -81,7 +81,7 @@
 @media (min-width: 980px) {
   .speakers-list {
     width: 980px;
-    padding-top: 120px;
+    padding-top: 220px;
     padding-bottom: 120px;
   }
   .speakers-list .speaker.left {
@@ -106,7 +106,7 @@
     border-radius: 4px;
     position: absolute;
     left: 50%;
-    top: 19px;
+    top: 42px;
     bottom: 0;
     background: #fdefe1;
   }

@@ -124,6 +124,8 @@
   margin: 20px auto;
   max-width: 800px;
   line-height: 1.7;
+/* Desktop: Line them up horizontally */
+/* Mobile: No breaks */
 }
 .pass-contents h3 {
   font-weight: 400;
@@ -144,15 +146,31 @@
 }
 .pass-contents ul {
   font-size: 1.2em;
+  text-align: center;
+  margin: 30px 0;
 }
 .pass-contents li {
   padding: 9px 0;
   text-align: center;
   line-height: 1.3;
 }
+@media (min-width: 600px) {
+  .pass-contents li {
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    margin: 0 10px;
+  }
+}
+@media (max-width: 600px) {
+  .pass-contents br {
+    display: none;
+  }
+}
 .pass-contents li strong {
   font-weight: bold;
   display: block;
+  line-height: 1.3;
 }
 .pass-contents li small {
   display: block;
@@ -160,13 +178,16 @@
   font-weight: 400;
   font-family: adelle, sans-serif;
   color: #777;
+  line-height: 1.6;
+  margin-top: 3px;
 }
 .pass-contents span.free {
   background: #e5a141;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.3);
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-family: proxima-nova-alt, proxima-nova, proxima nova, sans-serif;
+  font-weight: 700;
   padding: 2px 5px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -253,11 +274,11 @@
 .buy-box .buy-button strong {
   font-weight: 700;
   font-family: proxima-nova-alt, proxima-nova, proxima nova, sans-serif;
-  font-size: 14pt;
+  font-size: 16pt;
   text-transform: uppercase;
 }
 .buy-box .buy-button small {
-  color: #f7bbb2;
+  color: #fbddd9;
   font-family: adelle, sans-serif;
   font-size: 10pt;
 }

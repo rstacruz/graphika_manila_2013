@@ -36,7 +36,7 @@ $("section.section").scrollagent(function(cid, pid) {
 $("#navigation a").anchorjump();
 
 $(function() {
-  $(".pass-reminders li")
+  $(".pass-reminders li, .pass-contents li strong")
     .filter(":not(.no-unorphan")
     .unorphan();
 });
