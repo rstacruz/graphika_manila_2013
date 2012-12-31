@@ -6,7 +6,11 @@
  */
 
 .section.location
-  padding-bottom: 100px
+
+  @media (min-width: 600px)
+    padding-top: 75px
+    padding-bottom: 150px
+
   // background: url(location-hall.jpg)
   // background-size: 100% auto
   // background-position: center center
@@ -36,20 +40,23 @@
       color: white
       text-shadow: 0 1px 1px rgba(black, 0.3)
 
-    .image img.one
-      height: 300px
+  .image img.one
+    height: 371px
+
+  .body
+    text-shadow: 0 1px 1px rgba(white, 0.4)
 
 /* List of benefits of the new location */
 .location-benefits
   li
-    padding: 7px 0
+    padding-bottom: 20px
 
     font-weight: 400
 
   li strong
-    color: darken(ecru, 40%)
+    color: darken(lime, 60%)
     display: block
 
-    font-weight: 400
+    font-weight: 900
     font-family: adelle-font
     font-size: 1.3em

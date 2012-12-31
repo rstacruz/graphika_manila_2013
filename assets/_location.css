@@ -2,8 +2,13 @@
  * Location
  */
 .section.location {
-  padding-bottom: 100px;
   background: #d2b69e;
+}
+@media (min-width: 600px) {
+  .section.location {
+    padding-top: 75px;
+    padding-bottom: 150px;
+  }
 }
 .section.location .header {
   color: #fff;
@@ -37,18 +42,21 @@
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
-.section.location a.highlight .image img.one {
-  height: 300px;
+.section.location .image img.one {
+  height: 371px;
+}
+.section.location .body {
+  text-shadow: 0 1px 1px rgba(255,255,255,0.4);
 }
 /* List of benefits of the new location */
 .location-benefits li {
-  padding: 7px 0;
+  padding-bottom: 20px;
   font-weight: 400;
 }
 .location-benefits li strong {
-  color: #976b46;
+  color: #525a2e;
   display: block;
-  font-weight: 400;
+  font-weight: 900;
   font-family: adelle, sans-serif;
   font-size: 1.3em;
 }
