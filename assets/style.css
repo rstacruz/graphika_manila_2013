@@ -153,7 +153,11 @@ a { color: #1e908c; text-decoration: none; }
 .ticket-list .ticket:after { content: ''; display: block; position: absolute; left: 5px; top: 5px; width: 236px; height: 236px; -webkit-border-radius: 120px; border-radius: 120px; border: dotted 2px #ccc; }
 .ticket-list .ticket img { width: 72px; height: 120px; margin-top: -40px; background: #fdefe1; margin-bottom: 15px; position: relative; z-index: 1; }
 .ticket-list .ticket h3 { font-weight: 700; font-size: 18px; text-transform: uppercase; color: #1e908c; }
-.ticket-list .ticket .price { font-size: 28pt; font-family: adelle, sans-serif; font-weight: 900; color: #ec553f; }
+.ticket-list .ticket .price { font-size: 32pt; font-family: adelle, sans-serif; font-weight: 400; color: #ec553f; line-height: 1.1; margin-bottom: 7px; text-shadow: 1px 1px 0 #fff, 2px 2px 0 #c7f3f2; }
+.ticket-list .ticket .price:before, .ticket-list .ticket .price:after { content: '\2219'; opacity: 0.4; -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); filter: alpha(opacity=40); }
+.ticket-list .ticket .price:before { margin-right: 10px; }
+.ticket-list .ticket .price:after { margin-left: 10px; }
+.ticket-list .ticket.student-pass .price { color: #bb906c; }
 .ticket-list .ticket .type { font-size: 9pt; width: 160px; margin: 3px auto 0 auto; }
 .ticket-list .ticket .type b { font-weight: bold; }
 /* Each pass contains: */

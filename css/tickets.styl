@@ -69,7 +69,6 @@
 
       border: dotted 2px #ccc
 
-
     img
       width: (120px * 0.6)
       height: 120px
@@ -87,10 +86,27 @@
       color: turquoise
 
     .price
-      font-size: 28pt
+      font-size: 32pt
       font-family: adelle-font
-      font-weight: 900
+      font-weight: 400
       color: scarlet
+
+      line-height: 1.1
+      margin-bottom: 7px
+
+      text-shadow: 1px 1px 0 white, 2px 2px 0 lighten(turquoise, 80%)
+
+      &:before, &:after
+        content: '\2219'
+        opacity: 0.4
+      &:before
+        margin-right: 10px
+      &:after
+        margin-left: 10px
+
+    &.student-pass
+      .price
+        color: darken(ecru, 20%)
 
     .type
       font-size: 9pt
