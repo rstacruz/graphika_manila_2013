@@ -7,6 +7,7 @@
   padding-bottom: 40px;
 }
 .section.speakers .header {
+  padding-top: 100px;
   color: #ec553f;
 }
 .section.speakers .header h2 {
@@ -18,7 +19,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 403px;
+  height: 503px;
   z-index: 0;
 }
 .section.speakers .o-floaters {
@@ -27,7 +28,7 @@
   background-position: center top;
   position: absolute;
   left: -95px;
-  top: 170px;
+  top: 270px;
   width: 100%;
   height: 230px;
   z-index: 0;
