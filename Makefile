@@ -14,7 +14,7 @@ assets/style.css: \
 	assets/_about.css
 
 	$(COMBINE)
-	$(CONDENSE)
+	@# $(CONDENSE)
 	
 assets/script.js: \
 	js/attributions.js \
