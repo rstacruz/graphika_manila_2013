@@ -1,0 +1,153 @@
+/* ----------------------------------------------------------------------------
+ * Nav
+ */
+.navigation {
+  position: fixed;
+  left: 0;
+  top: -20px;
+  z-index: 100;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px;
+  padding-top: 20px;
+  -webkit-transition: box-shadow 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
+  -moz-transition: box-shadow 300ms ease, background-color 300ms ease, -moz-transform 300ms ease;
+  -o-transition: box-shadow 300ms ease, background-color 300ms ease, -o-transform 300ms ease;
+  -ms-transition: box-shadow 300ms ease, background-color 300ms ease, -ms-transform 300ms ease;
+  transition: box-shadow 300ms ease, background-color 300ms ease, transform 300ms ease;
+}
+.navigation {
+  background-color: rgba(254,247,240,0.01);
+}
+@media (min-width: 600px) {
+  .navigation:not(.stuck) {
+    -webkit-transform: translate(0, 20px);
+    -moz-transform: translate(0, 20px);
+    -o-transform: translate(0, 20px);
+    -ms-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+  }
+}
+.navigation.stuck {
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 3px rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.2);
+  background-color: rgba(254,247,240,0.95);
+}
+.navigation ul {
+  display: block;
+  float: left;
+}
+.navigation li {
+  display: inline;
+}
+.navigation a {
+  display: block;
+  line-height: 52px;
+  height: 52px;
+  float: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 15px;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+  text-shadow: 0 0 2px #fdefe1, 0 0 2px #fdefe1;
+  background-color: rgba(229,161,65,0);
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+.navigation a:hover {
+  background-color: rgba(188,197,142,0.2);
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+.navigation a.active {
+  background-color: rgba(229,161,65,0.1);
+}
+.navigation a[href='#speakers'] {
+  color: #bcc58e;
+}
+.navigation a[href='#tickets'] {
+  color: #ec553f;
+}
+.navigation a[href='#about'] {
+  color: #e5a141;
+}
+.navigation a.home {
+  background: #ec553f;
+  color: #fff;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: width 300ms ease, padding 300ms ease;
+  -moz-transition: width 300ms ease, padding 300ms ease;
+  -o-transition: width 300ms ease, padding 300ms ease;
+  -ms-transition: width 300ms ease, padding 300ms ease;
+  transition: width 300ms ease, padding 300ms ease;
+}
+.navigation a.home:hover {
+  background: #444;
+}
+.navigation a.home {
+  width: 0;
+  padding: 0;
+}
+.navigation.stuck a.home {
+  width: 60px;
+}
+.navigation .in {
+  max-width: 980px;
+  margin: 0 auto;
+  zoom: 1;
+}
+.navigation .in:before,
+.navigation .in:after {
+  content: "";
+  display: table;
+}
+.navigation .in:after {
+  clear: both;
+}
+.navigation .share {
+  float: right;
+  margin-top: 4px;
+  height: 22px;
+  padding: 10px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.navigation:not(.stuck) .share,
+.navigation:not(.stuck) ul {
+  background: rgba(254,247,240,0.95);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+}
+.navigation .share iframe {
+  vertical-align: top;
+}
+@media (max-width: 600px) {
+  .navigation:not(.stuck) {
+    opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: alpha(opacity=0);
+  }
+  .navigation ul {
+    display: none !important;
+  }
+  .navigation .share {
+    float: none !important;
+  }
+}
+

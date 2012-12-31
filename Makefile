@@ -7,6 +7,7 @@ all: \
 assets/style.css: \
 	assets/_attributions.css \
 	assets/_reset.css \
+	assets/_nav.css \
 	assets/_title.css \
 	assets/_speakers.css \
 	assets/_tickets.css \

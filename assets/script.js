@@ -199,7 +199,7 @@
 /* Navigation sticky thing */
 ;(function() {
   var active = true;
-  var threshold = 200;
+  var threshold = 500;
 
   $(window).on('scroll restuck', function() {
     var y = $(window).scrollTop();

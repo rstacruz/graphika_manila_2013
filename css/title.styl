@@ -158,6 +158,7 @@ a
   position: relative
   overflow: hidden
   width: 100%
+  z-index: 1
 
   .header
     text-align: center
@@ -177,18 +178,17 @@ a
 .section.title
   &
     background: cream
-    border-bottom: solid 4px ochre
 
   // Right ornament
   .o-right
-    absolute: right 0 bottom 10px
+    fixed: right 0 top 0
     width: 669px
     height: 748px
     transition: all 300ms ease
     z-index: 1
 
   .o-left
-    absolute: left 0 bottom 10px
+    fixed: left 0 top 0
     width: 708px
     height: 748px
     transition: all 300ms ease
@@ -260,6 +260,11 @@ a
       right: -450px
 
   @media (max-width: 600px)
+    .o-left, .o-right
+      position: absolute
+      top: auto
+      bottom: 0
+
     .o-left
       left: -1000px
     .o-right

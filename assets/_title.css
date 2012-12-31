@@ -189,6 +189,7 @@ a {
   position: relative;
   overflow: hidden;
   width: 100%;
+  z-index: 1;
 }
 .section .header {
   text-align: center;
@@ -204,12 +205,11 @@ a {
  */
 .section.title {
   background: #fdefe1;
-  border-bottom: solid 4px #e5a141;
 }
 .section.title .o-right {
-  position: absolute;
+  position: fixed;
   right: 0;
-  bottom: 10px;
+  top: 0;
   width: 669px;
   height: 748px;
   -webkit-transition: all 300ms ease;
@@ -220,9 +220,9 @@ a {
   z-index: 1;
 }
 .section.title .o-left {
-  position: absolute;
+  position: fixed;
   left: 0;
-  bottom: 10px;
+  top: 0;
   width: 708px;
   height: 748px;
   -webkit-transition: all 300ms ease;
@@ -306,6 +306,12 @@ a {
   }
 }
 @media (max-width: 600px) {
+  .section.title .o-left,
+  .section.title .o-right {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+  }
   .section.title .o-left {
     left: -1000px;
   }

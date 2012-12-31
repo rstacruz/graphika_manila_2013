@@ -25,9 +25,11 @@
   box-shadow: inset 0 -4px 0 #e5a141;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  border-top: solid 4px #e5a141;
   padding: 150px 0 0 0;
   text-align: center;
   overflow: visible;
+  z-index: 2;
 }
 .section.cta .in {
   max-width: 960px;

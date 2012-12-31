@@ -1,0 +1,119 @@
+@import nib
+@import common
+
+/* ----------------------------------------------------------------------------
+ * Nav
+ */
+
+.navigation
+  fixed: left 0 top -20px
+  z-index: 100
+  width: 100%
+
+  box-sizing: border-box
+
+  padding: 0 20px
+  padding-top: 20px
+
+  transition: box-shadow 300ms ease, background-color 300ms ease, transform 300ms ease
+
+  &
+    background-color: rgba(lighten(cream, 50%), 0.01)
+
+  @media (min-width: 600px)
+    &:not(.stuck)
+      transform: translate(0, 20px)
+
+  &.stuck
+    box-shadow: 0 0 3px rgba(black, 0.1), inset 0 -1px 0 rgba(black, 0.2)
+    background-color: rgba(lighten(cream, 50%), 0.95)
+
+  // Menu items
+  ul
+    display: block
+    float: left
+
+  li
+    display: inline
+
+  a
+    display: block
+    line-height: 52px
+    height: 52px
+    float: left
+
+    text-transform: uppercase
+    font-weight: bold
+    padding: 0 15px
+
+    antialias()
+
+    text-shadow: 0 0 2px cream, 0 0 2px cream
+
+    background-color: rgba(ochre, 0.0)
+    transition: background-color 300ms linear
+
+  a:hover
+    background-color: rgba(lime, 0.2)
+    transition: none
+
+  a.active
+    background-color: rgba(ochre, 0.1)
+
+  a[href='#speakers']
+    color: lime
+  a[href='#tickets']
+    color: scarlet
+  a[href='#about']
+    color: ochre
+
+  a.home
+    background: scarlet
+    color: white
+    overflow: hidden
+
+    padding: 0
+    text-align: center
+    transition: width 300ms ease, padding 300ms ease
+
+  a.home:hover
+    background: #444
+
+  & a.home
+    width: 0
+    padding: 0
+
+  &.stuck a.home
+    width: 60px
+
+  .in
+    max-width: 980px
+    margin: 0 auto
+    clearfix()
+
+  .share
+    float: right
+    margin-top: 4px
+    height: 22px
+    padding: 10px
+
+    transition: all 300ms ease
+
+  &:not(.stuck) .share,
+  &:not(.stuck) ul
+    background: rgba(lighten(cream, 50%), 0.95)
+    border-radius: 2px
+    box-shadow: 0 2px 1px rgba(black, 0.1)
+
+  .share iframe
+    vertical-align: top
+
+
+  @media (max-width: 600px)
+    &:not(.stuck)
+      opacity: 0
+    ul
+      display: none !important
+    .share
+      float: none !important
+
