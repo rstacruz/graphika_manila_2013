@@ -1067,9 +1067,6 @@ a {
 /* ----------------------------------------------------------------------------
  * Schedule
  */
-.section.schedule {
-  padding-bottom: 40px;
-}
 .section.schedule .header .pre {
   color: #1e908c;
 }
@@ -1078,8 +1075,8 @@ a {
   border-bottom-color: rgba(188,197,142,0.8);
 }
 .section.schedule .event-map {
-  width: 400px;
-  margin: 20px auto;
+  width: 100%;
+  margin: 20px auto 0 auto;
 }
 .event-info {
   text-align: center;
