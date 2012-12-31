@@ -13,15 +13,18 @@
 
   // Header
   .header
-    color: turquoise
+    color: scarlet
+    h2
+      font-size: 46pt
+
+  offset = 50px
 
   .o-waves
-    background: url(speakers-waves.jpg) center top
-    background-repeat: repeat-x
+    background: cream url(speakers-waves.jpg) center bottom repeat-x
 
     absolute: left 0 top 0
     width: 100%
-    height: 353px
+    height: (353px + offset)
 
     z-index: 0
 
@@ -30,7 +33,7 @@
     background-repeat: no-repeat
     background-position: center top
 
-    absolute: left -95px top 120px
+    absolute: left -95px top (120px + offset)
     width: 100%
     height: 230px
 

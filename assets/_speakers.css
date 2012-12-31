@@ -7,16 +7,18 @@
   padding-bottom: 40px;
 }
 .section.speakers .header {
-  color: #1e908c;
+  color: #ec553f;
+}
+.section.speakers .header h2 {
+  font-size: 46pt;
 }
 .section.speakers .o-waves {
-  background: url("speakers-waves.jpg") center top;
-  background-repeat: repeat-x;
+  background: #fdefe1 url("speakers-waves.jpg") center bottom repeat-x;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 353px;
+  height: 403px;
   z-index: 0;
 }
 .section.speakers .o-floaters {
@@ -25,7 +27,7 @@
   background-position: center top;
   position: absolute;
   left: -95px;
-  top: 120px;
+  top: 170px;
   width: 100%;
   height: 230px;
   z-index: 0;
