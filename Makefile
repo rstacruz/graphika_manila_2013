@@ -40,8 +40,8 @@ assets/%@2x.png: images/%@2x.png
 assets/%@2x.jpg: images/%@2x.jpg.png
 	$(check_imagemagick)
 	$(check_optipng)
-	$(convert) $< -quality 35 -strip -interlace plane $@
-	$(convert) $< -quality 70 -strip -interlace plane -resize 50% $(patsubst %@2x.jpg, %.jpg, $@)
+	$(convert) $< -quality 80 -strip -interlace plane $@
+	$(convert) $< -resize 50% -quality 90 -strip -interlace plane $(patsubst %@2x.jpg, %.jpg, $@)
 
 # Regular PNGs
 assets/%.png: images/%.png
@@ -51,7 +51,7 @@ assets/%.png: images/%.png
 # Regular JPGs
 assets/%.jpg: images/%.jpg.png
 	$(check_imagemagick)
-	$(convert) $< -quality 60 -strip -interlace plane $@
+	$(convert) $< -quality 90 -strip -interlace plane $@
 
 
 # ----------------------------------------------------------------------------

@@ -41,7 +41,9 @@ a {
   margin: 50px 0;
   font-size: 36pt;
   font-family: adelle, sans-serif;
-  font-weight: 700;
+  font-weight: 900;
+  position: relative;
+  z-index: 5;
 }
 .section.title {
   background: #fdefe1;
@@ -121,13 +123,46 @@ a {
 }
 }
 .section.speakers {
-  background: #1e908c;
+  background: #1e908c url("speakers-bg.jpg");
   color: #fff;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+}
+.section.speakers .header {
+  color: #1e908c;
+}
+.section.speakers .o-waves {
+  background: url("speakers-waves.jpg") center top;
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 353px;
+  z-index: 0;
+}
+.section.speakers .o-floaters {
+  background-image: url("speakers-floaters.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  left: -95px;
+  top: 120px;
+  width: 100%;
+  height: 230px;
+  z-index: 0;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .section.speakers .o-floaters {
+    background-image: url("speakers-floaters@2x.png");
+    -webkit-background-size: 1167px 230px;
+    -moz-background-size: 1167px 230px;
+    background-size: 1167px 230px;
+  }
 }
 .speakers-list {
   zoom: 1;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
+  position: relative;
 }
 .speakers-list:before,
 .speakers-list:after {
@@ -137,9 +172,11 @@ a {
 .speakers-list:after {
   clear: both;
 }
-@media (min-width: 600px) {
+@media (min-width: 980px) {
   .speakers-list {
-    width: 960px;
+    width: 980px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   .speakers-list .speaker.left {
     float: left;
@@ -149,8 +186,20 @@ a {
     margin-top: 30px;
     float: right;
   }
+  .speakers-list .o-hook {
+    display: block;
+    width: 4px;
+    margin-left: -2px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    top: 19px;
+    bottom: 0;
+    background: #fdefe1;
+  }
 }
-@media (max-width: 600px) {
+@media (max-width: 980px) {
   .speakers-list .speaker {
     display: block;
     margin: 10px auto;
@@ -181,10 +230,10 @@ a {
   box-sizing: border-box;
 }
 .speaker {
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  -ms-perspective: 1000px;
-  perspective: 1000px;
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  -ms-perspective: 2000px;
+  perspective: 2000px;
 }
 .speaker .front,
 .speaker .back {
@@ -233,7 +282,7 @@ a {
   position: absolute;
   z-index: 1;
   background: #fff;
-  padding: 20px;
+  padding: 10px 30px 10px 10px;
   bottom: 20px;
   right: 20px;
   text-transform: uppercase;
