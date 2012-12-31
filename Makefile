@@ -8,6 +8,7 @@ assets/style.css: \
 	assets/_attributions.css \
 	assets/_reset.css \
 	assets/_sections-speakers.css \
+	assets/_sections-tickets.css
 	$(COMBINE)
 
 assets/script.js: \
