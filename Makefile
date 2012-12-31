@@ -29,11 +29,6 @@ assets/%.css: css/%.styl
 	$(check_stylus)
 	$(stylus) -I css -u nib < $< > $@
 
-# Regular JPGs
-assets/%.jpg: images/%.jpg.png
-	$(check_imagemagick)
-	$(convert) $< -quality 60 -strip -interlace plane $@
-
 # Retina PNGs
 assets/%@2x.png: images/%@2x.png
 	$(check_imagemagick)
@@ -41,10 +36,23 @@ assets/%@2x.png: images/%@2x.png
 	$(optipng) -quiet -clobber $< -out $@
 	$(convert) $@ -resize 50% $(patsubst %@2x.png, %.png, $@)
 
+# Retina JPGs
+assets/%@2x.jpg: images/%@2x.jpg.png
+	$(check_imagemagick)
+	$(check_optipng)
+	$(convert) $< -quality 60 -strip -interlace plane $@
+	$(convert) $@ -quality 60 -strip -interlace plane -resize 50% $(patsubst %@2x.png, %.png, $@)
+
 # Regular PNGs
 assets/%.png: images/%.png
 	$(check_optipng)
 	$(optipng) -quiet -clobber $< -out $@
+
+# Regular JPGs
+assets/%.jpg: images/%.jpg.png
+	$(check_imagemagick)
+	$(convert) $< -quality 60 -strip -interlace plane $@
+
 
 # ----------------------------------------------------------------------------
 
