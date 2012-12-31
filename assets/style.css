@@ -106,7 +106,9 @@ a { color: #1e908c; text-decoration: none; }
 .speakers-list:after { clear: both; }
 @media (min-width: 980px) { .speakers-list { width: 980px; padding-top: 120px; padding-bottom: 120px; }
   .speakers-list .speaker.left { float: left; clear: both; }
-  .speakers-list .speaker.right { margin-top: 70px; float: right; }
+  .speakers-list .speaker.right { margin-top: 80px; float: right; }
+  .speakers-list .speaker:first-child { margin-top: 0; }
+  .speakers-list .speaker.left { margin-top: -50px; }
   .speakers-list .o-hook { display: block; width: 4px; margin-left: -2px; -webkit-border-radius: 4px; border-radius: 4px; position: absolute; left: 50%; top: 19px; bottom: 0; background: #fdefe1; }
   .speakers-list .speaker:after { content: ''; display: block; height: 4px; width: 50px; position: absolute; bottom: 80px; z-index: 0; opacity: 0.5; -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); filter: alpha(opacity=50); }
   .speakers-list .speaker.left:after { right: -20px; background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(253,239,225,0)), color-stop(1, #fdefe1)); background: -webkit-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%); background: -moz-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%); background: -o-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%); background: -ms-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%); background: linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%); }

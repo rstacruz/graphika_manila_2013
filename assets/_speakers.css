@@ -68,8 +68,14 @@
     clear: both;
   }
   .speakers-list .speaker.right {
-    margin-top: 70px;
+    margin-top: 80px;
     float: right;
+  }
+  .speakers-list .speaker:first-child {
+    margin-top: 0;
+  }
+  .speakers-list .speaker.left {
+    margin-top: -50px;
   }
   .speakers-list .o-hook {
     display: block;
