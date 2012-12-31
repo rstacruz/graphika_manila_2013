@@ -92,6 +92,28 @@ a {
 .navigation a[href='#about'] {
   color: #e5a141;
 }
+.navigation a.home {
+  background: #ec553f;
+  color: #fff;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: width 300ms ease, padding 300ms ease;
+  -moz-transition: width 300ms ease, padding 300ms ease;
+  -o-transition: width 300ms ease, padding 300ms ease;
+  -ms-transition: width 300ms ease, padding 300ms ease;
+  transition: width 300ms ease, padding 300ms ease;
+}
+.navigation a.home:hover {
+  background: #444;
+}
+.navigation a.home {
+  width: 0;
+  padding: 0;
+}
+.navigation.stuck a.home {
+  width: 60px;
+}
 .navigation .in {
   width: 980px;
   margin: 0 auto;
@@ -171,6 +193,7 @@ a {
  */
 .section.title {
   background: #fdefe1;
+  border-bottom: solid 4px #e5a141;
 }
 .section.title .o-right {
   position: absolute;
