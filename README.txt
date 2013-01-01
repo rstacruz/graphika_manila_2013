@@ -1,5 +1,44 @@
-How it works
-------------
+Dev notes
+---------
+
+ * Edit `index.html` as you would any HTML.
+
+ * You can edit Stylus source files in `css/` - they get compiled to CSS by the make tool.
+
+ * JavaScripts are in `js/` - they get combined using the make tool.
+
+ * The list of JavaScript files are in the `Makefile`.
+
+ * Raw images are all in .png and are stored in `images/`. They get
+   auto-optimized under `assets/` using the make tool.
+
+ * For retina images, save them as `images/hello@2x.jpg.png` (for jpegs) or
+   `images/hello@2x.png` (for PNGs). They will get auto-scaled down using the make tool.
+
+ * To use retina images in `<img>`, use `<img data-src="hello.jpg">`. The `@2x`
+   suffix will be added automatically on retina systems.
+
+To use the Make tool
+--------------------
+
+The make tool builds optimized assets (in `assets/`) from source files (in
+`images/`, `css/` and `js/`). GNU Make already comes pre-installed in most
+systems, but you need a few more things.
+
+In OSX:
+
+ * Install homebrew (http://mxcl.github.com/homebrew)
+ * Install NodeJS (brew install nodejs) - needed for Stylus
+ * Install Optipng (brew install optipng) - needed to optimize PNG
+ * Install ImageMagick (brew install imagemagick) - needed to auto-scale retina images
+ * Install Stylus+Nib (sudo npm install -g stylus nib) - needed to compile CSS
+
+Then:
+
+ * Type `make start` in a Terminal
+
+Asset compilation: How it works
+-------------------------------
 
 There's a make script (`Makefile`) that takes care of processing your CSS, JS and images.
 Just type `make` and they will be generated. In general:
