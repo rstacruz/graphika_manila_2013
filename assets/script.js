@@ -250,6 +250,7 @@
     return this;
   };
 })(jQuery);
+
 /* Navigation sticky thing */
 ;(function() {
   var active = true;
@@ -287,6 +288,7 @@ $("section.section").scrollagent(function(cid, pid) {
 /* Jumping */
 $("#navigation a").anchorjump();
 
+/* Unorphan */
 $(function() {
   $(".pass-reminders li, .pass-contents li strong")
     .filter(":not(.no-unorphan)")
@@ -297,6 +299,7 @@ $(function() {
 });
 
 
+/* Retina support */
 $(function() {
   $("img[data-src]").hidpi();
 });
