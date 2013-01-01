@@ -71,13 +71,13 @@
 .navigation a.active {
   background-color: rgba(229,161,65,0.1);
 }
-.navigation a[href='#speakers'] {
+.navigation a.speakers {
   color: #bcc58e;
 }
-.navigation a[href='#tickets'] {
+.navigation a.tickets {
   color: #ec553f;
 }
-.navigation a[href='#about'] {
+.navigation a.schedule {
   color: #e5a141;
 }
 .navigation a.home {
@@ -111,7 +111,7 @@
   padding: 0;
 }
 .navigation.stuck a.home {
-  width: 60px;
+  width: 70px;
 }
 .navigation .in {
   max-width: 980px;
