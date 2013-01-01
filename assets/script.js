@@ -60,7 +60,7 @@
     return false;
   }
 
-})(jQuery, window, '-device-pixel-ratio: 1.5),');
+})(jQuery, this, '-device-pixel-ratio: 1.5),');
 
 /*! Anchorjump (c) 2012, Rico Sta. Cruz. MIT License.
  *   http://github.com/rstacruz/jquery-stuff/tree/master/anchorjump */
