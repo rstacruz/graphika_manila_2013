@@ -158,18 +158,23 @@ a {
   color: #fff;
   text-shadow: 0 1px 0 rgba(0,0,0,0.3);
   text-align: center;
+  position: relative;
+  z-index: 150;
 }
 .unsupported-browser strong {
   font-weight: bold;
   font-size: 1.1em;
 }
 .unsupported-browser a {
-  background-color: #bcc58e;
+  background-color: #cf851c;
   color: #fff;
-  padding: 3px 10px;
+  padding: 3px 4px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  margin-left: 10px;
+}
+.unsupported-browser a.upgrade-browser {
+  background-color: #ec553f;
+  font-weight: bold;
 }
 /* ----------------------------------------------------------------------------
  * Section base
