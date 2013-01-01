@@ -46,6 +46,11 @@ $(function() {
     .unorphan();
 });
 
+/* Mobile switch */
+$(function() {
+  var isMobile = navigator.userAgent.match(/iPhone|iPad|iPod/);
+  $("html").addClass(isMobile ? "desktop" : "mobile");
+});
 
 /* Retina support */
 $(function() {

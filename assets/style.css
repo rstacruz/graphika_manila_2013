@@ -423,7 +423,7 @@ a {
   background: #fdefe1;
 }
 .section.title .o-right {
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   width: 669px;
@@ -436,7 +436,7 @@ a {
   z-index: 1;
 }
 .section.title .o-left {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 708px;
@@ -447,6 +447,10 @@ a {
   -ms-transition: all 300ms ease;
   transition: all 300ms ease;
   z-index: 2;
+}
+.desktop .section.title .o-right,
+.desktop .section.title .o-left {
+  position: fixed;
 }
 .section.title .logo {
   margin: 170px auto 40px auto;
