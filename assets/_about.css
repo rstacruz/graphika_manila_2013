@@ -166,4 +166,7 @@
     display: none;
   }
 }
+.body.faq {
+  clear: both;
+}
 
