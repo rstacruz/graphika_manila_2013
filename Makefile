@@ -9,6 +9,7 @@ assets/style.css: \
 	assets/_reset.css \
 	assets/_basic.css \
 	assets/_nav.css \
+	assets/_cta.css \
 	assets/_title.css \
 	assets/_speakers.css \
 	assets/_tickets.css \

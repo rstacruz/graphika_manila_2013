@@ -282,6 +282,12 @@ a {
   -o-transition: box-shadow 300ms ease, background-color 300ms ease, -o-transform 300ms ease;
   -ms-transition: box-shadow 300ms ease, background-color 300ms ease, -ms-transform 300ms ease;
   transition: box-shadow 300ms ease, background-color 300ms ease, transform 300ms ease;
+/* Currently selected */
+/* Overrides for each thingie */
+/* GM logo */
+/* Hiding logo */
+/* The inside thing */
+/* Facebook/Twitter share section */
 }
 .navigation {
   background-color: rgba(254,247,240,0.01);
@@ -337,7 +343,9 @@ a {
   transition: none;
 }
 .navigation a.active {
-  background-color: rgba(229,161,65,0.1);
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 4px rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.2);
 }
 .navigation a.speakers {
   color: #bcc58e;
@@ -431,6 +439,96 @@ a {
   .navigation .share {
     float: none !important;
   }
+}
+
+/* ----------------------------------------------------------------------------
+ * Call to action
+ */
+.section.cta {
+  background: #d2b69e;
+  -webkit-box-shadow: inset 0 -4px 0 #e5a141;
+  box-shadow: inset 0 -4px 0 #e5a141;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  border-top: solid 4px #e5a141;
+  padding: 150px 0 0 0;
+  text-align: center;
+  overflow: visible;
+  z-index: 2;
+}
+.section.cta .in {
+  max-width: 960px;
+  margin: 0 auto;
+  zoom: 1;
+}
+.section.cta .in:before,
+.section.cta .in:after {
+  content: "";
+  display: table;
+}
+.section.cta .in:after {
+  clear: both;
+}
+.section.cta .left {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+.section.cta .body {
+  font-size: 14pt;
+}
+.section.cta .body h3 {
+  font-family: adelle, sans-serif;
+  font-weight: 900;
+  font-size: 26pt;
+}
+.section.cta .right {
+  padding-top: 30px;
+  margin: 0 auto;
+  margin-bottom: -75px;
+}
+.section.cta .btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+  background: #ec553f;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 75px;
+  border-radius: 75px;
+  line-height: 150px;
+  position: relative;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 0 0 4px rgba(0,0,0,0.04), inset 0 0 0 4px rgba(253,239,225,0.8);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 0 0 4px rgba(0,0,0,0.04), inset 0 0 0 4px rgba(253,239,225,0.8);
+  -webkit-transition: -webkit-transform 100ms ease;
+  -moz-transition: -moz-transform 100ms ease;
+  -o-transition: -o-transform 100ms ease;
+  -ms-transition: -ms-transform 100ms ease;
+  transition: transform 100ms ease;
+}
+.section.cta .btn:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.section.cta .btn span {
+  display: inline-block;
+  width: 110px;
+  line-height: 18pt;
+  vertical-align: middle;
+}
+.section.cta .btn span b {
+  display: block;
+  font-size: 1.8em;
+  text-transform: uppercase;
 }
 
 /* ----------------------------------------------------------------------------
@@ -1290,95 +1388,6 @@ a {
 }
 .section.about .body {
   text-shadow: 0 1px 1px rgba(255,255,255,0.4);
-}
-/* ----------------------------------------------------------------------------
- * Call to action
- */
-.section.cta {
-  background: #d2b69e;
-  -webkit-box-shadow: inset 0 -4px 0 #e5a141;
-  box-shadow: inset 0 -4px 0 #e5a141;
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
-  border-top: solid 4px #e5a141;
-  padding: 150px 0 0 0;
-  text-align: center;
-  overflow: visible;
-  z-index: 2;
-}
-.section.cta .in {
-  max-width: 960px;
-  margin: 0 auto;
-  zoom: 1;
-}
-.section.cta .in:before,
-.section.cta .in:after {
-  content: "";
-  display: table;
-}
-.section.cta .in:after {
-  clear: both;
-}
-.section.cta .left {
-  max-width: 600px;
-  text-align: center;
-  margin: 0 auto;
-}
-.section.cta .body {
-  font-size: 14pt;
-}
-.section.cta .body h3 {
-  font-family: adelle, sans-serif;
-  font-weight: 900;
-  font-size: 26pt;
-}
-.section.cta .right {
-  padding-top: 30px;
-  margin: 0 auto;
-  margin-bottom: -75px;
-}
-.section.cta .btn {
-  display: block;
-  margin: 0 auto;
-  font-size: 12pt;
-  font-weight: bold;
-  text-align: center;
-  background: #ec553f;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  color: #fff;
-  width: 150px;
-  height: 150px;
-  -webkit-border-radius: 75px;
-  border-radius: 75px;
-  line-height: 150px;
-  position: relative;
-  z-index: 10;
-  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 0 0 4px rgba(0,0,0,0.04), inset 0 0 0 4px rgba(253,239,225,0.8);
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 0 0 4px rgba(0,0,0,0.04), inset 0 0 0 4px rgba(253,239,225,0.8);
-  -webkit-transition: -webkit-transform 100ms ease;
-  -moz-transition: -moz-transform 100ms ease;
-  -o-transition: -o-transform 100ms ease;
-  -ms-transition: -ms-transform 100ms ease;
-  transition: transform 100ms ease;
-}
-.section.cta .btn:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.section.cta .btn span {
-  display: inline-block;
-  width: 110px;
-  line-height: 18pt;
-  vertical-align: middle;
-}
-.section.cta .btn span b {
-  display: block;
-  font-size: 1.8em;
-  text-transform: uppercase;
 }
 /* ----------------------------------------------------------------------------
  */
