@@ -21,7 +21,7 @@ assets/style.css: \
 	
 assets/script.js: \
 	js/attributions.js \
-	js/foresight.min.js \
+	js/jquery.hidpi.js \
 	js/jquery.anchorjump.js \
 	js/jquery.scrollagent.js \
 	js/jquery.unorphan.js \

@@ -77,9 +77,9 @@
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .section.title .o-road {
     background-image: url("title-road@2x.png");
-    -webkit-background-size: auto auto;
-    -moz-background-size: auto auto;
-    background-size: auto auto;
+    -webkit-background-size: 471px 22px;
+    -moz-background-size: 471px 22px;
+    background-size: 471px 22px;
   }
 }
 @media (max-width: 1250px) {

@@ -44,3 +44,7 @@ $(function() {
     .unorphan();
 });
 
+
+$(function() {
+  $("img[data-src]").hidpi();
+});
