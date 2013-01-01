@@ -346,7 +346,10 @@ a {
   color: #e5a141;
 }
 .navigation a.home {
-  background: #ec553f;
+  background-color: #ec553f;
+  background-image: url("logo-small.png");
+  background-position: center center;
+  background-repeat: no-repeat;
   color: #fff;
   overflow: hidden;
   padding: 0;
@@ -356,6 +359,14 @@ a {
   -o-transition: width 300ms ease, padding 300ms ease;
   -ms-transition: width 300ms ease, padding 300ms ease;
   transition: width 300ms ease, padding 300ms ease;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .navigation a.home {
+    background-image: url("logo-small@2x.png");
+    -webkit-background-size: 42px 20px;
+    -moz-background-size: 42px 20px;
+    background-size: 42px 20px;
+  }
 }
 .navigation a.home:hover {
   background: #444;
