@@ -285,6 +285,8 @@ a {
 }
 .navigation {
   background-color: rgba(254,247,240,0.01);
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.01), inset 0 -1px 0 rgba(0,0,0,0.01);
+  box-shadow: 0 0 3px rgba(0,0,0,0.01), inset 0 -1px 0 rgba(0,0,0,0.01);
 }
 @media (min-width: 600px) {
   .navigation:not(.stuck) {
@@ -309,11 +311,12 @@ a {
 }
 .navigation a {
   display: block;
-  line-height: 52px;
-  height: 52px;
+  line-height: 42px;
+  height: 42px;
   float: left;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 10pt;
   padding: 0 15px;
   -webkit-font-smoothing: antialiased !important;
   text-rendering: optimizeLegibility !important;
@@ -395,7 +398,7 @@ a {
   float: right;
   margin-top: 4px;
   height: 22px;
-  padding: 10px;
+  padding: 7px 10px;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -o-transition: all 300ms ease;
@@ -412,6 +415,9 @@ a {
 }
 .navigation .share iframe {
   vertical-align: top;
+}
+.navigation .share > a {
+  display: none;
 }
 @media (max-width: 600px) {
   .navigation:not(.stuck) {
