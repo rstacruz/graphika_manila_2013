@@ -59,12 +59,12 @@
     background-color: rgba(lime, 0.2)
     transition: none
 
-  /* Currently selected */
+  // Currently selected
   a.active
     background-color: white
     box-shadow: 0 0 4px rgba(black, 0.1), inset 0 -1px 0 rgba(black, 0.2)
 
-  /* Overrides for each thingie */
+  // Overrides for each thingie
   a.speakers
     color: lime
   a.tickets
@@ -72,7 +72,7 @@
   a.schedule
     color: ochre
 
-  /* GM logo */
+  // GM logo
   a.home
     background-color: scarlet
     image: 'logo-small.png' 42px 20px
@@ -89,7 +89,7 @@
   a.home:hover
     background: #444
 
-  /* Hiding logo */
+  // Hiding logo
   & a.home
     width: 0
     padding: 0
@@ -97,13 +97,13 @@
   &.stuck a.home
     width: 70px
 
-  /* The inside thing */
+  // The wrapper
   .in
     max-width: 980px
     margin: 0 auto
     clearfix()
 
-  /* Facebook/Twitter share section */
+  // Facebook/Twitter share section
   .share
     float: right
     margin-top: 4px

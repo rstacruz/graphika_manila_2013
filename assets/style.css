@@ -282,12 +282,6 @@ a {
   -o-transition: box-shadow 300ms ease, background-color 300ms ease, -o-transform 300ms ease;
   -ms-transition: box-shadow 300ms ease, background-color 300ms ease, -ms-transform 300ms ease;
   transition: box-shadow 300ms ease, background-color 300ms ease, transform 300ms ease;
-/* Currently selected */
-/* Overrides for each thingie */
-/* GM logo */
-/* Hiding logo */
-/* The inside thing */
-/* Facebook/Twitter share section */
 }
 .navigation {
   background-color: rgba(254,247,240,0.01);
