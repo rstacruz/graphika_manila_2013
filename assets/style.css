@@ -1500,3 +1500,79 @@ a {
   color: #525a2e;
 }
 
+/* ----------------------------------------------------------------------------
+ * Contact
+ */
+.section.contact {
+  background: #fff;
+}
+.section.contact .in {
+  padding: 20px 0;
+}
+.section.contact .content {
+  font-size: 0.9em;
+}
+.section.contact .content p {
+  margin-bottom: 20px;
+}
+.section.contact .content h2,
+.section.contact .content h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+@media (min-width: 600px) {
+  .section.contact .in {
+    width: 980px;
+    margin: 0 auto;
+    zoom: 1;
+    padding: 40px 0;
+  }
+  .section.contact .in:before,
+  .section.contact .in:after {
+    content: "";
+    display: table;
+  }
+  .section.contact .in:after {
+    clear: both;
+  }
+  .section.contact .content {
+    float: left;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .section.contact .content.details {
+    padding-top: 20px;
+  }
+}
+.footer {
+  font-size: 0.9em;
+  text-align: center;
+  color: #888;
+  padding-bottom: 40px;
+}
+.footer p {
+  margin: 20px 0;
+}
+.footer strong {
+  font-weight: bold;
+  color: #444;
+}
+.footer em {
+  color: #444;
+}
+.footer a {
+  color: #999;
+  border-bottom: dotted 1px #ccc;
+}
+.footer a:hover {
+  color: #ec553f;
+}
+.footer .logo-footer {
+  opacity: 0.3;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  filter: alpha(opacity=30);
+  margin: 40px 0;
+}
+

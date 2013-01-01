@@ -1,0 +1,65 @@
+@import nib
+@import common
+
+/* ----------------------------------------------------------------------------
+ * Contact
+ */
+
+.section.contact
+  background: white
+  .in
+    padding: 20px 0
+
+  .content
+    font-size: 0.9em
+
+  .content p
+    margin-bottom: 20px
+
+  .content h2,
+  .content h3
+    font-weight: bold
+    font-size: 1.2em
+
+  // Desktop
+  @media (min-width: 600px)
+    .in
+      width: 980px
+      margin: 0 auto
+      clearfix()
+      padding: 40px 0
+
+    .content
+      float: left
+      width: 50%
+      box-sizing: border-box
+
+    .content.details
+      padding-top: 20px
+
+.footer
+  font-size: 0.9em
+  text-align: center
+  color: #888
+  padding-bottom: 40px
+
+  p
+    margin: 20px 0
+
+  strong
+    font-weight: bold
+    color: #444
+
+  em
+    color: #444
+
+  a
+    color: #999
+    border-bottom: dotted 1px #ccc
+
+  a:hover
+    color: scarlet
+
+  .logo-footer
+    opacity: 0.3
+    margin: 40px 0

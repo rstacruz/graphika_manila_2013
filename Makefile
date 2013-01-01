@@ -15,7 +15,8 @@ assets/style.css: \
 	assets/_tickets.css \
 	assets/_schedule.css \
 	assets/_location.css \
-	assets/_about.css
+	assets/_about.css \
+	assets/_contact.css
 
 	$(COMBINE)
 	@# $(CONDENSE)
