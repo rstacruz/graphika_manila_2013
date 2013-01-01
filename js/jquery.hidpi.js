@@ -1,5 +1,5 @@
 /*! jquery.hidpi (c) 2012, Rico Sta. Cruz. MIT License.
- *   http://github.com/rstacruz/jquery-stuff/tree/master/anchorjump */
+ *   http://github.com/rstacruz/jquery-stuff/tree/master/hidpi */
 
 // Adds retina (High DPI) support to images.
 //
