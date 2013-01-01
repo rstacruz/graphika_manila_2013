@@ -14,6 +14,16 @@
 //
 // This also adds the `jQuery.support.hidpi` variable for checking for hidpi support in JS.
 //
+// Be sure to specify the dimensions of the image!
+//
+//     <img data-src="hello.jpg" width="40" height="40" alt="Hello">
+//
+// or you can do it in CSS... either way, the dimensions are required to be specified.
+//
+//     <img data-src="hello.jpg" class="hello">
+//
+//     img.hello { width: 40px; height: 40px; }
+//
 (function($) {
   $.support.hidpi = isHiDPI();
 
