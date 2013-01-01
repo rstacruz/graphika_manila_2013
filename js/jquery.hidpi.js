@@ -38,13 +38,15 @@
   };
 
   // Thanks https://github.com/imulus/retinajs/blob/master/src/retina.js
+  // The repetitive parts of the string are put in a variable so JS compressors
+  // can optimize them away.
   function isHiDPI() {
     var query =
-      "(-webkit-min-" + devicePixelRatio15 +
-      "(min--moz-" + devicePixelRatio15 +
-      "(-ms-min-" + devicePixelRatio15 +
-      "(-o-min-" + devicePixelRatio15 +
-      "(min-" + devicePixelRatio15 +
+      "(-webkit-min" + devicePixelRatio15 +
+      "(min--moz" + devicePixelRatio15 +
+      "(-ms-min" + devicePixelRatio15 +
+      "(-o-min" + devicePixelRatio15 +
+      "(min" + devicePixelRatio15 +
       "(min-resolution: 1.5dppx)";
 
     if (w.devicePixelRatio && w.devicePixelRatio > 1)
@@ -56,5 +58,5 @@
     return false;
   }
 
-})(jQuery, window, 'device-pixel-ratio: 1.5),');
+})(jQuery, window, '-device-pixel-ratio: 1.5),');
 
