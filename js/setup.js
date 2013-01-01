@@ -56,3 +56,8 @@ $(function() {
 $(function() {
   $("img[data-src]").hidpi();
 });
+
+/* Smartquotes - typographic punctuation */
+$(function() {
+  $("body").smartquotes();
+});
