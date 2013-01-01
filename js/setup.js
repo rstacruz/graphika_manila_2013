@@ -42,8 +42,8 @@ $(function() {
     .filter(":not(.no-unorphan)")
     .unorphan();
 
-  $("p, li", ".location, .about")
-    .unorphan();
+  $("p, li", ".location, .about").unorphan();
+  $(".faq li strong").unorphan();
 });
 
 /* Mobile switch */
