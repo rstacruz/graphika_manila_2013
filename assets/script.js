@@ -303,7 +303,7 @@ $(function() {
 /* Mobile switch */
 $(function() {
   var isMobile = navigator.userAgent.match(/iPhone|iPad|iPod/);
-  $("html").addClass(isMobile ? "desktop" : "mobile");
+  $("html").addClass(isMobile ? "mobile" : "desktop");
 });
 
 /* Retina support */
