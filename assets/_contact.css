@@ -57,7 +57,8 @@
   font-weight: bold;
   color: #444;
 }
-.footer em {
+.footer em,
+.footer em a {
   color: #444;
 }
 .footer a {
@@ -72,5 +73,11 @@
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   filter: alpha(opacity=30);
   margin: 40px 0;
+}
+.footer .amp {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  margin: 0 2px;
 }
 
