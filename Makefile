@@ -33,11 +33,17 @@ assets/script.js: \
 
 	$(COMBINE)
 
-favicon.ico: favicon.png
-	convert $< -resize 16x16 $@
-
 cachebust:
 	perl -p -i -e "s/\?v=[0-9]+/?v=`echo $$RANDOM`/" index.html
+
+# ----------------------------------------------------------------------------
+
+favicon.ico: favicon.png
+	convert $< -resize 16x16 favicon.16.png
+	convert $< -resize 32x32 favicon.32.png
+	convert $< -resize 64x64 favicon.64.png
+	convert favicon.16.png favicon.32.png favicon.64.png $@
+	rm favicon.*.png
 
 # ----------------------------------------------------------------------------
 
