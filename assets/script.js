@@ -333,7 +333,7 @@ $("section.section").scrollagent(function(cid, pid) {
 });
 
 /* Jumping */
-$("#navigation a").anchorjump();
+$("[href^='#']").anchorjump();
 
 /* Unorphan */
 $(function() {
