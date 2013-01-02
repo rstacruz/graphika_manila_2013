@@ -733,6 +733,25 @@ a {
     background-size: 1167px 230px;
   }
 }
+.section.speakers .o-bed {
+  background-image: url("speakers-bed.jpg");
+  background-repeat: repeat-x;
+  background-position: center top;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 106px;
+  z-index: 0;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .section.speakers .o-bed {
+    background-image: url("speakers-bed@2x.jpg");
+    -webkit-background-size: 1031px 106px;
+    -moz-background-size: 1031px 106px;
+    background-size: 1031px 106px;
+  }
+}
 /* ----------------------------------------------------------------------------
  * Speakers list
  */
@@ -755,6 +774,13 @@ a {
     padding-top: 220px;
     padding-bottom: 120px;
   }
+  .speakers-list .speaker {
+    z-index: 2;
+  }
+  .speakers-list .speaker .front,
+  .speakers-list .speaker .back {
+    z-index: 3;
+  }
   .speakers-list .speaker.left {
     float: left;
     clear: both;
@@ -769,7 +795,7 @@ a {
   .speakers-list .speaker.left {
     margin-top: -50px;
   }
-  .speakers-list .o-hook {
+  .speakers-list .o-line {
     display: block;
     width: 4px;
     margin-left: -2px;
@@ -778,39 +804,61 @@ a {
     position: absolute;
     left: 50%;
     top: 42px;
-    bottom: 0;
-    background: #fdefe1;
+    bottom: 90px;
+    background: #f2d0a0;
+    z-index: 1;
   }
+  .speakers-list .o-anchor {
+    display: block;
+    width: 23px;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    bottom: 66px;
+    background-image: url("speakers-anchor.png");
+    margin-left: -12px;
+  }
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
+      background-image: url("speakers-anchor@2x.png");
+      -webkit-background-size: 23px 25px;
+      -moz-background-size: 23px 25px;
+      background-size: 23px 25px;
+    }
+}
   .speakers-list .speaker:after {
     content: '';
     display: block;
-    height: 4px;
-    width: 50px;
+    width: 92px;
+    height: 35px;
     position: absolute;
     bottom: 80px;
     z-index: 0;
-    opacity: 0.5;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-    filter: alpha(opacity=50);
   }
   .speakers-list .speaker.left:after {
-    right: -20px;
-    background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(253,239,225,0)), color-stop(1, #fdefe1));
-    background: -webkit-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%);
-    background: -moz-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%);
-    background: -o-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%);
-    background: -ms-linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%);
-    background: linear-gradient(left, rgba(253,239,225,0) 0%, #fdefe1 100%);
+    right: -22px;
+    background-image: url("speakers-through-left.png");
   }
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
+      background-image: url("speakers-through-left@2x.png");
+      -webkit-background-size: 92px 35px;
+      -moz-background-size: 92px 35px;
+      background-size: 92px 35px;
+    }
+}
   .speakers-list .speaker.right:after {
-    left: -20px;
-    background: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(253,239,225,0)), color-stop(1, #fdefe1));
-    background: -webkit-linear-gradient(right, rgba(253,239,225,0) 0%, #fdefe1 100%);
-    background: -moz-linear-gradient(right, rgba(253,239,225,0) 0%, #fdefe1 100%);
-    background: -o-linear-gradient(right, rgba(253,239,225,0) 0%, #fdefe1 100%);
-    background: -ms-linear-gradient(right, rgba(253,239,225,0) 0%, #fdefe1 100%);
-    background: linear-gradient(right, rgba(253,239,225,0) 0%, #fdefe1 100%);
+    left: -22px;
+    background-image: url("speakers-through-right.png");
   }
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
+      background-image: url("speakers-through-right@2x.png");
+      -webkit-background-size: 92px 35px;
+      -moz-background-size: 92px 35px;
+      background-size: 92px 35px;
+    }
+}
 }
 @media (max-width: 980px) {
   .speakers-list {

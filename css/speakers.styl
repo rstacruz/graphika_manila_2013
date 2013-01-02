@@ -61,6 +61,17 @@
 
     z-index: 0
 
+  .o-bed
+    image: 'speakers-bed.jpg' 1031px 106px
+    background-repeat: repeat-x
+    background-position: center top
+
+    absolute: left 0 bottom 0
+    width: 100%
+    height: 106px
+
+    z-index: 0
+
 /* ----------------------------------------------------------------------------
  * Speakers list
  */
@@ -80,6 +91,12 @@
       padding-top: 220px
       padding-bottom: 120px
 
+    .speaker
+      z-index: 2
+    .speaker .front,
+    .speaker .back
+      z-index: 3
+
     .speaker.left
       float: left
       clear: both
@@ -93,7 +110,7 @@
     .speaker.left
       margin-top: -50px
 
-    .o-hook
+    .o-line
       display: block
 
       width: 4px
@@ -101,30 +118,40 @@
       border-radius: 4px
 
       absolute: left 50% top 42px
-      bottom: 0
+      bottom: 90px
 
-      background: cream
+      background: lighten(ochre, 50%)
+      z-index: 1
+
+    .o-anchor
+      display: block
+
+      width: 23px
+      height: 25px
+
+      absolute: left 50% bottom 66px
+      image: 'speakers-anchor.png' 23px 25px
+
+      margin-left: -12px
 
     .speaker:after
       content: ''
       display: block
 
-      height: 4px
-      width: 50px
+      width: 92px
+      height: 35px
 
       position: absolute
       bottom: 80px
       z-index: 0
 
-      opacity: 0.5
-
     .speaker.left:after
-      right: -20px
-      background: linear-gradient(left, rgba(cream, 0), cream)
+      right: -22px
+      image: 'speakers-through-left.png' 92px 35px
 
     .speaker.right:after
-      left: -20px
-      background: linear-gradient(right, rgba(cream, 0), cream)
+      left: -22px
+      image: 'speakers-through-right.png' 92px 35px
 
 
   // Mobile
