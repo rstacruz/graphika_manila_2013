@@ -75,19 +75,22 @@
   // GM logo
   a.home
     background-color: scarlet
-    image: 'logo-small.png' 42px 20px
-    background-position: center center
-    background-repeat: no-repeat
 
     color: white
     overflow: hidden
 
     padding: 0
     text-align: center
-    transition: width 300ms ease, padding 300ms ease
+    transition: width 300ms ease, padding 300ms ease, background-color 200ms linear
 
   a.home:hover
-    background: #444
+    background-color: #444
+
+  a.home,
+  a.home:hover
+    image: 'logo-small.png' 42px 20px
+    background-position: center center
+    background-repeat: no-repeat
 
   // Hiding logo
   & a.home

@@ -87,29 +87,33 @@
 }
 .navigation a.home {
   background-color: #ec553f;
-  background-image: url("logo-small.png");
-  background-position: center center;
-  background-repeat: no-repeat;
   color: #fff;
   overflow: hidden;
   padding: 0;
   text-align: center;
-  -webkit-transition: width 300ms ease, padding 300ms ease;
-  -moz-transition: width 300ms ease, padding 300ms ease;
-  -o-transition: width 300ms ease, padding 300ms ease;
-  -ms-transition: width 300ms ease, padding 300ms ease;
-  transition: width 300ms ease, padding 300ms ease;
+  -webkit-transition: width 300ms ease, padding 300ms ease, background-color 200ms linear;
+  -moz-transition: width 300ms ease, padding 300ms ease, background-color 200ms linear;
+  -o-transition: width 300ms ease, padding 300ms ease, background-color 200ms linear;
+  -ms-transition: width 300ms ease, padding 300ms ease, background-color 200ms linear;
+  transition: width 300ms ease, padding 300ms ease, background-color 200ms linear;
+}
+.navigation a.home:hover {
+  background-color: #444;
+}
+.navigation a.home,
+.navigation a.home:hover {
+  background-image: url("logo-small.png");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  .navigation a.home {
+  .navigation a.home,
+  .navigation a.home:hover {
     background-image: url("logo-small@2x.png");
     -webkit-background-size: 42px 20px;
     -moz-background-size: 42px 20px;
     background-size: 42px 20px;
   }
-}
-.navigation a.home:hover {
-  background: #444;
 }
 .navigation a.home {
   width: 0;
