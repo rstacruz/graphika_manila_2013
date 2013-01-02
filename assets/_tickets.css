@@ -269,8 +269,8 @@
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.4);
   line-height: 1.2;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 0 0 4px rgba(0,0,0,0.2);
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 0 0 4px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2);
 }
 .buy-box .buy-button strong,
 .buy-box .buy-button small {
@@ -289,19 +289,19 @@
   margin-top: 3px;
 }
 .buy-box .buy-button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f17f6f), color-stop(1, #e73117));
-  background: -webkit-linear-gradient(top, #f17f6f 0%, #e73117 100%);
-  background: -moz-linear-gradient(top, #f17f6f 0%, #e73117 100%);
-  background: -o-linear-gradient(top, #f17f6f 0%, #e73117 100%);
-  background: -ms-linear-gradient(top, #f17f6f 0%, #e73117 100%);
-  background: linear-gradient(top, #f17f6f 0%, #e73117 100%);
-  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 0 0 4px rgba(0,0,0,0.2), inset 0 2px rgba(255,255,255,0.2);
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 0 0 4px rgba(0,0,0,0.2), inset 0 2px rgba(255,255,255,0.2);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f17f6f), color-stop(1, #ec553f));
+  background: -webkit-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: -moz-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: -o-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: -ms-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 0 2px rgba(255,255,255,0.2);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 0 2px rgba(255,255,255,0.2);
 }
 .buy-box .buy-button:active {
   background: #eb4931;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 0 0 4px rgba(0,0,0,0.2), inset 3px 3px 3px rgba(0,0,0,0.2);
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 0 0 4px rgba(0,0,0,0.2), inset 3px 3px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 3px 3px 3px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 3px 3px 3px rgba(0,0,0,0.2);
 }
 /* ----------------------------------------------------------------------------
  * Payment
