@@ -288,10 +288,65 @@
 /* ----------------------------------------------------------------------------
  * Payment
  */
+.payment-methods .in {
+  padding: 20px;
+}
 @media (min-width: 600px) {
   .payment-methods .in {
+    padding: 40px 0;
     width: 980px;
     margin: 0 auto;
+    zoom: 1;
   }
+  .payment-methods .in:before,
+  .payment-methods .in:after {
+    content: "";
+    display: table;
+  }
+  .payment-methods .in:after {
+    clear: both;
+  }
+}
+.payment-methods .content {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+.payment-methods {
+  font-size: 0.9em;
+}
+.establishments h3 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.establishments h3 strong {
+  color: #a1ae61;
+  margin-left: 10px;
+}
+.establishments article {
+  zoom: 1;
+  margin-bottom: 20px;
+}
+.establishments article:before,
+.establishments article:after {
+  content: "";
+  display: table;
+}
+.establishments article:after {
+  clear: both;
+}
+.establishments article img {
+  float: left;
+  margin: 8px 15px 0 0;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  padding: 5px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.05);
 }
 

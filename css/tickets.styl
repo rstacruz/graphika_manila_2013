@@ -273,7 +273,43 @@
  */
 
 .payment-methods
+  .in
+    padding: 20px
+
   @media (min-width: 600px)
     .in
+      padding: 40px 0
       width: 980px
       margin: 0 auto
+      clearfix()
+
+  .content
+    width: 50%
+    box-sizing: border-box
+    float: left
+
+  &
+    font-size: 0.9em
+
+.establishments
+  h3
+    font-weight: bold
+    font-size: 1.1em
+
+  h3 strong
+    color: darken(lime, 20%)
+    margin-left: 10px
+
+  article
+    clearfix()
+    margin-bottom: 20px
+    img
+      float: left
+      margin: 8px 15px 0 0
+      height: 40px
+      width: 40px
+
+      background: white
+      padding: 5px
+      border-radius: 3px
+      box-shadow: 0 1px 1px rgba(black, 0.2), 0 0 0 4px rgba(black, 0.05)
