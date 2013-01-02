@@ -43,8 +43,9 @@ favicon.ico: favicon.png
 	$(check_imagemagick)
 	$(convert) $< -resize 16x16 favicon.16.png
 	$(convert) $< -resize 32x32 favicon.32.png
+	$(convert) $< -resize 48x48 favicon.48.png
 	$(convert) $< -resize 64x64 favicon.64.png
-	$(convert) favicon.16.png favicon.32.png favicon.64.png $@
+	$(convert) favicon.16.png favicon.32.png favicon.48.png favicon.64.png $@
 	rm favicon.*.png
 
 # ----------------------------------------------------------------------------
