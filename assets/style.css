@@ -1030,7 +1030,7 @@ a {
  * Tickets
  */
 .section.tickets {
-  background: #e9eee0 url("tickets-backdrop.jpg") center 0;
+  background: #e9eee0 url("tickets-backdrop.jpg") center 0 repeat-x;
   text-shadow: 0 1px 0 rgba(255,255,255,0.2);
 /* Road ornament at the bottom */
 }
