@@ -6,15 +6,32 @@
  */
 
 .section.venue
-
+  &
+    padding-top: 90px
   @media (min-width: 600px)
-    padding-top: 75px
     padding-bottom: 150px
 
-  // background: url(location-hall.jpg)
-  // background-size: 100% auto
-  // background-position: center center
-  background: #d2b69e
+  background: cadmium url(venue-bg.jpg)
+
+  // Line
+  &:before
+    content: ''
+    display: block
+
+    absolute: left 0 top 0
+    z-index: 2
+
+    width: 100%
+    height: 0
+    border-top: dotted 3px cream
+
+  // Ornament
+  .o-beach
+    absolute: left 0 top 0
+    width: 100%
+    height: 455px
+    background: url(venue-beach.jpg) center 0 repeat-x
+    box-shadow: inset 0 8px 5px -5px rgba(black, 0.1)
 
   .image
     height: auto
@@ -22,6 +39,10 @@
   .header
     color: white
     text-shadow: 0 1px 1px rgba(black, 0.2)
+
+  // Align
+  .figure
+    margin-top: -20px
 
   a.highlight
     color: #444
@@ -48,6 +69,10 @@
 
   .body
     text-shadow: 0 1px 1px rgba(white, 0.4)
+
+  .body, .image
+    position: relative
+    z-index: 1
 
 /* List of benefits of the new location */
 .location-benefits

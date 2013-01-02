@@ -1466,13 +1466,36 @@ a {
  * Venue
  */
 .section.venue {
-  background: #d2b69e;
+  background: #eac859 url("venue-bg.jpg");
+}
+.section.venue {
+  padding-top: 90px;
 }
 @media (min-width: 600px) {
   .section.venue {
-    padding-top: 75px;
     padding-bottom: 150px;
   }
+}
+.section.venue:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 0;
+  border-top: dotted 3px #fdefe1;
+}
+.section.venue .o-beach {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 455px;
+  background: url("venue-beach.jpg") center 0 repeat-x;
+  -webkit-box-shadow: inset 0 8px 5px -5px rgba(0,0,0,0.1);
+  box-shadow: inset 0 8px 5px -5px rgba(0,0,0,0.1);
 }
 .section.venue .image {
   height: auto;
@@ -1480,6 +1503,9 @@ a {
 .section.venue .header {
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.section.venue .figure {
+  margin-top: -20px;
 }
 .section.venue a.highlight {
   color: #444;
@@ -1514,6 +1540,11 @@ a {
 }
 .section.venue .body {
   text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+}
+.section.venue .body,
+.section.venue .image {
+  position: relative;
+  z-index: 1;
 }
 /* List of benefits of the new location */
 .location-benefits li {
