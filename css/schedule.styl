@@ -6,6 +6,31 @@
  */
 
 .section.schedule
+  offset = 75px
+
+  &
+    background-color: #8ca630
+    padding-top: offset
+
+  .o-bg2
+    absolute: left 0 top 0
+    width: 100%
+    height: offset
+    background: white url(schedule-bg2.jpg)
+
+  .o-backdrop
+    absolute: left 0 top offset
+    width: 100%
+    height: 292px
+
+    background: white url(schedule-backdrop.jpg) center 0 repeat-x
+
+  .header, .event-info
+    position: relative
+    z-index: 1
+
+  .header h2
+    color: darken(ecru, 50%)
 
   .header .pre
     color: turquoise
@@ -43,6 +68,7 @@
     font-size: 10pt
 
     color: darken(ecru, 50%)
+    text-shadow: 0 1px 1px rgba(white, 0.2)
 
   /* Value */
   dd
@@ -60,7 +86,8 @@
     color: turquoise
     
   .starts dd
-    color: lime
+    color: white
+    text-shadow: 0 1px 1px rgba(black, 0.3)
 
   .ends dd
     color: scarlet

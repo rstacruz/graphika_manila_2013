@@ -5,6 +5,8 @@
  * Call to action
  */
 
+btn-size = 150px
+
 .section.cta
   background: #e1efe1 url(cta-backdrop.jpg) center bottom repeat-x
   box-shadow: inset 0 -4px 0 ochre
@@ -18,8 +20,6 @@
   overflow: visible
 
   z-index: 2
-
-  btn-size = 150px
 
   .in
     max-width: 960px
@@ -46,7 +46,8 @@
 
     margin-bottom: (-1 * btn-size / 2)
 
-  .btn
+.btn
+  &
     display: block
     margin: 0 auto
 
@@ -70,11 +71,11 @@
 
     transition: transform 100ms ease
 
-  .btn:hover
+  &:hover
     transform: scale(1.1)
     background: darken(scarlet, 10%)
 
-  .btn span
+  & span
     display: inline-block
     width: 110px
     line-height: 18pt
@@ -98,3 +99,22 @@
       color: lighten(scarlet, 70%)
       margin-top: 5px
 
+/* Dat gap */
+.gap
+  margin: (-1 * btn-size / 2) 0
+
+  position: relative
+  z-index: 10
+
+  &:after
+    content: ''
+    display: block
+    width: 100%
+    height: 4px
+    background: scarlet
+
+    position: relative
+    top: (-1 * btn-size / 2)
+
+  .btn
+    z-index: 1

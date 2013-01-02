@@ -1,6 +1,34 @@
 /* ----------------------------------------------------------------------------
  * Schedule
  */
+.section.schedule {
+  background-color: #8ca630;
+  padding-top: 75px;
+}
+.section.schedule .o-bg2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: #fff url("schedule-bg2.jpg");
+}
+.section.schedule .o-backdrop {
+  position: absolute;
+  left: 0;
+  top: 75px;
+  width: 100%;
+  height: 292px;
+  background: #fff url("schedule-backdrop.jpg") center 0 repeat-x;
+}
+.section.schedule .header,
+.section.schedule .event-info {
+  position: relative;
+  z-index: 1;
+}
+.section.schedule .header h2 {
+  color: #7e593a;
+}
 .section.schedule .header .pre {
   color: #1e908c;
 }
@@ -35,6 +63,7 @@
   letter-spacing: 1px;
   font-size: 10pt;
   color: #7e593a;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.2);
 }
 .event-info dd {
   font-family: adelle, sans-serif;
@@ -51,7 +80,8 @@
   color: #1e908c;
 }
 .event-info .starts dd {
-  color: #bcc58e;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 .event-info .ends dd {
   color: #ec553f;
