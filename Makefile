@@ -37,12 +37,14 @@ cachebust:
 	perl -p -i -e "s/\?v=[0-9]+/?v=`echo $$RANDOM`/" index.html
 
 # ----------------------------------------------------------------------------
+#  Favicon building
 
 favicon.ico: favicon.png
-	convert $< -resize 16x16 favicon.16.png
-	convert $< -resize 32x32 favicon.32.png
-	convert $< -resize 64x64 favicon.64.png
-	convert favicon.16.png favicon.32.png favicon.64.png $@
+	$(check_imagemagick)
+	$(convert) $< -resize 16x16 favicon.16.png
+	$(convert) $< -resize 32x32 favicon.32.png
+	$(convert) $< -resize 64x64 favicon.64.png
+	$(convert) favicon.16.png favicon.32.png favicon.64.png $@
 	rm favicon.*.png
 
 # ----------------------------------------------------------------------------
