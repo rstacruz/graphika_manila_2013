@@ -2,6 +2,7 @@ all: \
 	assets/style.css \
 	assets/script.js \
 	favicon.ico \
+	apple_touch_icons \
 	$(patsubst %.jpg.png, %.jpg, $(patsubst images/%, assets/%, $(shell ls images/*)))
 
 assets/style.css: \
@@ -69,6 +70,27 @@ assets/%.jpg: images/%.jpg.png
 	$(check_imagemagick)
 	$(convert) $< -quality 90 -strip -interlace plane $@
 
+# ----------------------------------------------------------------------------
+# Apple touch icons
+
+apple_touch_icons: \
+	apple-touch-icon-144x144-precomposed.png \
+	apple-touch-icon-114x114-precomposed.png \
+	apple-touch-icon-72x72-precomposed.png \
+	apple-touch-icon-57x57-precomposed.png
+
+apple-touch-icon-144x144-precomposed.png: apple-touch-icon-precomposed.png
+	$(check_imagemagick)
+	$(convert) $< -resize 144x144 $@
+apple-touch-icon-114x114-precomposed.png: apple-touch-icon-precomposed.png
+	$(check_imagemagick)
+	$(convert) $< -resize 114x114 $@
+apple-touch-icon-72x72-precomposed.png: apple-touch-icon-precomposed.png
+	$(check_imagemagick)
+	$(convert) $< -resize 72x72 $@
+apple-touch-icon-57x57-precomposed.png: apple-touch-icon-precomposed.png
+	$(check_imagemagick)
+	$(convert) $< -resize 57x57 $@
 
 # ----------------------------------------------------------------------------
 
