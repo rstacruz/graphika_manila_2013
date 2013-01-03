@@ -822,7 +822,7 @@ a {
     clear: both;
   }
   .speakers-list .speaker.right {
-    margin-top: 80px;
+    margin-top: 30px;
     float: right;
   }
   .speakers-list .speaker:first-child {
