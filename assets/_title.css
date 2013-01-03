@@ -100,28 +100,28 @@
     }
 }
 }
-.section.title.moving .o-road {
+.desktop .section.title.moving .o-road {
   -webkit-animation: drift-1000px 90s linear infinite;
   -moz-animation: drift-1000px 90s linear infinite;
   -o-animation: drift-1000px 90s linear infinite;
   -ms-animation: drift-1000px 90s linear infinite;
   animation: drift-1000px 90s linear infinite;
 }
-.section.title.moving .o-trees {
+.desktop .section.title.moving .o-trees {
   -webkit-animation: drift-1306px 240s linear infinite;
   -moz-animation: drift-1306px 240s linear infinite;
   -o-animation: drift-1306px 240s linear infinite;
   -ms-animation: drift-1306px 240s linear infinite;
   animation: drift-1306px 240s linear infinite;
 }
-.section.title.moving .o-front1 {
+.desktop .section.title.moving .o-front1 {
   -webkit-animation: drift-1180px 90s linear infinite;
   -moz-animation: drift-1180px 90s linear infinite;
   -o-animation: drift-1180px 90s linear infinite;
   -ms-animation: drift-1180px 90s linear infinite;
   animation: drift-1180px 90s linear infinite;
 }
-.section.title.moving .o-front2 {
+.desktop .section.title.moving .o-front2 {
   -webkit-animation: drift-1240px 45s linear infinite;
   -moz-animation: drift-1240px 45s linear infinite;
   -o-animation: drift-1240px 45s linear infinite;
