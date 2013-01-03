@@ -287,23 +287,7 @@
 .payment-methods
   .in
     padding: 20px
-
-  .content
-    padding: 20px 0
-
-  // Desktop
-  @media (min-width: 600px)
-    .in
-      padding: 40px 0
-      width: 1000px
-      margin: 0 auto
-      clearfix()
-
-    .content
-      width: 50%
-      box-sizing: border-box
-      float: left
-      padding: 0 50px 0 20px
+    margin: 0 auto
 
   &
     font-size: 0.9em
@@ -322,37 +306,22 @@
     font-size: 1.4em
     font-family: adelle-font
     font-weight: 900
-    margin-bottom: 20px
     color: scarlet
-
-/* Direct deposits */
-.deposit
-  ul
     margin: 20px 0
+    text-align: center
 
-    background: rgba(white, 0.5)
-    box-shadow: 0 1px 1px rgba(black, 0.2)
-    font-weight: bold
-
-    box-sizing: border-box
-    padding: 10px
-
-   font-size: 1.1em
-
-  ul li
-    padding: 4px 0
-    border-bottom: #ddd
-
-  ul li:last-child
-    border: 0
-
-  ul em
-    color: darken(lime, 30%)
-    font-weight: normal
-    font-size: 0.9em
+  // Desktop
+  @media (min-width: 600px)
+    .in
+      max-width: 900px
+      clearfix()
+    h2
+      font-size: 1.6em
 
 /* Establishments where you can buy */
-.establishments, .schools
+.establishments
+  clearfix()
+
   h3 strong
     color: darken(lime, 20%)
     margin-left: 10px
@@ -360,6 +329,7 @@
   article
     clearfix()
     margin-bottom: 20px
+    box-sizing: border-box
 
   article img
     float: left
@@ -375,3 +345,8 @@
   article p
     margin: 0
 
+  @media (min-width: 600px)
+    article
+      float: left
+      padding-right: 50px
+      width: 50%

@@ -308,33 +308,7 @@
  */
 .payment-methods .in {
   padding: 20px;
-}
-.payment-methods .content {
-  padding: 20px 0;
-}
-@media (min-width: 600px) {
-  .payment-methods .in {
-    padding: 40px 0;
-    width: 1000px;
-    margin: 0 auto;
-    zoom: 1;
-  }
-  .payment-methods .in:before,
-  .payment-methods .in:after {
-    content: "";
-    display: table;
-  }
-  .payment-methods .in:after {
-    clear: both;
-  }
-  .payment-methods .content {
-    width: 50%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    padding: 0 50px 0 20px;
-  }
+  margin: 0 auto;
 }
 .payment-methods {
   font-size: 0.9em;
@@ -355,60 +329,59 @@
   font-size: 1.4em;
   font-family: adelle, sans-serif;
   font-weight: 900;
-  margin-bottom: 20px;
   color: #ec553f;
-}
-/* Direct deposits */
-.deposit {
-  font-size: 1.1em;
-}
-.deposit ul {
   margin: 20px 0;
-  background: rgba(255,255,255,0.5);
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-  font-weight: bold;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px;
+  text-align: center;
 }
-.deposit ul li {
-  padding: 4px 0;
-  border-bottom: #ddd;
-}
-.deposit ul li:last-child {
-  border: 0;
-}
-.deposit ul em {
-  color: #909d50;
-  font-weight: normal;
-  font-size: 0.9em;
+@media (min-width: 600px) {
+  .payment-methods .in {
+    max-width: 900px;
+    zoom: 1;
+  }
+  .payment-methods .in:before,
+  .payment-methods .in:after {
+    content: "";
+    display: table;
+  }
+  .payment-methods .in:after {
+    clear: both;
+  }
+  .payment-methods h2 {
+    font-size: 1.6em;
+  }
 }
 /* Establishments where you can buy */
-.establishments h3 strong,
-.schools h3 strong {
-  color: #a1ae61;
-  margin-left: 10px;
-}
-.establishments article,
-.schools article {
+.establishments {
   zoom: 1;
-  margin-bottom: 20px;
 }
-.establishments article:before,
-.schools article:before,
-.establishments article:after,
-.schools article:after {
+.establishments:before,
+.establishments:after {
   content: "";
   display: table;
 }
-.establishments article:after,
-.schools article:after {
+.establishments:after {
   clear: both;
 }
-.establishments article img,
-.schools article img {
+.establishments h3 strong {
+  color: #a1ae61;
+  margin-left: 10px;
+}
+.establishments article {
+  zoom: 1;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.establishments article:before,
+.establishments article:after {
+  content: "";
+  display: table;
+}
+.establishments article:after {
+  clear: both;
+}
+.establishments article img {
   float: left;
   margin: 8px 15px 0 0;
   height: 40px;
@@ -420,8 +393,14 @@
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.05);
   box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.05);
 }
-.establishments article p,
-.schools article p {
+.establishments article p {
   margin: 0;
+}
+@media (min-width: 600px) {
+  .establishments article {
+    float: left;
+    padding-right: 50px;
+    width: 50%;
+  }
 }
 
