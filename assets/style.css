@@ -711,6 +711,75 @@ a {
     background-size: 235px 11px;
   }
 }
+/* Download poster */
+.poster {
+  background: #fffcf9;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.2);
+  font-size: 8pt;
+  color: #444;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.2);
+}
+.poster p {
+  color: #888;
+  padding: 12px 15px;
+}
+.poster strong {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: #444;
+}
+.poster .button {
+  font-weight: bold;
+  padding: 2px 7px;
+  margin: 5px 0;
+  display: inline-block;
+  background: #ec553f;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 0px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 0px rgba(0,0,0,0.2);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.poster .button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f17f6f), color-stop(1, #ec553f));
+  background: -webkit-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: -moz-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: -o-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: -ms-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 0px rgba(0,0,0,0.2), inset 0 2px rgba(255,255,255,0.2);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 0px rgba(0,0,0,0.2), inset 0 2px rgba(255,255,255,0.2);
+}
+.poster .button:active {
+  background: #eb4931;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 0px rgba(0,0,0,0.2), inset 3px 3px 3px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 0px rgba(0,0,0,0.2), inset 3px 3px 3px rgba(0,0,0,0.2);
+}
+.poster p.extra {
+  -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.05), inset 0 4px 3px -3px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.05), inset 0 4px 3px -3px rgba(0,0,0,0.1);
+  background: #eee;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.poster p.extra a {
+  color: #666;
+}
+.poster p.extra a:hover {
+  color: #f28879;
+}
+.section.title .poster {
+  width: 170px;
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  z-index: 50;
+}
 
 /* ----------------------------------------------------------------------------
  * Speakers section
@@ -1361,17 +1430,32 @@ a {
 }
 .buy-box .buy-button {
   display: inline-block;
-  padding: 15px 10px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  margin: 0 10px;
-  min-width: 250px;
   background: #ec553f;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-  line-height: 1.2;
   -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2);
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 15px 10px;
+  margin: 0 10px;
+  min-width: 250px;
+  line-height: 1.2;
+}
+.buy-box .buy-button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f17f6f), color-stop(1, #ec553f));
+  background: -webkit-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: -moz-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: -o-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: -ms-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  background: linear-gradient(top, #f17f6f 0%, #ec553f 100%);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 0 2px rgba(255,255,255,0.2);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 0 2px rgba(255,255,255,0.2);
+}
+.buy-box .buy-button:active {
+  background: #eb4931;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 3px 3px 3px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 3px 3px 3px rgba(0,0,0,0.2);
 }
 .buy-box .buy-button strong,
 .buy-box .buy-button small {
@@ -1391,21 +1475,6 @@ a {
   font-family: adelle, sans-serif;
   font-size: 10pt;
   margin-bottom: 3px;
-}
-.buy-box .buy-button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f17f6f), color-stop(1, #ec553f));
-  background: -webkit-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
-  background: -moz-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
-  background: -o-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
-  background: -ms-linear-gradient(top, #f17f6f 0%, #ec553f 100%);
-  background: linear-gradient(top, #f17f6f 0%, #ec553f 100%);
-  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 0 2px rgba(255,255,255,0.2);
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 0 2px rgba(255,255,255,0.2);
-}
-.buy-box .buy-button:active {
-  background: #eb4931;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 3px 3px 3px rgba(0,0,0,0.2);
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), 0 0 0 4px rgba(0,0,0,0.2), inset 3px 3px 3px rgba(0,0,0,0.2);
 }
 /* ----------------------------------------------------------------------------
  * Payment
