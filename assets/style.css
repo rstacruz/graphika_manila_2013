@@ -2027,6 +2027,7 @@ a {
  */
 .section.about {
   background: #93c8be;
+  background: #429143 url("about-test.jpg") center 0 repeat-x;
 }
 @media (min-width: 600px) {
   .section.about {
