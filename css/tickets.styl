@@ -243,10 +243,24 @@
   text-align: center
   margin: 20px 0
 
+  .or
+    display: inline-block
+    margin: 0 10px
+
+    font-size: 16pt
+
+  .buy-button, .or
+    vertical-align: middle
+
   .buy-button
     display: inline-block
-    padding: 15px 30px
+
+    padding: 15px 10px
     border-radius: 2px
+
+    margin: 0 10px
+
+    min-width: 250px
 
     background: scarlet
     color: white
@@ -259,17 +273,20 @@
     strong, small
       display: block
 
+    .amp
+      text-transform: none
+
     strong
       font-weight: 700
       font-family: proxima-font
-      font-size: 16pt
+      font-size: 13pt
       text-transform: uppercase
 
     small
       color: lighten(scarlet, 80%)
       font-family: adelle-font
       font-size: 10pt
-      margin-top: 3px
+      margin-bottom: 3px
 
     &:hover
       background: linear-gradient(top, lighten(scarlet, 25%), scarlet)

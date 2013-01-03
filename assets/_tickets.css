@@ -260,11 +260,22 @@
   text-align: center;
   margin: 20px 0;
 }
+.buy-box .or {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 16pt;
+}
+.buy-box .buy-button,
+.buy-box .or {
+  vertical-align: middle;
+}
 .buy-box .buy-button {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 15px 10px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  margin: 0 10px;
+  min-width: 250px;
   background: #ec553f;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.4);
@@ -276,17 +287,20 @@
 .buy-box .buy-button small {
   display: block;
 }
+.buy-box .buy-button .amp {
+  text-transform: none;
+}
 .buy-box .buy-button strong {
   font-weight: 700;
   font-family: proxima-nova-alt, proxima-nova, proxima nova, sans-serif;
-  font-size: 16pt;
+  font-size: 13pt;
   text-transform: uppercase;
 }
 .buy-box .buy-button small {
   color: #fbddd9;
   font-family: adelle, sans-serif;
   font-size: 10pt;
-  margin-top: 3px;
+  margin-bottom: 3px;
 }
 .buy-box .buy-button:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f17f6f), color-stop(1, #ec553f));
