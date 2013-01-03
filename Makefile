@@ -80,6 +80,11 @@ assets/%.jpg: images/%.jpg.png
 	$(check_imagemagick)
 	$(convert) $< -quality 90 -strip -interlace plane $@
 
+# Regular JPGs
+assets/%.jpg: images/%.jpg
+	$(check_imagemagick)
+	$(convert) $< -strip $@
+
 # ----------------------------------------------------------------------------
 # Apple touch icons
 
