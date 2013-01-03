@@ -585,101 +585,124 @@ a {
 .section.title {
   background-color: #fdefe1;
   background-position: center 0;
-  background-image: url("title-sky.jpg");
-  height: 897px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+@media (max-width: 600px) {
   .section.title {
-    background-image: url("title-sky@2x.jpg");
-    -webkit-background-size: 1378px 722px;
-    -moz-background-size: 1378px 722px;
-    background-size: 1378px 722px;
+    background: #fdefe1 url("title-sky.jpg") center bottom repeat-x;
+    -webkit-background-size: 689px 361px;
+    -moz-background-size: 689px 361px;
+    background-size: 689px 361px;
   }
 }
-.section.title .o-road {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 179px;
-  background-image: url("title-road.jpg");
-  background-color: #92b562;
-  -webkit-animation: drift-1000px 90s linear infinite;
-  -moz-animation: drift-1000px 90s linear infinite;
-  -o-animation: drift-1000px 90s linear infinite;
-  -ms-animation: drift-1000px 90s linear infinite;
-  animation: drift-1000px 90s linear infinite;
-}
+@media (min-width: 600px) {
+  .section.title {
+    height: 897px;
+  }
+  .section.title .o-sky {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 722px;
+    background-image: url("title-sky.jpg");
+    background-position: center 0;
+    opacity: 0.9;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    filter: alpha(opacity=90);
+  }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
+      background-image: url("title-sky@2x.jpg");
+      -webkit-background-size: 1378px 722px;
+      -moz-background-size: 1378px 722px;
+      background-size: 1378px 722px;
+    }
+}
   .section.title .o-road {
-    background-image: url("title-road@2x.jpg");
-    -webkit-background-size: 1000px 179px;
-    -moz-background-size: 1000px 179px;
-    background-size: 1000px 179px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 179px;
+    background-image: url("title-road.jpg");
+    background-color: #92b562;
+    -webkit-animation: drift-1000px 90s linear infinite;
+    -moz-animation: drift-1000px 90s linear infinite;
+    -o-animation: drift-1000px 90s linear infinite;
+    -ms-animation: drift-1000px 90s linear infinite;
+    animation: drift-1000px 90s linear infinite;
   }
-}
-.section.title .o-trees {
-  position: absolute;
-  left: 0;
-  bottom: 179px;
-  width: 100%;
-  height: 176px;
-  background-image: url("title-trees.png");
-  -webkit-animation: drift-1306px 240s linear infinite;
-  -moz-animation: drift-1306px 240s linear infinite;
-  -o-animation: drift-1306px 240s linear infinite;
-  -ms-animation: drift-1306px 240s linear infinite;
-  animation: drift-1306px 240s linear infinite;
-}
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
+      background-image: url("title-road@2x.jpg");
+      -webkit-background-size: 1000px 179px;
+      -moz-background-size: 1000px 179px;
+      background-size: 1000px 179px;
+    }
+}
   .section.title .o-trees {
-    background-image: url("title-trees@2x.png");
-    -webkit-background-size: 1306px 176px;
-    -moz-background-size: 1306px 176px;
-    background-size: 1306px 176px;
+    position: absolute;
+    left: 0;
+    bottom: 179px;
+    width: 100%;
+    height: 176px;
+    background-image: url("title-trees.png");
+    -webkit-animation: drift-1306px 240s linear infinite;
+    -moz-animation: drift-1306px 240s linear infinite;
+    -o-animation: drift-1306px 240s linear infinite;
+    -ms-animation: drift-1306px 240s linear infinite;
+    animation: drift-1306px 240s linear infinite;
   }
-}
-.section.title .o-front1 {
-  position: absolute;
-  left: 0;
-  bottom: 70px;
-  width: 100%;
-  height: 148px;
-  background-image: url("title-front1.png");
-  -webkit-animation: drift-1180px 90s linear infinite;
-  -moz-animation: drift-1180px 90s linear infinite;
-  -o-animation: drift-1180px 90s linear infinite;
-  -ms-animation: drift-1180px 90s linear infinite;
-  animation: drift-1180px 90s linear infinite;
-}
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
+      background-image: url("title-trees@2x.png");
+      -webkit-background-size: 1306px 176px;
+      -moz-background-size: 1306px 176px;
+      background-size: 1306px 176px;
+    }
+}
   .section.title .o-front1 {
-    background-image: url("title-front1@2x.png");
-    -webkit-background-size: 1180px 148px;
-    -moz-background-size: 1180px 148px;
-    background-size: 1180px 148px;
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    width: 100%;
+    height: 148px;
+    background-image: url("title-front1.png");
+    -webkit-animation: drift-1180px 90s linear infinite;
+    -moz-animation: drift-1180px 90s linear infinite;
+    -o-animation: drift-1180px 90s linear infinite;
+    -ms-animation: drift-1180px 90s linear infinite;
+    animation: drift-1180px 90s linear infinite;
   }
-}
-.section.title .o-front2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 163px;
-  background-image: url("title-front2.png");
-  -webkit-animation: drift-1240px 45s linear infinite;
-  -moz-animation: drift-1240px 45s linear infinite;
-  -o-animation: drift-1240px 45s linear infinite;
-  -ms-animation: drift-1240px 45s linear infinite;
-  animation: drift-1240px 45s linear infinite;
-}
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
+      background-image: url("title-front1@2x.png");
+      -webkit-background-size: 1180px 148px;
+      -moz-background-size: 1180px 148px;
+      background-size: 1180px 148px;
+    }
+}
   .section.title .o-front2 {
-    background-image: url("title-front2@2x.png");
-    -webkit-background-size: 1240px 163px;
-    -moz-background-size: 1240px 163px;
-    background-size: 1240px 163px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 163px;
+    background-image: url("title-front2.png");
+    -webkit-animation: drift-1240px 45s linear infinite;
+    -moz-animation: drift-1240px 45s linear infinite;
+    -o-animation: drift-1240px 45s linear infinite;
+    -ms-animation: drift-1240px 45s linear infinite;
+    animation: drift-1240px 45s linear infinite;
   }
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+ {
+      background-image: url("title-front2@2x.png");
+      -webkit-background-size: 1240px 163px;
+      -moz-background-size: 1240px 163px;
+      background-size: 1240px 163px;
+    }
+}
 }
 .section.title .logo {
   margin: 170px auto 40px auto;
@@ -718,43 +741,7 @@ a {
 .section.title .address.two {
   color: #008000;
 }
-@media (max-width: 1250px) {
-  .section.title .o-right {
-    right: -50px;
-  }
-  .section.title .o-left {
-    left: -50px;
-  }
-}
-@media (max-width: 1050px) {
-  .section.title .o-right {
-    right: -150px;
-  }
-  .section.title .o-left {
-    left: -250px;
-  }
-}
-@media (max-width: 800px) {
-  .section.title .o-right {
-    right: -450px;
-  }
-}
 @media (max-width: 600px) {
-  .section.title .o-left,
-  .section.title .o-right {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-  }
-  .section.title .o-left {
-    left: -1000px;
-  }
-  .section.title .o-right {
-    right: 0;
-    opacity: 0.1;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
-    filter: alpha(opacity=10);
-  }
   .section.title .logo {
     margin: 40px auto 20px auto;
     width: 90%;
@@ -765,12 +752,6 @@ a {
   }
   .section.title .info {
     margin: 20px auto 40px auto;
-  }
-  .section.title .o-road {
-    height: 11px;
-    -webkit-background-size: 235px 11px;
-    -moz-background-size: 235px 11px;
-    background-size: 235px 11px;
   }
 }
 /* Download poster */
@@ -835,13 +816,25 @@ a {
 .poster p.extra a:hover {
   color: #f28879;
 }
-.section.title .poster {
-  width: 170px;
-  position: absolute;
-  bottom: 40px;
-  right: 20px;
-  z-index: 50;
+/* Mobile: no poster link */
+@media (max-width: 600px) {
+  .section.title .poster {
+    display: none;
+  }
 }
+/* Desktop */
+@media (min-width: 600px) {
+  .section.title .poster {
+    width: 170px;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    z-index: 50;
+  }
+}
+/* ----------------------------------------------------------------------------
+ * Animation frames
+ */
 @-moz-keyframes drift-1000px {
   0% {
     background-position: 0 0;

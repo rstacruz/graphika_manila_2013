@@ -5,62 +5,56 @@
  * Title
  */
 
-@keyframes drift-1000px
-  0%
-    background-position: 0 0
-  100%
-    background-position: -1000px 0
-@keyframes drift-1240px
-  0%
-    background-position: 0 0
-  100%
-    background-position: -1240px 0
-@keyframes drift-1180px
-  0%
-    background-position: 0 0
-  100%
-    background-position: -1180px 0
-@keyframes drift-1306px
-  0%
-    background-position: 0 0
-  100%
-    background-position: -1306px 0
-
 .section.title
   &
     background-color: cream
     background-position: center 0
-    image: 'title-sky.jpg' 1378px 722px
-    height: 897px
 
-  .o-road
-    absolute: left 0 bottom 0
-    width: 100%
-    height: 179px
-    image: 'title-road.jpg' 1000px 179px
-    background-color: #92b562
-    animation: drift-1000px 90s linear infinite
+  @media (max-width: 600px)
+    background: cream url(title-sky.jpg) center bottom repeat-x
+    background-size: round(1378px * 0.5) round(722px * 0.5)
 
-  .o-trees
-    absolute: left 0 bottom 179px
-    width: 100%
-    height: 176px
-    image: 'title-trees.png' 1306px 176px
-    animation: drift-1306px 240s linear infinite
+  // Desktop
+  @media (min-width: 600px)
+    &
+      height: 897px
 
-  .o-front1
-    absolute: left 0 bottom 70px
-    width: 100%
-    height: 148px
-    image: 'title-front1.png' 1180px 148px
-    animation: drift-1180px 90s linear infinite
+    .o-sky
+      absolute: left 0 top 0
+      width: 100%
+      height: 722px
+      image: 'title-sky.jpg' 1378px 722px
+      background-position: center 0
+      opacity: 0.9
 
-  .o-front2
-    absolute: left 0 bottom 0
-    width: 100%
-    height: 163px
-    image: 'title-front2.png' 1240px 163px
-    animation: drift-1240px 45s linear infinite
+    .o-road
+      absolute: left 0 bottom 0
+      width: 100%
+      height: 179px
+      image: 'title-road.jpg' 1000px 179px
+      background-color: #92b562
+      animation: drift-1000px 90s linear infinite
+
+    .o-trees
+      absolute: left 0 bottom 179px
+      width: 100%
+      height: 176px
+      image: 'title-trees.png' 1306px 176px
+      animation: drift-1306px 240s linear infinite
+
+    .o-front1
+      absolute: left 0 bottom 70px
+      width: 100%
+      height: 148px
+      image: 'title-front1.png' 1180px 148px
+      animation: drift-1180px 90s linear infinite
+
+    .o-front2
+      absolute: left 0 bottom 0
+      width: 100%
+      height: 163px
+      image: 'title-front2.png' 1240px 163px
+      animation: drift-1240px 45s linear infinite
 
   // Logo image
   .logo
@@ -104,32 +98,7 @@
     color: green
 
   // Mobile
-  @media (max-width: 1250px)
-    .o-right
-      right: -50px
-    .o-left
-      left: -50px
-  @media (max-width: 1050px)
-    .o-right
-      right: -150px
-    .o-left
-      left: -250px
-  @media (max-width: 800px)
-    .o-right
-      right: -450px
-
   @media (max-width: 600px)
-    .o-left, .o-right
-      position: absolute
-      top: auto
-      bottom: 0
-
-    .o-left
-      left: -1000px
-    .o-right
-      right: 0
-      opacity: 0.1
-
     .logo
       margin: 40px auto 20px auto
       width: 90%
@@ -140,10 +109,6 @@
 
     .info
       margin: 20px auto 40px auto
-
-    .o-road
-      height: 11px
-      background-size: (470px / 2) 11px
 
 /* Download poster */
 .poster
@@ -187,10 +152,43 @@
   p.extra a:hover
     color: lighten(scarlet, 30%)
 
-.section.title .poster
-  width: 170px
-  position: absolute
-  bottom: 40px
-  right: 20px
+/* Mobile: no poster link */
+@media (max-width: 600px)
+  .section.title .poster
+    display: none
 
-  z-index: 50
+/* Desktop */
+@media (min-width: 600px)
+  .section.title .poster
+    width: 170px
+    position: absolute
+    bottom: 40px
+    right: 20px
+
+    z-index: 50
+
+/* ----------------------------------------------------------------------------
+ * Animation frames
+ */
+
+@keyframes drift-1000px
+  0%
+    background-position: 0 0
+  100%
+    background-position: -1000px 0
+@keyframes drift-1240px
+  0%
+    background-position: 0 0
+  100%
+    background-position: -1240px 0
+@keyframes drift-1180px
+  0%
+    background-position: 0 0
+  100%
+    background-position: -1180px 0
+@keyframes drift-1306px
+  0%
+    background-position: 0 0
+  100%
+    background-position: -1306px 0
+
