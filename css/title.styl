@@ -28,7 +28,7 @@
 
     .o-road
       absolute: left 0 bottom 0
-      width: 100%
+      width: 2000px
       height: 179px
       image: 'title-road.jpg' 1000px 179px
       background-color: #92b562
@@ -54,9 +54,9 @@
   &.moving
     s = 0.8
     .o-road.a
-      animation: drift-out (s*90s) linear infinite
+      animation: drift-out (s*180s) linear infinite
     .o-road.b
-      animation: drift-in (s*90s) linear infinite
+      animation: drift-in (s*180s) linear infinite
     .o-trees.a
       animation: drift-out (s*180s) linear infinite
     .o-trees.b
