@@ -143,7 +143,7 @@
 }
 /* Download poster */
 .poster {
-  background: #fffcf9;
+  background: rgba(255,252,249,0.8);
   -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.2);
@@ -193,7 +193,7 @@
 .poster p.extra {
   -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.05), inset 0 4px 3px -3px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 0 rgba(0,0,0,0.05), inset 0 4px 3px -3px rgba(0,0,0,0.1);
-  background: #eee;
+  background: rgba(238,238,238,0.8);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
