@@ -29,6 +29,7 @@ assets/script.js: \
 	js/jquery.anchorjump.js \
 	js/jquery.scrollagent.js \
 	js/jquery.unorphan.js \
+	js/jquery.toggleable.js \
 	js/setup.js
 
 	$(COMBINE)

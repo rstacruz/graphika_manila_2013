@@ -61,3 +61,6 @@ $(function() {
 $(function() {
   $("body").smartquotes();
 });
+
+/* Speakers - click to toggle */
+$(".speaker").toggleable({ using: '.button, h3, .image' });

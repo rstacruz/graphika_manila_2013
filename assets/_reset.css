@@ -119,4 +119,11 @@ audio:not([controls]),
 [hidden] {
   display: none;
 }
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
 
