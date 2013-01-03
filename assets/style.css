@@ -636,7 +636,7 @@ a {
     position: absolute;
     left: 0;
     bottom: 179px;
-    width: 100%;
+    width: 1306px;
     height: 176px;
     background-image: url("title-trees.png");
   }
@@ -652,7 +652,7 @@ a {
     position: absolute;
     left: 0;
     bottom: 70px;
-    width: 100%;
+    width: 1180px;
     height: 148px;
     background-image: url("title-front1.png");
   }
@@ -668,7 +668,7 @@ a {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 1240px;
     height: 163px;
     background-image: url("title-front2.png");
   }
@@ -680,11 +680,6 @@ a {
       background-size: 1240px 163px;
     }
 }
-}
-.section.title.moving .o-sky {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
 }
 .section.title.moving .o-road.a {
   -webkit-animation: drift-out 72s linear infinite;
@@ -885,12 +880,12 @@ a {
     filter: none;
   }
 
-  95% {
-    -webkit-transform: translate3d(-95%, 0, 0);
-    -moz-transform: translate3d(-95%, 0, 0);
-    -o-transform: translate3d(-95%, 0, 0);
-    -ms-transform: translate3d(-95%, 0, 0);
-    transform: translate3d(-95%, 0, 0);
+  99% {
+    -webkit-transform: translate3d(-99%, 0, 0);
+    -moz-transform: translate3d(-99%, 0, 0);
+    -o-transform: translate3d(-99%, 0, 0);
+    -ms-transform: translate3d(-99%, 0, 0);
+    transform: translate3d(-99%, 0, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -919,12 +914,12 @@ a {
     filter: none;
   }
 
-  95% {
-    -webkit-transform: translate3d(-95%, 0, 0);
-    -moz-transform: translate3d(-95%, 0, 0);
-    -o-transform: translate3d(-95%, 0, 0);
-    -ms-transform: translate3d(-95%, 0, 0);
-    transform: translate3d(-95%, 0, 0);
+  99% {
+    -webkit-transform: translate3d(-99%, 0, 0);
+    -moz-transform: translate3d(-99%, 0, 0);
+    -o-transform: translate3d(-99%, 0, 0);
+    -ms-transform: translate3d(-99%, 0, 0);
+    transform: translate3d(-99%, 0, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -953,12 +948,12 @@ a {
     filter: none;
   }
 
-  95% {
-    -webkit-transform: translate3d(-95%, 0, 0);
-    -moz-transform: translate3d(-95%, 0, 0);
-    -o-transform: translate3d(-95%, 0, 0);
-    -ms-transform: translate3d(-95%, 0, 0);
-    transform: translate3d(-95%, 0, 0);
+  99% {
+    -webkit-transform: translate3d(-99%, 0, 0);
+    -moz-transform: translate3d(-99%, 0, 0);
+    -o-transform: translate3d(-99%, 0, 0);
+    -ms-transform: translate3d(-99%, 0, 0);
+    transform: translate3d(-99%, 0, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -987,12 +982,12 @@ a {
     filter: none;
   }
 
-  95% {
-    -webkit-transform: translate3d(-95%, 0, 0);
-    -moz-transform: translate3d(-95%, 0, 0);
-    -o-transform: translate3d(-95%, 0, 0);
-    -ms-transform: translate3d(-95%, 0, 0);
-    transform: translate3d(-95%, 0, 0);
+  99% {
+    -webkit-transform: translate3d(-99%, 0, 0);
+    -moz-transform: translate3d(-99%, 0, 0);
+    -o-transform: translate3d(-99%, 0, 0);
+    -ms-transform: translate3d(-99%, 0, 0);
+    transform: translate3d(-99%, 0, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -1021,12 +1016,12 @@ a {
     filter: none;
   }
 
-  95% {
-    -webkit-transform: translate3d(-95%, 0, 0);
-    -moz-transform: translate3d(-95%, 0, 0);
-    -o-transform: translate3d(-95%, 0, 0);
-    -ms-transform: translate3d(-95%, 0, 0);
-    transform: translate3d(-95%, 0, 0);
+  99% {
+    -webkit-transform: translate3d(-99%, 0, 0);
+    -moz-transform: translate3d(-99%, 0, 0);
+    -o-transform: translate3d(-99%, 0, 0);
+    -ms-transform: translate3d(-99%, 0, 0);
+    transform: translate3d(-99%, 0, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -1055,12 +1050,12 @@ a {
     filter: alpha(opacity=0);
   }
 
-  5% {
-    -webkit-transform: translate3d(95%, 0, 0);
-    -moz-transform: translate3d(95%, 0, 0);
-    -o-transform: translate3d(95%, 0, 0);
-    -ms-transform: translate3d(95%, 0, 0);
-    transform: translate3d(95%, 0, 0);
+  1% {
+    -webkit-transform: translate3d(99%, 0, 0);
+    -moz-transform: translate3d(99%, 0, 0);
+    -o-transform: translate3d(99%, 0, 0);
+    -ms-transform: translate3d(99%, 0, 0);
+    transform: translate3d(99%, 0, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -1089,12 +1084,12 @@ a {
     filter: alpha(opacity=0);
   }
 
-  5% {
-    -webkit-transform: translate3d(95%, 0, 0);
-    -moz-transform: translate3d(95%, 0, 0);
-    -o-transform: translate3d(95%, 0, 0);
-    -ms-transform: translate3d(95%, 0, 0);
-    transform: translate3d(95%, 0, 0);
+  1% {
+    -webkit-transform: translate3d(99%, 0, 0);
+    -moz-transform: translate3d(99%, 0, 0);
+    -o-transform: translate3d(99%, 0, 0);
+    -ms-transform: translate3d(99%, 0, 0);
+    transform: translate3d(99%, 0, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -1123,12 +1118,12 @@ a {
     filter: alpha(opacity=0);
   }
 
-  5% {
-    -webkit-transform: translate3d(95%, 0, 0);
-    -moz-transform: translate3d(95%, 0, 0);
-    -o-transform: translate3d(95%, 0, 0);
-    -ms-transform: translate3d(95%, 0, 0);
-    transform: translate3d(95%, 0, 0);
+  1% {
+    -webkit-transform: translate3d(99%, 0, 0);
+    -moz-transform: translate3d(99%, 0, 0);
+    -o-transform: translate3d(99%, 0, 0);
+    -ms-transform: translate3d(99%, 0, 0);
+    transform: translate3d(99%, 0, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -1157,12 +1152,12 @@ a {
     filter: alpha(opacity=0);
   }
 
-  5% {
-    -webkit-transform: translate3d(95%, 0, 0);
-    -moz-transform: translate3d(95%, 0, 0);
-    -o-transform: translate3d(95%, 0, 0);
-    -ms-transform: translate3d(95%, 0, 0);
-    transform: translate3d(95%, 0, 0);
+  1% {
+    -webkit-transform: translate3d(99%, 0, 0);
+    -moz-transform: translate3d(99%, 0, 0);
+    -o-transform: translate3d(99%, 0, 0);
+    -ms-transform: translate3d(99%, 0, 0);
+    transform: translate3d(99%, 0, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -1191,12 +1186,12 @@ a {
     filter: alpha(opacity=0);
   }
 
-  5% {
-    -webkit-transform: translate3d(95%, 0, 0);
-    -moz-transform: translate3d(95%, 0, 0);
-    -o-transform: translate3d(95%, 0, 0);
-    -ms-transform: translate3d(95%, 0, 0);
-    transform: translate3d(95%, 0, 0);
+  1% {
+    -webkit-transform: translate3d(99%, 0, 0);
+    -moz-transform: translate3d(99%, 0, 0);
+    -o-transform: translate3d(99%, 0, 0);
+    -ms-transform: translate3d(99%, 0, 0);
+    transform: translate3d(99%, 0, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
