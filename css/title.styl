@@ -51,15 +51,24 @@
       height: 163px
       image: 'title-front2.png' 1240px 163px
 
-  .desktop &.moving
-    .o-road
-      animation: drift-1000px 90s linear infinite
-    .o-trees
-      animation: drift-1306px 240s linear infinite
-    .o-front1
-      animation: drift-1180px 90s linear infinite
-    .o-front2
-      animation: drift-1240px 45s linear infinite
+  &.moving
+    s = 0.8
+    .o-road.a
+      animation: drift-out (s*90s) linear infinite
+    .o-road.b
+      animation: drift-in (s*90s) linear infinite
+    .o-trees.a
+      animation: drift-out (s*180s) linear infinite
+    .o-trees.b
+      animation: drift-in (s*180s) linear infinite
+    .o-front1.a
+      animation: drift-out (s*90s) linear infinite
+    .o-front1.b
+      animation: drift-in (s*90s) linear infinite
+    .o-front2.a
+      animation: drift-out (s*45s) linear infinite
+    .o-front2.b
+      animation: drift-in (s*45s) linear infinite
 
   // Logo image
   .logo
@@ -176,24 +185,26 @@
  * Animation frames
  */
 
-@keyframes drift-1000px
+range = 100%
+@keyframes drift-out
   0%
-    background-position: 0 0
+    transform: translate3d(0, 0, 0)
+    opacity: 1
+  95%
+    transform: translate3d(round(-1 * range * 0.95), 0, 0)
+    opacity: 1
   100%
-    background-position: -1000px 0
-@keyframes drift-1240px
+    transform: translate3d(-1 * range, 0, 0)
+    opacity: 0
+
+@keyframes drift-in
   0%
-    background-position: 0 0
+    transform: translate3d(range, 0, 0)
+    opacity: 0
+  5%
+    transform: translate3d(round(range * 0.95), 0, 0)
+    opacity: 1
   100%
-    background-position: -1240px 0
-@keyframes drift-1180px
-  0%
-    background-position: 0 0
-  100%
-    background-position: -1180px 0
-@keyframes drift-1306px
-  0%
-    background-position: 0 0
-  100%
-    background-position: -1306px 0
+    transform: translate3d(0, 0, 0)
+    opacity: 1
 
