@@ -306,7 +306,7 @@
 }
 .speaker .meta span {
   background: rgba(255,255,255,0.95);
-  padding: 2px 7px 0px 7px;
+  padding: 2px 7px 1px 7px;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.1), 3px 3px rgba(0,0,0,0.1);
   box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.1), 3px 3px rgba(0,0,0,0.1);
   -webkit-border-radius: 1px;
@@ -335,7 +335,7 @@
   background: #111;
 }
 .speaker .meta h3 span {
-  padding: 4px 7px 0px 7px;
+  padding: 3px 7px 1px 7px;
   background-color: rgba(236,85,63,0.8);
   text-shadow: 0 1px 1px rgba(0,0,0,0.3);
   color: #fff;

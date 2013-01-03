@@ -86,11 +86,11 @@
   width: 100%;
   height: 163px;
   background-image: url("title-front2.png");
-  -webkit-animation: drift-1240px 60s linear infinite;
-  -moz-animation: drift-1240px 60s linear infinite;
-  -o-animation: drift-1240px 60s linear infinite;
-  -ms-animation: drift-1240px 60s linear infinite;
-  animation: drift-1240px 60s linear infinite;
+  -webkit-animation: drift-1240px 45s linear infinite;
+  -moz-animation: drift-1240px 45s linear infinite;
+  -o-animation: drift-1240px 45s linear infinite;
+  -ms-animation: drift-1240px 45s linear infinite;
+  animation: drift-1240px 45s linear infinite;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .section.title .o-front2 {
