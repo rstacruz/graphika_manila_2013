@@ -2,7 +2,7 @@
  * Call to action
  */
 .section.cta {
-  background: #e9eee0 url("tickets-backdrop.jpg") center 0;
+  background: #e1efe1 url("cta-backdrop.jpg") center bottom repeat-x;
   -webkit-box-shadow: inset 0 -4px 0 #e5a141;
   box-shadow: inset 0 -4px 0 #e5a141;
   color: #156562;

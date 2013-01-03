@@ -2,37 +2,18 @@
  * Title
  */
 .section.title {
-  background: #fdefe1;
+  background-color: #fdefe1;
+  background-position: center -370px;
+  background-image: url("title-sky.jpg");
+  height: 722px;
 }
-.section.title .o-right {
-  position: absolute;
-  right: 0;
-  top: -11px;
-  width: 669px;
-  height: 748px;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  transition: all 300ms ease;
-  z-index: 1;
-}
-.section.title .o-left {
-  position: absolute;
-  left: 0;
-  top: -11px;
-  width: 708px;
-  height: 748px;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  transition: all 300ms ease;
-  z-index: 2;
-}
-.desktop .section.title .o-right,
-.desktop .section.title .o-left {
-  position: fixed;
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .section.title {
+    background-image: url("title-sky@2x.jpg");
+    -webkit-background-size: 1378px 722px;
+    -moz-background-size: 1378px 722px;
+    background-size: 1378px 722px;
+  }
 }
 .section.title .logo {
   margin: 170px auto 40px auto;
@@ -70,21 +51,6 @@
 }
 .section.title .address.two {
   color: #008000;
-}
-.section.title .o-road {
-  background-image: url("title-road.png");
-  height: 22px;
-  width: 100%;
-  position: relative;
-  z-index: 5;
-}
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  .section.title .o-road {
-    background-image: url("title-road@2x.png");
-    -webkit-background-size: 471px 22px;
-    -moz-background-size: 471px 22px;
-    background-size: 471px 22px;
-  }
 }
 @media (max-width: 1250px) {
   .section.title .o-right {
@@ -209,5 +175,50 @@
   bottom: 40px;
   right: 20px;
   z-index: 50;
+}
+@-moz-keyframes sky-drift {
+  0% {
+    background-position: 0 -370px;
+  }
+
+  100% {
+    background-position: -1378px -370px;
+  }
+}
+@-webkit-keyframes sky-drift {
+  0% {
+    background-position: 0 -370px;
+  }
+
+  100% {
+    background-position: -1378px -370px;
+  }
+}
+@-o-keyframes sky-drift {
+  0% {
+    background-position: 0 -370px;
+  }
+
+  100% {
+    background-position: -1378px -370px;
+  }
+}
+@-ms-keyframes sky-drift {
+  0% {
+    background-position: 0 -370px;
+  }
+
+  100% {
+    background-position: -1378px -370px;
+  }
+}
+@keyframes sky-drift {
+  0% {
+    background-position: 0 -370px;
+  }
+
+  100% {
+    background-position: -1378px -370px;
+  }
 }
 

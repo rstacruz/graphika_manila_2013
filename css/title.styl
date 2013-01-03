@@ -5,31 +5,21 @@
  * Title
  */
 
+@keyframes sky-drift
+  0%
+    background-position: 0 -370px
+  100%
+    background-position: -1378px -370px
+
 .section.title
   &
-    background: cream
+    background-color: cream
+    background-position: center -370px
+    image: 'title-sky.jpg' 1378px 722px
+    height: 722px
+    // animation: sky-drift 240s linear infinite
 
-  /* Ornaments */
-  .o-right
-    absolute: right 0 top -11px
-    width: 669px
-    height: 748px
-    transition: all 300ms ease
-    z-index: 1
-
-  .o-left
-    absolute: left 0 top -11px
-    width: 708px
-    height: 748px
-    transition: all 300ms ease
-    z-index: 2
-
-  /* Desktop: fix the ornaments. This is pretty weird on an iPad */
-  .desktop &
-    .o-right, .o-left
-      position: fixed
-
-  /* Logo image */
+  // Logo image
   .logo
     margin: 170px auto 40px auto
     text-align: center
@@ -41,7 +31,7 @@
     width: 569px
     height: 196px
 
-  /* PICC hall, etc */
+  // PICC hall, etc
   .info
     margin: 40px auto 180px auto
     font-size: 16pt
@@ -69,15 +59,6 @@
 
   .address.two
     color: green
-
-  /* Road ornament at the bottom */
-  .o-road
-    image: 'title-road.png' 471px 22px
-    height: 22px
-    width: 100%
-
-    position: relative
-    z-index: 5
 
   // Mobile
   @media (max-width: 1250px)
