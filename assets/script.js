@@ -390,7 +390,7 @@
 /* Animation */
 ;(function() {
   var active = false;
-  var threshold = 200;
+  var threshold = 900;
 
   $(window).on('scroll reanimate', function() {
     var y = $(window).scrollTop();
