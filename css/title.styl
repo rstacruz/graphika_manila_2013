@@ -25,6 +25,8 @@
       height: 722px
       image: 'title-sky.jpg' 1378px 722px
       background-position: center 0
+      opacity: 0.3
+      transition: opacity 500ms linear
 
     .o-road
       absolute: left 0 bottom 0
@@ -53,6 +55,8 @@
 
   &.moving
     s = 0.8
+    .o-sky
+      opacity: 1
     .o-road.a
       animation: drift-out (s*90s) linear infinite
     .o-road.b

@@ -606,6 +606,14 @@ a {
     height: 722px;
     background-image: url("title-sky.jpg");
     background-position: center 0;
+    opacity: 0.3;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: alpha(opacity=30);
+    -webkit-transition: opacity 500ms linear;
+    -moz-transition: opacity 500ms linear;
+    -o-transition: opacity 500ms linear;
+    -ms-transition: opacity 500ms linear;
+    transition: opacity 500ms linear;
   }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
  {
@@ -680,6 +688,11 @@ a {
       background-size: 1240px 163px;
     }
 }
+}
+.section.title.moving .o-sky {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .section.title.moving .o-road.a {
   -webkit-animation: drift-out 72s linear infinite;
