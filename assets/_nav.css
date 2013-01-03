@@ -148,11 +148,11 @@
 }
 .navigation:not(.stuck) .share,
 .navigation:not(.stuck) ul {
-  background: rgba(254,247,240,0.95);
+  background: rgba(254,250,246,0.9);
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.1);
-  box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 0 2px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 0 2px rgba(0,0,0,0.1);
 }
 .navigation .share iframe {
   vertical-align: top;
