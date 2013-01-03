@@ -378,17 +378,36 @@
       active = true;
       $("#navigation").addClass("stuck");
     }
-
-    else if (active && y < 200) {
+    else if (active && y < threshold) {
       active = false;
       $("#navigation").removeClass("stuck");
     }
   });
 
-  $(function() {
-    $(window).trigger('restuck');
-  });
+  $(function() { $(window).trigger('restuck'); });
 })();
+
+/* Animation */
+;(function() {
+  var active = false;
+  var threshold = 100;
+
+  $(window).on('scroll reanimate', function() {
+    var y = $(window).scrollTop();
+
+    if (!active && y < threshold) {
+      active = true;
+      $(".section.title").addClass("moving");
+    }
+    else if (active && y > threshold) {
+      active = false;
+      $(".section.title").removeClass("moving");
+    }
+  });
+
+  $(function() { $(window).trigger('reanimate'); });
+})();
+
 
 /* Highlight as you go along */
 $("section.section").scrollagent(function(cid, pid) {
