@@ -2044,6 +2044,9 @@ a {
   }
 }
 .section.about .header {
+  color: #1e908c;
+}
+.section.about .header.faq {
   color: #fff;
 }
 .section.about .pullquote {
@@ -2119,7 +2122,8 @@ a {
   clear: both;
   max-width: 980px;
   margin: 0 auto;
-  text-shadow: 0 1px 1px rgba(255,255,255,0.2);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 .faq-list ul {
   zoom: 1;
@@ -2157,6 +2161,7 @@ a {
   font-size: 1.3em;
   font-weight: 700;
   color: #156562;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.2);
 }
 .faq-list li p {
   margin-bottom: 20px;
