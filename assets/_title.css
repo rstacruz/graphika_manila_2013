@@ -5,7 +5,7 @@
   background-color: #fdefe1;
   background-position: center -370px;
   background-image: url("title-sky.jpg");
-  height: 722px;
+  height: 966px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .section.title {
@@ -13,6 +13,39 @@
     -webkit-background-size: 1378px 722px;
     -moz-background-size: 1378px 722px;
     background-size: 1378px 722px;
+  }
+}
+.section.title .o-road {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 179px;
+  background-image: url("title-road.jpg");
+  background-color: #92b562;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .section.title .o-road {
+    background-image: url("title-road@2x.jpg");
+    -webkit-background-size: 1000px 179px;
+    -moz-background-size: 1000px 179px;
+    background-size: 1000px 179px;
+  }
+}
+.section.title .o-trees {
+  position: absolute;
+  left: 0;
+  bottom: 179px;
+  width: 100%;
+  height: 176px;
+  background-image: url("title-trees.png");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .section.title .o-trees {
+    background-image: url("title-trees@2x.png");
+    -webkit-background-size: 1306px 176px;
+    -moz-background-size: 1306px 176px;
+    background-size: 1306px 176px;
   }
 }
 .section.title .logo {
