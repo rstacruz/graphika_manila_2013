@@ -606,9 +606,6 @@ a {
     height: 722px;
     background-image: url("title-sky.jpg");
     background-position: center 0;
-    opacity: 0.9;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-    filter: alpha(opacity=90);
   }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
  {
