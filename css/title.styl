@@ -10,6 +10,16 @@
     background-position: 0 0
   100%
     background-position: -1000px 0
+@keyframes drift-1240px
+  0%
+    background-position: 0 0
+  100%
+    background-position: -1240px 0
+@keyframes drift-1180px
+  0%
+    background-position: 0 0
+  100%
+    background-position: -1180px 0
 @keyframes drift-1306px
   0%
     background-position: 0 0
@@ -29,14 +39,28 @@
     height: 179px
     image: 'title-road.jpg' 1000px 179px
     background-color: #92b562
-    // animation: drift-1000px 90s linear infinite
+    animation: drift-1000px 90s linear infinite
 
   .o-trees
     absolute: left 0 bottom 179px
     width: 100%
     height: 176px
     image: 'title-trees.png' 1306px 176px
-    // animation: drift-1306px 240s linear infinite
+    animation: drift-1306px 240s linear infinite
+
+  .o-front1
+    absolute: left 0 bottom 70px
+    width: 100%
+    height: 148px
+    image: 'title-front1.png' 1180px 148px
+    animation: drift-1180px 90s linear infinite
+
+  .o-front2
+    absolute: left 0 bottom 0
+    width: 100%
+    height: 163px
+    image: 'title-front2.png' 1240px 163px
+    animation: drift-1240px 60s linear infinite
 
   // Logo image
   .logo
