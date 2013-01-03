@@ -5,19 +5,23 @@
  * Title
  */
 
-@keyframes sky-drift
+@keyframes drift-1000px
   0%
-    background-position: 0 -370px
+    background-position: 0 0
   100%
-    background-position: -1378px -370px
+    background-position: -1000px 0
+@keyframes drift-1306px
+  0%
+    background-position: 0 0
+  100%
+    background-position: -1306px 0
 
 .section.title
   &
     background-color: cream
-    background-position: center -370px
+    background-position: center 0
     image: 'title-sky.jpg' 1378px 722px
-    height: 966px
-    // animation: sky-drift 240s linear infinite
+    height: 897px
 
   .o-road
     absolute: left 0 bottom 0
@@ -25,12 +29,14 @@
     height: 179px
     image: 'title-road.jpg' 1000px 179px
     background-color: #92b562
+    // animation: drift-1000px 90s linear infinite
 
   .o-trees
     absolute: left 0 bottom 179px
     width: 100%
     height: 176px
     image: 'title-trees.png' 1306px 176px
+    // animation: drift-1306px 240s linear infinite
 
   // Logo image
   .logo

@@ -3,9 +3,9 @@
  */
 .section.title {
   background-color: #fdefe1;
-  background-position: center -370px;
+  background-position: center 0;
   background-image: url("title-sky.jpg");
-  height: 966px;
+  height: 897px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .section.title {
@@ -209,49 +209,94 @@
   right: 20px;
   z-index: 50;
 }
-@-moz-keyframes sky-drift {
+@-moz-keyframes drift-1000px {
   0% {
-    background-position: 0 -370px;
+    background-position: 0 0;
   }
 
   100% {
-    background-position: -1378px -370px;
+    background-position: -1000px 0;
   }
 }
-@-webkit-keyframes sky-drift {
+@-webkit-keyframes drift-1000px {
   0% {
-    background-position: 0 -370px;
+    background-position: 0 0;
   }
 
   100% {
-    background-position: -1378px -370px;
+    background-position: -1000px 0;
   }
 }
-@-o-keyframes sky-drift {
+@-o-keyframes drift-1000px {
   0% {
-    background-position: 0 -370px;
+    background-position: 0 0;
   }
 
   100% {
-    background-position: -1378px -370px;
+    background-position: -1000px 0;
   }
 }
-@-ms-keyframes sky-drift {
+@-ms-keyframes drift-1000px {
   0% {
-    background-position: 0 -370px;
+    background-position: 0 0;
   }
 
   100% {
-    background-position: -1378px -370px;
+    background-position: -1000px 0;
   }
 }
-@keyframes sky-drift {
+@keyframes drift-1000px {
   0% {
-    background-position: 0 -370px;
+    background-position: 0 0;
   }
 
   100% {
-    background-position: -1378px -370px;
+    background-position: -1000px 0;
+  }
+}
+@-moz-keyframes drift-1306px {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1306px 0;
+  }
+}
+@-webkit-keyframes drift-1306px {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1306px 0;
+  }
+}
+@-o-keyframes drift-1306px {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1306px 0;
+  }
+}
+@-ms-keyframes drift-1306px {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1306px 0;
+  }
+}
+@keyframes drift-1306px {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1306px 0;
   }
 }
 
