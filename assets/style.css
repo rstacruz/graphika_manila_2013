@@ -387,6 +387,9 @@ a {
     background-size: 42px 20px;
   }
 }
+.navigation .amp {
+  margin-right: 2px;
+}
 .navigation a.home {
   width: 0;
   padding: 0;
