@@ -228,15 +228,33 @@
     padding: 0 10px
 
     display: block
-    float: left
-    width: 20%
+    float: none
+    width: auto
 
     text-align: center
 
-  @media (max-width: 600px)
+  // Desktop: side by side layout
+  @media (min-width: 600px)
+    // Bullets
+    li:before
+      display: inline-block
+      content: '\2014'
+      margin-right: 5px
+      color: turquoise
+      width: 12px
+      margin-left: -17px
+
     li
-      float: none
-      width: auto
+      padding-left: 17px
+      padding-right: 20px
+      float: left
+      text-align: left
+      width: 20%
+
+      line-height: 1.5
+
+    li:first-line
+      font-weight: bold
 
 /* Box with 'buy now' button */
 .buy-box

@@ -245,14 +245,29 @@
   box-sizing: border-box;
   padding: 0 10px;
   display: block;
-  float: left;
-  width: 20%;
+  float: none;
+  width: auto;
   text-align: center;
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
+  .pass-reminders li:before {
+    display: inline-block;
+    content: '\2014';
+    margin-right: 5px;
+    color: #1e908c;
+    width: 12px;
+    margin-left: -17px;
+  }
   .pass-reminders li {
-    float: none;
-    width: auto;
+    padding-left: 17px;
+    padding-right: 20px;
+    float: left;
+    text-align: left;
+    width: 20%;
+    line-height: 1.5;
+  }
+  .pass-reminders li:first-line {
+    font-weight: bold;
   }
 }
 /* Box with 'buy now' button */
