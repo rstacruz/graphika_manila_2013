@@ -307,7 +307,7 @@ a {
 .navigation.stuck {
   -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.2);
   box-shadow: 0 0 3px rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.2);
-  background-color: rgba(254,247,240,0.95);
+  background-color: rgba(255,252,249,0.95);
 }
 .navigation ul {
   display: block;
@@ -424,7 +424,7 @@ a {
 }
 .navigation:not(.stuck) .share,
 .navigation:not(.stuck) ul {
-  background: rgba(254,250,246,0.9);
+  background: rgba(255,253,252,0.9);
   -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 0 2px rgba(0,0,0,0.1);
