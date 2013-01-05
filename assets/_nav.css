@@ -76,11 +76,12 @@
   -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.2);
   box-shadow: 0 0 4px rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.2);
 }
+.navigation a.tickets,
+.navigation a.about {
+  color: #ec553f;
+}
 .navigation a.speakers {
   color: #bcc58e;
-}
-.navigation a.tickets {
-  color: #ec553f;
 }
 .navigation a.schedule {
   color: #e5a141;
