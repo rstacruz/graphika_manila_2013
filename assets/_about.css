@@ -1,20 +1,51 @@
 /* ----------------------------------------------------------------------------
  * About
  */
+.section {
+  display: none !important;
+}
+.section.about,
+.section.faq {
+  display: block !important;
+}
 .section.about {
-  background: #429143 url("about-test.jpg") center 0 repeat-x;
+  background: #f7faf4 url("about-bg.jpg");
+  position: relative;
+}
+.section.about .o-backdrop {
+  background-image: url("about-backdrop.jpg");
+  background-position: center 0;
+  background-repeat: repeat-x;
+  height: 668px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .section.about .o-backdrop {
+    background-image: url("about-backdrop@2x.jpg");
+    -webkit-background-size: 1625px 668px;
+    -moz-background-size: 1625px 668px;
+    background-size: 1625px 668px;
+  }
+}
+.section.about .header,
+.section.about .figure {
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 600px) {
   .section.about {
     padding-top: 75px;
-    padding-bottom: 150px;
+    padding-bottom: 75px;
   }
 }
 .section.about .header {
   color: #1e908c;
 }
 .section.about .pullquote {
-  background: #93c8be;
+  background: #f7faf4 url("about-bg.jpg");
 }
 .section.about img.one {
   height: 380px;
