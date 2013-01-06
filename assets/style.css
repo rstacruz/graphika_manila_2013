@@ -478,15 +478,13 @@ a {
 .section.cta .in:after {
   clear: both;
 }
-.section.cta .left {
+.section.cta .text {
   max-width: 600px;
   text-align: center;
   margin: 0 auto;
+  font-size: 12pt;
 }
-.section.cta .body {
-  font-size: 14pt;
-}
-.section.cta .body h3 small {
+.section.cta .text h3 small {
   font-family: proxima-nova-alt, proxima-nova, proxima nova, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -497,13 +495,16 @@ a {
   border-bottom: solid 1px rgba(30,144,140,0.3);
   border-top: solid 1px rgba(30,144,140,0.3);
 }
-.section.cta .body h3 strong {
+.section.cta .text h3 strong {
   font-family: adelle, sans-serif;
   font-weight: 900;
-  font-size: 26pt;
+  font-size: 22pt;
   color: #ec553f;
 }
-.section.cta .right {
+.section.cta .text h3 {
+  margin-bottom: 10px;
+}
+.section.cta .actions {
   padding-top: 30px;
   margin: 0 auto;
   margin-bottom: -75px;
