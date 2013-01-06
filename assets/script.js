@@ -809,7 +809,7 @@ $(function() {
 
 /* Mobile switch */
 $(function() {
-  var isMobile = navigator.userAgent.match(/iPhone|iPad|iPod/);
+  var isMobile = navigator.userAgent.match(/iPhone|iPad|iPod|Android/);
   $("html").addClass(isMobile ? "mobile" : "desktop");
 });
 
