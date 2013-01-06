@@ -94,12 +94,14 @@
     var friction = 0.1;
 
     $container.on('mousedown touchstart', function(e) {
-      if (c.disabled) return;
-      if ($container.is(':animated')) return;
-
       // Only prevent mouse clicks. This allows vertical scrolling on mobile.
+      // Do this before the sanity checks... you don't want the user to
+      // accidentally drag the <img>.
       if (e.type === 'mousedown')
         e.preventDefault();
+
+      if (c.disabled) return;
+      if ($container.is(':animated')) return;
 
       c.pause();
 
