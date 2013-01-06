@@ -86,16 +86,7 @@ $(".speaker").toggleable({ using: '.button, h3, .image' });
 
 /* Naive slideshow impementation */
 $(".slideshow").each(function() {
-  var $slideshow = $(this);
-  var $container = $slideshow.find('> .slides');
-  var $slides    = $container.find('> .slide');
-
-  var width = $slideshow.width();
-
-  var c = new Cycler($slides, {
-    interval: 4000 + Math.random() * 3000,
-    onactivate: function(current, i, prev, j) {
-      $container.animate({ left: -1 * width * i });
-    }
+  $(this).slideshow({
+    interval: 4000 + Math.random() * 3000
   });
 });
