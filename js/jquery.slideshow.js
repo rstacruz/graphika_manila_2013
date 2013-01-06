@@ -89,6 +89,10 @@
     var start;
     var timestart;
 
+    var width = $slideshow.width();
+    var length = c.list.length;
+    var friction = 0.1;
+
     $container.on('mousedown touchstart', function(e) {
       if (c.disabled) return;
       if ($container.is(':animated')) return;
@@ -106,7 +110,7 @@
       timestart = +new Date();
     });
 
-    $container.on('mousemove touchmove', function(e) {
+    $('body').on('mousemove touchmove', function(e) {
       if (c.disabled) return;
       if ($container.is(':animated')) return;
       if (!moving) return;
@@ -116,7 +120,14 @@
         e.preventDefault();
 
       var delta = getX(e) - origin.x;
-      $container.css('left', start.x + delta);
+      var target = start.x + delta;
+      var max = -1 * width * (length - 1);
+
+      // Have some friction when scrolling out of bounds.
+      if (target > 0) target *= friction;
+      if (target < max) target = max + (target - max) * friction;
+
+      $container.css('left', target);
     });
 
     $('body').on('mouseup touchend', function(e) {
@@ -125,7 +136,6 @@
       if (!moving) return;
 
       var left  = parseInt($container.css('left'), 10);
-      var width = $slideshow.width();
 
       // Account for velocity.
       var delta = getX(e) - origin.x;
