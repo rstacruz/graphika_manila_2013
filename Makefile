@@ -17,7 +17,8 @@ assets/style.css: \
 	assets/_schedule.css \
 	assets/_location.css \
 	assets/_about.css \
-	assets/_contact.css
+	assets/_contact.css \
+	assets/_slideshow.css
 
 	$(COMBINE)
 	@# $(CONDENSE)
@@ -30,6 +31,7 @@ assets/script.js: \
 	js/jquery.scrollagent.js \
 	js/jquery.unorphan.js \
 	js/jquery.toggleable.js \
+	js/cycler.js \
 	js/setup.js
 
 	$(COMBINE)

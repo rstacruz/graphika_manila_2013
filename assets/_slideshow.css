@@ -1,0 +1,24 @@
+.slideshow,
+.slideshow .slides,
+.slideshow .slide {
+  display: block;
+  width: 450px;
+  height: 270px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slideshow {
+  overflow: hidden;
+  position: relative;
+}
+.slideshow .slides {
+  width: 99999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slideshow .slide {
+  float: left;
+}
+
