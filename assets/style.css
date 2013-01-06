@@ -2421,8 +2421,7 @@ a {
 }
 @media (min-width: 600px) {
   .section.about {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-bottom: 85px;
   }
 }
 .section.about .header {
