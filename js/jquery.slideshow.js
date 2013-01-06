@@ -30,16 +30,20 @@
         }
       }));
 
+      // Defer starting until images are loaded.
+      if (options.autostart !== false)
+        deferLoading($slideshow, c);
+
       // Bind a "next slide" button.
       $slideshow.find('.next').on('click', function(e) {
         e.preventDefault();
-        c.next();
+        if (c.enabled) c.next();
       });
 
       // Bind a "previous slide" button.
       $slideshow.find('.previous').on('click', function(e) {
         e.preventDefault();
-        c.previous();
+        if (c.enabled) c.previous();
       });
 
       // Save the cycler for future use.
@@ -48,4 +52,28 @@
 
     return this;
   };
+
+  function deferLoading($slideshow, c) {
+    // Disabled slideshow first;
+    c.enabled = false;
+    $slideshow.addClass('disabled');
+
+    var images = {
+      loaded: 0,
+      total: $slideshow.find('img').length
+    };
+
+    // Wait till all images are loaded...
+    $slideshow.find('img').on('load', function() {
+      if (++images.loaded >= images.total) {
+        // The re-enable...
+        console.log("[Slideshow] Loading slideshow", $slideshow);
+        $slideshow.removeClass('disabled');
+        c.enabled = true;
+
+        // And start.
+        c.start();
+      }
+    });
+  }
 })(jQuery);
