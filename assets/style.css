@@ -2384,7 +2384,6 @@ a {
  * About
  */
 .section.about {
-  background: #93c8be;
   background: #429143 url("about-test.jpg") center 0 repeat-x;
 }
 @media (min-width: 600px) {
@@ -2395,9 +2394,6 @@ a {
 }
 .section.about .header {
   color: #1e908c;
-}
-.section.about .header.faq {
-  color: #fff;
 }
 .section.about .pullquote {
   background: #93c8be;
@@ -2463,10 +2459,17 @@ a {
     display: none;
   }
 }
+
+/* ----------------------------------------------------------------------------
+ * FAQ
+ */
+.section.faq {
+  background: #1e908c url("speakers-bg.jpg");
+}
 /* FAQ header */
 .header.faq {
   clear: both;
-  padding-top: 60px;
+  color: #fff;
 }
 .faq-list {
   clear: both;
@@ -2474,6 +2477,7 @@ a {
   margin: 0 auto;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  font-size: 0.9em;
 }
 .faq-list ul {
   zoom: 1;

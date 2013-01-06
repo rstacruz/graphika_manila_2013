@@ -1,0 +1,68 @@
+@import nib
+@import common
+
+/* ----------------------------------------------------------------------------
+ * FAQ
+ */
+
+.section.faq
+  background: turquoise url(speakers-bg.jpg)
+
+
+/* FAQ header */
+.header.faq
+  clear: both
+  color: white
+
+.faq-list
+  clear: both
+  max-width: 980px
+  margin: 0 auto
+
+  color: white
+  text-shadow: 0 1px 1px rgba(black, 0.2)
+  font-size: 0.9em
+
+  ul
+    clearfix()
+
+  // Mobile: not side by side
+  @media (max-width: 800px)
+    ul
+      padding: 0 30px
+
+  // Desktop: side-by-side
+  @media (min-width: 800px)
+    li
+      width: 50%
+      box-sizing: border-box
+      padding-right: 50px
+
+      float: left
+
+      border-top: solid 1px rgba(black, 0.1)
+      padding-top: 20px
+
+  li:nth-child(2n+1)
+    clear: both
+
+  // Questions
+  li strong
+    display: block
+
+    font-size: 1.3em
+    font-weight: 700
+
+    color: darken(turquoise, 30%)
+    text-shadow: 0 1px 1px rgba(white, 0.2)
+
+  li p
+    margin-bottom: 20px
+
+  li:nth-child(5n+2) strong,
+  li:nth-child(5n+5) strong
+    color: scarlet
+  li:nth-child(5n+3) strong
+    color: darken(ochre, 30%)
+  li:nth-child(5n+4) strong
+    color: darken(lime, 60%)

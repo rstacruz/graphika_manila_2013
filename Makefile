@@ -18,6 +18,7 @@ assets/style.css: \
 	assets/_schedule.css \
 	assets/_location.css \
 	assets/_about.css \
+	assets/_faq.css \
 	assets/_contact.css \
 	assets/_slideshow.css
 
