@@ -338,6 +338,10 @@
   box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.1), 3px 3px rgba(0,0,0,0.1);
   -webkit-border-radius: 1px;
   border-radius: 1px;
+  cursor: pointer;
+}
+.speaker .meta:hover span {
+  background: #fff;
 }
 .speaker .meta .button {
   padding: 10px 20px;
@@ -372,7 +376,7 @@
   -ms-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
 }
-.speaker .meta h3:hover span {
+.speaker .meta:hover h3 span {
   background-color: #ec553f;
   -webkit-transition: none;
   -moz-transition: none;
