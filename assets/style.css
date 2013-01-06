@@ -240,7 +240,6 @@ a {
 }
 .figure .image img {
   background: rgba(0,0,0,0.1);
-  margin-bottom: 10px;
 }
 @media (min-width: 980px) {
   .figure .body,
@@ -254,11 +253,21 @@ a {
     margin-right: 40px;
   }
 }
+@media (max-width: 600px) {
+  .figure .image,
+  .figure .image img {
+    width: 280px !important;
+    height: auto !important;
+  }
+  .figure .image img {
+    display: block;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 980px) {
   .figure .body,
   .figure .image {
-    max-width: 95%;
-    margin: 40px auto;
+    margin: 20px auto;
   }
 }
 .figure img.bordered {
