@@ -744,7 +744,7 @@
 /* Navigation sticky thing */
 ;(function() {
   var active = true;
-  var threshold = 500;
+  var threshold = 500 + 300;
 
   $(window).on('scroll restuck', function() {
     var y = $(window).scrollTop();
@@ -765,7 +765,7 @@
 /* Animation */
 ;(function() {
   var active = false;
-  var threshold = 900;
+  var threshold = 900 + 500;
 
   $(window).on('scroll reanimate', function() {
     var y = $(window).scrollTop();
@@ -831,4 +831,15 @@ $(".slideshow").each(function() {
   $(this).swipeshow({
     interval: 4000 + Math.random() * 3000
   });
+});
+
+/* Call for entries */
+$(function() {
+  var $section = $('#call-for-entries');
+  $section.show();
+
+  var height = $section.outerHeight();
+
+  if ($(window).scrollTop() === 0)
+    $(window).scrollTop(height);
 });
