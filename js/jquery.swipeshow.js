@@ -28,7 +28,7 @@
       // Use Cycler.
       var c = new Cycler($slides, $.extend({}, options, {
         onactivate: function(current, i, prev, j) {
-          $container.animate({ left: -1 * width * i });
+          setOffset($container, -1 * width * i);
         }
       }));
 
@@ -82,6 +82,30 @@
     });
   }
 
+  // Use transitions?
+  var transitions = true;
+
+  function setOffset($el, left, instant) {
+    $el.data('swipeshow:left', left);
+    if (transitions) {
+      if (instant) {
+        $el.css({ transform: 'translate3d('+left+'px,0,0)', transition: 'none' });
+      } else {
+        $el.css({ transform: 'translate3d('+left+'px,0,0)', transition: 'all 300ms ease' });
+      }
+    } else {
+      if (instant) {
+        $el.css({left: left});
+      } else {
+        $el.animate({left: left});
+      }
+    }
+  }
+
+  function getOffset($el) {
+    return $el.data('swipeshow:left') || 0;
+  }
+
   // Binds swiping behavior.
   function bindSwipe($slideshow, $container, c) {
     var moving = false;
@@ -107,7 +131,7 @@
 
       moving = true;
       origin = { x: getX(e) };
-      start  = { x: parseInt($container.css('left'), 10) };
+      start  = { x: getOffset($container) };
 
       timestart = +new Date();
     });
@@ -129,7 +153,7 @@
       if (target > 0) target *= friction;
       if (target < max) target = max + (target - max) * friction;
 
-      $container.css('left', target);
+      setOffset($container, target, true);
     });
 
     $('body').on('mouseup touchend', function(e) {
@@ -137,7 +161,7 @@
       if ($container.is(':animated')) return;
       if (!moving) return;
 
-      var left  = parseInt($container.css('left'), 10);
+      var left  = getOffset($container);
 
       // Account for velocity.
       var delta = getX(e) - origin.x;
@@ -148,6 +172,7 @@
       var index = -1 * Math.round(left / width);
       if (index < 0) index = 0;
       if (index > c.list.length-1) index = c.list.length-1;
+      console.log('=> stopped at', left, index);
 
       // Switch to that slide.
       c.goTo(index);
