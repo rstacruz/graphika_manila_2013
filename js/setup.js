@@ -82,7 +82,7 @@ $(function() {
 });
 
 /* Speakers - click to toggle */
-$(".speaker").toggleable({ using: '.button, h3, .image' });
+$(".speaker").toggleable({ using: '.button, h3, p' });
 
 /* Naive slideshow impementation */
 $(".slideshow").each(function() {

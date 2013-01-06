@@ -1,3 +1,5 @@
+/*! Slideshow (c) 2013 Rico Sta. Cruz, MIT license. */
+
 // Opnionated, simple slideshow using Cycler.js.
 //
 // <div class="slideshow">
@@ -34,16 +36,19 @@
       if (options.autostart !== false)
         deferLoading($slideshow, c);
 
+      // Bind
+      bindSwipe($slideshow, $container, c);
+
       // Bind a "next slide" button.
       $slideshow.find('.next').on('click', function(e) {
         e.preventDefault();
-        if (c.enabled) c.next();
+        if (!c.disabled) c.next();
       });
 
       // Bind a "previous slide" button.
       $slideshow.find('.previous').on('click', function(e) {
         e.preventDefault();
-        if (c.enabled) c.previous();
+        if (!c.disabled) c.previous();
       });
 
       // Save the cycler for future use.
@@ -53,9 +58,10 @@
     return this;
   };
 
+  // Defer starting of slideshow until images are fully loaded.
   function deferLoading($slideshow, c) {
     // Disabled slideshow first;
-    c.enabled = false;
+    c.disabled = true;
     $slideshow.addClass('disabled');
 
     var images = {
@@ -67,13 +73,79 @@
     $slideshow.find('img').on('load', function() {
       if (++images.loaded >= images.total) {
         // The re-enable...
-        console.log("[Slideshow] Loading slideshow", $slideshow);
         $slideshow.removeClass('disabled');
-        c.enabled = true;
+        c.disabled = false;
 
         // And start.
         c.start();
       }
     });
+  }
+
+  // Binds swiping behavior.
+  function bindSwipe($slideshow, $container, c) {
+    var moving = false;
+    var origin;
+    var start;
+    var timestart;
+
+    // Extracts the X from given event object. Works for mouse or touch events.
+    function getX(e) {
+      if (e.changedTouches)
+        return e.changedTouches[0].pageX;
+
+      if (e.clientX)
+        return e.clientX;
+    }
+
+    $container.on('mousedown touchstart', function(e) {
+      if (c.disabled) return;
+
+      e.preventDefault();
+      c.pause();
+
+      moving = true;
+      origin = { x: getX(e) };
+      start  = { x: parseInt($container.css('left'), 10) };
+
+      timestart = +new Date();
+    });
+
+    $container.on('mousemove touchmove', function(e) {
+      if (c.disabled) return;
+
+      if (!moving) return;
+      e.preventDefault();
+
+      var delta = getX(e) - origin.x;
+      $container.css('left', start.x + delta);
+    });
+
+    $('body').on('mouseup touchend', function(e) {
+      if (c.disabled) return;
+      if (!moving) return;
+
+      var left  = parseInt($container.css('left'), 10);
+      var width = $slideshow.width();
+
+      // Account for velocity.
+      var delta = getX(e) - origin.x;
+      var duration = +new Date() - timestart;
+      var coef = 9 * Math.max(0, 300 - duration) / 300;
+
+      // Find out what slide it stopped to.
+      var index = -1 * Math.round(left / width);
+      if (index < 0) index = 0;
+      if (index > c.list.length-1) index = c.list.length-1;
+
+      // Switch to that slide.
+      c.goTo(index);
+
+      // Restart the slideshow.
+      e.preventDefault();
+      c.start();
+      moving = false;
+    });
+
   }
 })(jQuery);
