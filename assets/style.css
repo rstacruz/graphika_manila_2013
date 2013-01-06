@@ -2045,10 +2045,20 @@ a {
   margin: 0;
 }
 @media (min-width: 600px) {
+  .establishments {
+    margin: 0 auto;
+    width: 790px;
+  }
   .establishments article {
+    width: 380px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     float: left;
+  }
+  .establishments article:nth-child(2n+1) {
+    width: 410px;
     padding-right: 50px;
-    width: 50%;
   }
 }
 

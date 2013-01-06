@@ -362,8 +362,17 @@
   article p
     margin: 0
 
+  // Desktop: side by side
   @media (min-width: 600px)
+    &
+      margin: 0 auto
+      width: 410px + 380px
+
     article
+      width: 380px
+      box-sizing: border-box
       float: left
+
+    article:nth-child(2n+1)
+      width: 410px
       padding-right: 50px
-      width: 50%
