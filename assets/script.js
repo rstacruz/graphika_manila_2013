@@ -635,19 +635,14 @@
     var start;
     var timestart;
 
-    // Extracts the X from given event object. Works for mouse or touch events.
-    function getX(e) {
-      if (e.changedTouches)
-        return e.changedTouches[0].pageX;
-
-      if (e.clientX)
-        return e.clientX;
-    }
-
     $container.on('mousedown touchstart', function(e) {
       if (c.disabled) return;
+      if ($container.is(':animated')) return;
 
-      e.preventDefault();
+      // Only prevent mouse clicks. This allows vertical scrolling on mobile.
+      if (e.type === 'mousedown')
+        e.preventDefault();
+
       c.pause();
 
       moving = true;
@@ -659,9 +654,12 @@
 
     $container.on('mousemove touchmove', function(e) {
       if (c.disabled) return;
-
+      if ($container.is(':animated')) return;
       if (!moving) return;
-      e.preventDefault();
+
+      // Only prevent mouse clicks. This allows vertical scrolling on mobile.
+      if (e.type === 'mousedown')
+        e.preventDefault();
 
       var delta = getX(e) - origin.x;
       $container.css('left', start.x + delta);
@@ -669,6 +667,7 @@
 
     $('body').on('mouseup touchend', function(e) {
       if (c.disabled) return;
+      if ($container.is(':animated')) return;
       if (!moving) return;
 
       var left  = parseInt($container.css('left'), 10);
@@ -693,6 +692,15 @@
       moving = false;
     });
 
+  }
+
+  // Extracts the X from given event object. Works for mouse or touch events.
+  function getX(e) {
+    if (e.changedTouches)
+      return e.changedTouches[0].pageX;
+
+    if (e.clientX)
+      return e.clientX;
   }
 })(jQuery);
 
