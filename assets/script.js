@@ -544,9 +544,9 @@
 
   window.Cycler = Cycler;
 })();
-/*! Slideshow (c) 2013 Rico Sta. Cruz, MIT license. */
+/*! Swipeshow (c) 2013 Rico Sta. Cruz, MIT license. */
 
-// Opnionated, simple slideshow using Cycler.js.
+// Opnionated, touch-enabled simple slideshow using Cycler.js.
 //
 // <div class="slideshow">
 //   <ul class="slides">
@@ -561,7 +561,7 @@
 // </div>
 
 (function($) {
-  $.fn.slideshow = function(options) {
+  $.fn.swipeshow = function(options) {
     if (!options) options = {};
 
     $(this).each(function() {
@@ -803,7 +803,7 @@ $(".speaker").toggleable({ using: '.button, h3, p' });
 
 /* Naive slideshow impementation */
 $(".slideshow").each(function() {
-  $(this).slideshow({
+  $(this).swipeshow({
     interval: 4000 + Math.random() * 3000
   });
 });

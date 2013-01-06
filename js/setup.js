@@ -86,7 +86,7 @@ $(".speaker").toggleable({ using: '.button, h3, p' });
 
 /* Naive slideshow impementation */
 $(".slideshow").each(function() {
-  $(this).slideshow({
+  $(this).swipeshow({
     interval: 4000 + Math.random() * 3000
   });
 });

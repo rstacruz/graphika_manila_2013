@@ -1,6 +1,6 @@
-/*! Slideshow (c) 2013 Rico Sta. Cruz, MIT license. */
+/*! Swipeshow (c) 2013 Rico Sta. Cruz, MIT license. */
 
-// Opnionated, simple slideshow using Cycler.js.
+// Opnionated, touch-enabled simple slideshow using Cycler.js.
 //
 // <div class="slideshow">
 //   <ul class="slides">
@@ -15,7 +15,7 @@
 // </div>
 
 (function($) {
-  $.fn.slideshow = function(options) {
+  $.fn.swipeshow = function(options) {
     if (!options) options = {};
 
     $(this).each(function() {
