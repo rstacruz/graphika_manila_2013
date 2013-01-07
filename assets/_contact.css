@@ -5,7 +5,7 @@
   background: #fff;
 }
 .section.contact .in {
-  padding: 20px 0;
+  padding: 40px 20px;
 }
 .section.contact .content {
   font-size: 0.9em;
@@ -23,7 +23,6 @@
     width: 980px;
     margin: 0 auto;
     zoom: 1;
-    padding: 40px 0;
   }
   .section.contact .in:before,
   .section.contact .in:after {

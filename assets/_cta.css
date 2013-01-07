@@ -17,6 +17,7 @@
   max-width: 960px;
   margin: 0 auto;
   zoom: 1;
+  padding: 0 20px;
 }
 .section.cta .in:before,
 .section.cta .in:after {

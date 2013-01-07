@@ -602,6 +602,7 @@ a {
   max-width: 960px;
   margin: 0 auto;
   zoom: 1;
+  padding: 0 20px;
 }
 .section.cta .in:before,
 .section.cta .in:after {
@@ -2152,6 +2153,7 @@ a {
 @media screen and (max-width: 600px) {
   .buy-box .or {
     display: block;
+    margin: 10px 0;
   }
 }
 /* ----------------------------------------------------------------------------
@@ -2649,7 +2651,7 @@ a {
   background: #fff;
 }
 .section.contact .in {
-  padding: 20px 0;
+  padding: 40px 20px;
 }
 .section.contact .content {
   font-size: 0.9em;
@@ -2667,7 +2669,6 @@ a {
     width: 980px;
     margin: 0 auto;
     zoom: 1;
-    padding: 40px 0;
   }
   .section.contact .in:before,
   .section.contact .in:after {
