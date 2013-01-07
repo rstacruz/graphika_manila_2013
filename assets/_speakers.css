@@ -233,7 +233,6 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  z-index: 1;
   -webkit-transition: -webkit-transform 200ms ease;
   -moz-transition: -moz-transform 200ms ease;
   -o-transition: -o-transform 200ms ease;
@@ -244,7 +243,11 @@
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+.speaker .front {
+  z-index: 2;
+}
 .speaker .back {
+  z-index: 1;
   -webkit-transform: rotateX(-180deg);
   -moz-transform: rotateX(-180deg);
   -o-transform: rotateX(-180deg);
@@ -257,6 +260,7 @@
   -o-transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
   transform: rotateX(180deg);
+  z-index: 1;
 }
 .speaker.active .back {
   -webkit-transform: rotateX(0);
@@ -264,6 +268,7 @@
   -o-transform: rotateX(0);
   -ms-transform: rotateX(0);
   transform: rotateX(0);
+  z-index: 2;
 }
 .speaker .back {
   background: #c3cb99;
