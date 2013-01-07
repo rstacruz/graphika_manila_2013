@@ -2751,19 +2751,19 @@ a {
   height: 270px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 .slideshow {
   overflow: hidden;
   position: relative;
 }
-.slideshow .slides {
-  width: 99999px;
+.slideshow .slides,
+.slideshow .slide {
   position: absolute;
   top: 0;
   left: 0;
 }
-.slideshow .slide {
-  float: left;
+.slideshow .slide:not(:first-child) {
+  display: none;
 }
 

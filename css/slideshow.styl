@@ -1,26 +1,21 @@
-horizontal-slideshow(width, height)
+.slideshow
   &, .slides, .slide
     display: block
-    width: width
-    height: height
+    width: 450px
+    height: 270px
 
     margin: 0
     padding: 0
-    list-style: none
+    list-style-type: none
 
   &
     overflow: hidden
     position: relative
 
-  .slides
-    width: 99999px
-
+  .slides, .slide
     position: absolute
     top: 0
     left: 0
 
-  .slide
-    float: left
-
-.slideshow
-  horizontal-slideshow(450px, 270px)
+  .slide:not(:first-child)
+    display: none

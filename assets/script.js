@@ -680,14 +680,16 @@ $(".slideshow").each(function() {
       onactivate: function(current, i, prev, j) {
         if (prev) {
           $(prev).css({
-            zIndex: 1, opacity: 1, transition: 'none'
-          }).show();
+            zIndex: 1, opacity: 1, transition: 'none',
+            display: 'block'
+          });
         }
 
         $(current)
           .css({
             position: 'absolute', top: 0, left: 0,
-            zIndex: 2, opacity: 0, transition: 'none'
+            zIndex: 2, opacity: 0, transition: 'none',
+            display: 'block'
           }).show();
 
         setTimeout(function() {
@@ -697,7 +699,9 @@ $(".slideshow").each(function() {
         }, 0);
 
         setTimeout(function() {
-          $(prev).hide();
+          $(prev).css({
+            display: 'none', zIndex: 1
+          });
         }, speed);
       }
     });
