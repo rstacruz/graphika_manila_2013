@@ -34,7 +34,7 @@ assets/script.js: \
 	js/jquery.unorphan.js \
 	js/jquery.toggleable.js \
 	js/cycler.js \
-	js/jquery.swipeshow.js \
+	js/jquery.onloadall.js \
 	js/setup.js
 
 	$(COMBINE)

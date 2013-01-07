@@ -86,8 +86,38 @@ $(".speaker").toggleable({ using: '.button, h3, p' });
 
 /* Naive slideshow impementation */
 $(".slideshow").each(function() {
-  $(this).swipeshow({
-    interval: 4000 + Math.random() * 3000
+  var $slideshow = $(this);
+  var $container = $slideshow.find('> .slides');
+  var $slides    = $container.find('> .slide');
+  var speed = 500;
+
+  $slideshow.find('img').onloadall(function() {
+    var c = new Cycler($slides, {
+      interval: 4000 + Math.random() * 3000,
+      onactivate: function(current, i, prev, j) {
+        if (prev) {
+          $(prev).css({
+            zIndex: 1, opacity: 1, transition: 'none'
+          }).show();
+        }
+
+        $(current)
+          .css({
+            position: 'absolute', top: 0, left: 0,
+            zIndex: 2, opacity: 0, transition: 'none'
+          }).show();
+
+        setTimeout(function() {
+          $(current).css({
+            opacity: 1, transition: 'opacity '+speed+'ms linear'
+          });
+        }, 0);
+
+        setTimeout(function() {
+          $(prev).hide();
+        }, speed);
+      }
+    });
   });
 });
 
