@@ -165,16 +165,8 @@
   display: none;
 }
 @media screen and (max-width: 600px) {
-  .navigation:not(.stuck) {
-    opacity: 0;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    filter: alpha(opacity=0);
-  }
-  .navigation ul {
-    display: none !important;
-  }
-  .navigation .share {
-    float: none !important;
+  .navigation {
+    display: none;
   }
 }
 

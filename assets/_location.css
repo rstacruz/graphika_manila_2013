@@ -94,4 +94,10 @@
   font-family: adelle, sans-serif;
   font-size: 1.3em;
 }
+/* Hide CTA after the venue */
+@media screen and (max-width: 600px) {
+  .section.venue + .gap {
+    display: none;
+  }
+}
 
