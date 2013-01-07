@@ -10,12 +10,12 @@
     background-color: cream
     background-position: center 0
 
-  @media (max-width: 600px)
+  @media screen and (max-width: 600px)
     background: cream url(title-sky.jpg) center bottom repeat-x
     background-size: round(1378px * 0.5) round(722px * 0.5)
 
   // Desktop
-  @media (min-width: 600px)
+  @media screen and (min-width: 600px)
     &
       height: 897px
 
@@ -112,7 +112,7 @@
     color: green
 
   // Mobile
-  @media (max-width: 600px)
+  @media screen and (max-width: 600px)
     .logo
       margin: 40px auto 20px auto
       width: 90%
@@ -167,12 +167,12 @@
     color: lighten(scarlet, 30%)
 
 /* Mobile: no poster link */
-@media (max-width: 600px)
+@media screen and (max-width: 600px)
   .section.title .poster
     display: none
 
 /* Desktop */
-@media (min-width: 600px)
+@media screen and (min-width: 600px)
   .section.title .poster
     width: 170px
     position: absolute

@@ -28,7 +28,7 @@
   position: relative;
   z-index: 1;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .section.about {
     padding-bottom: 85px;
   }
@@ -91,7 +91,7 @@
 .body strong {
   font-weight: bold;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .body {
     width: auto;
     padding: 0 20px;

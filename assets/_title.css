@@ -5,7 +5,7 @@
   background-color: #fdefe1;
   background-position: center 0;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .section.title {
     background: #fdefe1 url("title-sky.jpg") center bottom repeat-x;
     -webkit-background-size: 689px 361px;
@@ -13,7 +13,7 @@
     background-size: 689px 361px;
   }
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .section.title {
     height: 897px;
   }
@@ -193,7 +193,7 @@
 .section.title .address.two {
   color: #008000;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .section.title .logo {
     margin: 40px auto 20px auto;
     width: 90%;
@@ -269,13 +269,13 @@
   color: #f28879;
 }
 /* Mobile: no poster link */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .section.title .poster {
     display: none;
   }
 }
 /* Desktop */
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .section.title .poster {
     width: 170px;
     position: absolute;

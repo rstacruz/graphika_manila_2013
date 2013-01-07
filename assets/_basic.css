@@ -100,7 +100,7 @@ a {
   width: 530px;
   height: 300px;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .figure .image {
     padding-top: 3px;
   }
@@ -108,7 +108,7 @@ a {
 .figure .image img {
   background: rgba(0,0,0,0.1);
 }
-@media (min-width: 980px) {
+@media screen and (min-width: 980px) {
   .figure .body,
   .figure .image {
     float: left;
@@ -120,7 +120,7 @@ a {
     margin-right: 40px;
   }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .figure .image,
   .figure .image img {
     width: 280px !important;
@@ -131,7 +131,7 @@ a {
     margin: 0 auto;
   }
 }
-@media (max-width: 980px) {
+@media screen and (max-width: 980px) {
   .figure .body,
   .figure .image {
     margin: 20px auto;

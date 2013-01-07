@@ -233,7 +233,7 @@ a {
   width: 530px;
   height: 300px;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .figure .image {
     padding-top: 3px;
   }
@@ -241,7 +241,7 @@ a {
 .figure .image img {
   background: rgba(0,0,0,0.1);
 }
-@media (min-width: 980px) {
+@media screen and (min-width: 980px) {
   .figure .body,
   .figure .image {
     float: left;
@@ -253,7 +253,7 @@ a {
     margin-right: 40px;
   }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .figure .image,
   .figure .image img {
     width: 280px !important;
@@ -264,7 +264,7 @@ a {
     margin: 0 auto;
   }
 }
-@media (max-width: 980px) {
+@media screen and (max-width: 980px) {
   .figure .body,
   .figure .image {
     margin: 20px auto;
@@ -304,7 +304,7 @@ a {
   -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.01), inset 0 -1px 0 rgba(0,0,0,0.01);
   box-shadow: 0 0 3px rgba(0,0,0,0.01), inset 0 -1px 0 rgba(0,0,0,0.01);
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .navigation:not(.stuck) {
     -webkit-transform: translate(0, 20px);
     -moz-transform: translate(0, 20px);
@@ -445,7 +445,7 @@ a {
 .navigation .share > a {
   display: none;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .navigation:not(.stuck) {
     opacity: 0;
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -577,7 +577,7 @@ a {
 .section.call-for-entries .in:after {
   clear: both;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .section.call-for-entries .in {
     padding: 40px 20px;
   }
@@ -732,7 +732,7 @@ a {
   background-color: #fdefe1;
   background-position: center 0;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .section.title {
     background: #fdefe1 url("title-sky.jpg") center bottom repeat-x;
     -webkit-background-size: 689px 361px;
@@ -740,7 +740,7 @@ a {
     background-size: 689px 361px;
   }
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .section.title {
     height: 897px;
   }
@@ -920,7 +920,7 @@ a {
 .section.title .address.two {
   color: #008000;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .section.title .logo {
     margin: 40px auto 20px auto;
     width: 90%;
@@ -996,13 +996,13 @@ a {
   color: #f28879;
 }
 /* Mobile: no poster link */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .section.title .poster {
     display: none;
   }
 }
 /* Desktop */
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .section.title .poster {
     width: 170px;
     position: absolute;
@@ -1391,7 +1391,7 @@ a {
   border-top: solid 1px rgba(30,144,140,0.2);
   border-bottom: solid 1px rgba(30,144,140,0.2);
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .section.speakers .header h2 {
     font-size: 26pt;
   }
@@ -1462,7 +1462,7 @@ a {
 .speakers-list:after {
   clear: both;
 }
-@media (min-width: 980px) {
+@media screen and (min-width: 980px) {
   .speakers-list {
     width: 980px;
     padding-top: 220px;
@@ -1554,7 +1554,7 @@ a {
     }
 }
 }
-@media (max-width: 980px) {
+@media screen and (max-width: 980px) {
   .speakers-list {
     padding-top: 70px;
   }
@@ -1635,7 +1635,7 @@ a {
   z-index: 2;
   display: block;
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .speaker,
   .speaker .front,
   .speaker .back,
@@ -1721,7 +1721,7 @@ a {
   font-family: adelle, sans-serif;
   font-weight: 900;
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .speaker .back .heading h3 {
     font-size: 14pt;
     line-height: 1.2;
@@ -2366,7 +2366,7 @@ a {
 .section.venue {
   padding-top: 90px;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .section.venue {
     padding-bottom: 150px;
   }
@@ -2484,7 +2484,7 @@ a {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .section.about {
     padding-bottom: 85px;
   }
@@ -2547,7 +2547,7 @@ a {
 .body strong {
   font-weight: bold;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .body {
     width: auto;
     padding: 0 20px;
@@ -2597,12 +2597,12 @@ a {
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
   padding-top: 20px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .faq-list ul {
     padding: 0 30px;
   }
 }
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
   .faq-list li {
     width: 50%;
     -webkit-box-sizing: border-box;
@@ -2659,7 +2659,7 @@ a {
   font-weight: bold;
   font-size: 1.2em;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .section.contact .in {
     width: 980px;
     margin: 0 auto;

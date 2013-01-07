@@ -116,7 +116,7 @@
 .section.call-for-entries .in:after {
   clear: both;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .section.call-for-entries .in {
     padding: 40px 20px;
   }

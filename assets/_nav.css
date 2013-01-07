@@ -23,7 +23,7 @@
   -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.01), inset 0 -1px 0 rgba(0,0,0,0.01);
   box-shadow: 0 0 3px rgba(0,0,0,0.01), inset 0 -1px 0 rgba(0,0,0,0.01);
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .navigation:not(.stuck) {
     -webkit-transform: translate(0, 20px);
     -moz-transform: translate(0, 20px);
@@ -164,7 +164,7 @@
 .navigation .share > a {
   display: none;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .navigation:not(.stuck) {
     opacity: 0;
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
