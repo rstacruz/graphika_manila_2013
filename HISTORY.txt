@@ -1,3 +1,11 @@
+v1.0.1 - Jan 07, 2013
+---------------------
+
+FB updates by Aram.
+
+  * (Aram) update preview.jpg.
+  * (Aram) update the Facebook OG title and preview image.
+
 v1.0.0 - Jan 07, 2013
 ---------------------
 
