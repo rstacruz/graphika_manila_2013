@@ -114,10 +114,6 @@
   .speakers-list .speaker {
     z-index: 2;
   }
-  .speakers-list .speaker .front,
-  .speakers-list .speaker .back {
-    z-index: 3;
-  }
   .speakers-list .speaker.left {
     float: left;
     clear: both;
@@ -241,25 +237,34 @@
   position: absolute;
   top: 10px;
   left: 10px;
-}
-.speaker .front transition: transform 200msease,
-.speaker .back transition: transform 200msease {
+  -webkit-transition: -webkit-transform 200ms ease;
+  -moz-transition: -moz-transform 200ms ease;
+  -o-transition: -o-transform 200ms ease;
+  -ms-transition: -ms-transform 200ms ease;
+  transition: transform 200ms ease;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .speaker .front {
-  z-index: 2;
+  background: #1e908c;
+}
+.speaker .front {
+  z-index: 3;
 }
 .speaker .back {
-  z-index: 1;
+  z-index: 2;
   -webkit-transform: rotateX(-180deg);
   -moz-transform: rotateX(-180deg);
   -o-transform: rotateX(-180deg);
   -ms-transform: rotateX(-180deg);
   transform: rotateX(-180deg);
-  display: none;
 }
 .speaker.active .front {
   -webkit-transform: rotateX(180deg);
@@ -267,7 +272,7 @@
   -o-transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
   transform: rotateX(180deg);
-  z-index: 1;
+  z-index: 2;
 }
 .speaker.active .back {
   -webkit-transform: rotateX(0);
@@ -275,8 +280,7 @@
   -o-transform: rotateX(0);
   -ms-transform: rotateX(0);
   transform: rotateX(0);
-  z-index: 2;
-  display: block;
+  z-index: 3;
 }
 @media screen and (max-width: 480px) {
   .speaker,

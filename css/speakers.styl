@@ -103,9 +103,6 @@
 
     .speaker
       z-index: 2
-    .speaker .front,
-    .speaker .back
-      z-index: 3
 
     .speaker.left
       float: left
@@ -200,26 +197,28 @@
     left: 10px
 
     transition: transform 200ms ease
-     backface-visibility: hidden
+    backface-visibility: hidden
+    transform: translate3d(0,0,0)
+
+  .front
+    background: turquoise
 
   // Flippity
   &
     .front
-      z-index: 2
+      z-index: 3
     .back
-      z-index: 1
+      z-index: 2
       transform: rotateX(-180deg)
-      display: none
 
   &.active
     .front
       transform: rotateX(180deg)
-      z-index: 1
+      z-index: 2
 
     .back
       transform: rotateX(0)
-      z-index: 2
-      display: block
+      z-index: 3
 
   // Phone
   @media screen and (max-width: 480px)
