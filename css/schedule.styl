@@ -41,7 +41,20 @@
 
   .event-map
     width: 100%
-    margin: 20px auto 0 auto
+    margin: 20px auto 20px auto
+
+  // iPad/iPhone
+  .touch & .event-map
+    width: 400px
+
+  iframe
+    box-shadow: 0 0 4px rgba(black, 0.4)
+
+  // Mobile
+  @media screen and (max-width: 600px)
+    .event-map
+      width: auto
+      padding: 0 40px
 
 .event-info
   text-align: center
