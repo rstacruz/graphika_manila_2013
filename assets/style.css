@@ -1625,6 +1625,7 @@ a {
   -o-transform: rotateX(-180deg);
   -ms-transform: rotateX(-180deg);
   transform: rotateX(-180deg);
+  display: none;
 }
 .speaker.active .front {
   -webkit-transform: rotateX(180deg);
@@ -1641,6 +1642,7 @@ a {
   -ms-transform: rotateX(0);
   transform: rotateX(0);
   z-index: 2;
+  display: block;
 }
 @media (max-width: 480px) {
   .speaker,

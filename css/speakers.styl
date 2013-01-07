@@ -1,6 +1,12 @@
 @import nib
 @import common
 
+.section, .gap
+  display: none !important
+
+.section.speakers
+  display: block !important
+
 /* ----------------------------------------------------------------------------
  * Speakers section
  */
@@ -209,6 +215,7 @@
     .back
       z-index: 1
       transform: rotateX(-180deg)
+      display: none
 
   &.active
     .front
@@ -218,6 +225,7 @@
     .back
       transform: rotateX(0)
       z-index: 2
+      display: block
 
   // Phone
   @media (max-width: 480px)
