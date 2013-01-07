@@ -22,6 +22,7 @@ assets/style.css: \
 	assets/_contact.css \
 	assets/_slideshow.css
 
+	make cachebust
 	$(COMBINE)
 	@# $(CONDENSE)
 	
@@ -37,6 +38,7 @@ assets/script.js: \
 	js/jquery.onloadall.js \
 	js/setup.js
 
+	make cachebust
 	$(COMBINE)
 
 cachebust:
