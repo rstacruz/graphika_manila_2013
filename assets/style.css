@@ -1853,12 +1853,12 @@ a {
   margin: 0 auto;
   text-align: center;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .ticket-list .ticket {
     margin: 30px auto 30px auto;
   }
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .ticket-list .ticket {
     margin: 20px 50px 10px 50px;
   }
@@ -1958,7 +1958,7 @@ a {
   padding-bottom: 15px;
   border-bottom: solid 1px rgba(0,0,0,0.1);
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .pass-contents {
     margin-top: -25px;
   }
@@ -1973,7 +1973,7 @@ a {
   text-align: center;
   line-height: 1.3;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .pass-contents li {
     display: inline-block;
     vertical-align: top;
@@ -1981,7 +1981,7 @@ a {
     margin: 0 10px;
   }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .pass-contents br {
     display: none;
   }
@@ -2066,7 +2066,7 @@ a {
   width: auto;
   text-align: center;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .pass-reminders li:before {
     display: inline-block;
     content: '\2014';
@@ -2149,6 +2149,11 @@ a {
   font-size: 10pt;
   margin-bottom: 3px;
 }
+@media screen and (max-width: 600px) {
+  .buy-box .or {
+    display: block;
+  }
+}
 /* ----------------------------------------------------------------------------
  * Payment
  */
@@ -2179,7 +2184,7 @@ a {
   margin: 20px 0;
   text-align: center;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .payment-methods .in {
     max-width: 900px;
     zoom: 1;
@@ -2242,7 +2247,7 @@ a {
 .establishments article p {
   margin: 0;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .establishments {
     margin: 0 auto;
     width: 790px;
