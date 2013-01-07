@@ -1,0 +1,20 @@
+v1.0.0 - Jan 07, 2013
+---------------------
+
+Launch version. Done in GM's office.
+
+  * Added Aram's updates.
+  * Contact/CTA: Fix padding in iPhone.
+  * Enable media queries in IE8.
+  * Make the media queries more cross-browser compatible.
+  * Oops.
+  * Schedule: fix the map in iPhone/iPad.
+  * Speakers: fix Windows.
+  * Speakers: fix card flip regression bug.
+  * Venue: fix weird button placement in iPhone.
+  * iPhone: fix big 'buy' button after venue.
+
+v0.9.1 - Jan 07, 2013
+----------------------
+
+Version done on Sunday evening.
