@@ -1355,6 +1355,13 @@ a {
   }
 }
 
+.section,
+.gap {
+  display: none !important;
+}
+.section.speakers {
+  display: block !important;
+}
 /* ----------------------------------------------------------------------------
  * Speakers section
  */
