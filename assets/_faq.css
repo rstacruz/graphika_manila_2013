@@ -13,7 +13,7 @@
   clear: both;
   max-width: 980px;
   margin: 0 auto;
-  color: #fff;
+  color: #90e8e5;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
   font-size: 0.9em;
 }
@@ -28,6 +28,16 @@
 .faq-list ul:after {
   clear: both;
 }
+.faq-list a,
+.faq-list a:visited {
+  color: #fff;
+}
+.faq-list li {
+  border-top: solid 1px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  padding-top: 20px;
+}
 @media (max-width: 800px) {
   .faq-list ul {
     padding: 0 30px;
@@ -41,8 +51,9 @@
     box-sizing: border-box;
     padding-right: 50px;
     float: left;
-    border-top: solid 1px rgba(0,0,0,0.1);
-    padding-top: 20px;
+  }
+  .faq-list {
+    padding-bottom: 40px;
   }
 }
 .faq-list li:nth-child(2n+1) {
@@ -52,20 +63,20 @@
   display: block;
   font-size: 1.3em;
   font-weight: 700;
-  color: #156562;
-  text-shadow: 0 1px 1px rgba(255,255,255,0.2);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.faq-list li:nth-child(5n+1) strong,
+.faq-list li:nth-child(5n+4) strong {
+  color: #f8c4bc;
+}
+.faq-list li:nth-child(5n+2) strong {
+  color: #dee2c7;
+}
+.faq-list li:nth-child(5n+3) strong {
+  color: #f2d0a0;
 }
 .faq-list li p {
   margin-bottom: 20px;
-}
-.faq-list li:nth-child(5n+2) strong,
-.faq-list li:nth-child(5n+5) strong {
-  color: #ec553f;
-}
-.faq-list li:nth-child(5n+3) strong {
-  color: #b57419;
-}
-.faq-list li:nth-child(5n+4) strong {
-  color: #525a2e;
 }
 
