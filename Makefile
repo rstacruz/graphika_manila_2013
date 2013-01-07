@@ -28,6 +28,7 @@ assets/style.css: \
 	
 assets/script.js: \
 	js/attributions.js \
+	js/respond.min.js \
 	js/jquery.hidpi.js \
 	js/jquery.smartquotes.js \
 	js/jquery.anchorjump.js \
